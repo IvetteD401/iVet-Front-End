@@ -1,10 +1,38 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
 	return (
-		<div className="footer">
-			This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.
+		<div className="footer backgroundColor-black">
+			<div className="container">
+				<div className="row">
+					<div className="col-sm ml-auto">
+						<Link to="/demo">
+							<button className="btn btn-primary">Check the Context in action</button>
+						</Link>
+					</div>
+					<div className="col-sm ml-auto">
+						<Link to="/demo">
+							<button className="btn btn-primary">Check the Context in action</button>
+						</Link>
+					</div>
+					<div className="col-sm ml-auto">
+						<Link to="/demo">
+							<button className="btn btn-primary">Check the Context in action</button>
+						</Link>
+					</div>
+					<div className="col-sm ml-auto">
+						<Link to="/demo">
+							<button className="btn btn-primary">Check the Context in action</button>
+						</Link>
+					</div>
+					<div className="col-sm ml-auto">
+						<Link to="/demo">
+							<button className="btn btn-primary">Check the Context in action</button>
+						</Link>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
