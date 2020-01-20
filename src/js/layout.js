@@ -4,6 +4,11 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
+import { Doguments } from "./views/doguments";
+import { Medications } from "./views/medications";
+import { CalenderAppointments } from "./views/calenderAppointments";
+import { Camera } from "./views/camera";
+import { Tracker } from "./views/tracker";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
@@ -23,7 +28,12 @@ export const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/" component={Home} />
-						<Route path="/demo" component={Demo} />
+						{/* <Route path="/demo" component={Demo} /> */}
+						<Route path="/doguments" component={Doguments} />
+						<Route path="/medications" component={Medications} />
+						<Route path="/calenderAppointments" component={CalenderAppointments} />
+						<Route path="/camera" component={Camera} />
+						<Route path="/tracker" component={Tracker} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
