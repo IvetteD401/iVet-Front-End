@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import { Sidebar } from "./component/sidebar";
 
 export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 			<a className="navbar-brand" href="#">
-				Fixed navbar
+				<Link to="/sidebar">
+					<button className="btn btn-dark">☰</button>
+				</Link>
+				iVet
 			</a>
 			<button
 				className="navbar-toggler"

@@ -13,6 +13,7 @@ import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
+import { Sidebar } from "./component/sidebar";
 import { Footer } from "./component/footer";
 
 //create your first component
@@ -34,6 +35,7 @@ export const Layout = () => {
 						<Route path="/calenderAppointments" component={CalenderAppointments} />
 						<Route path="/camera" component={Camera} />
 						<Route path="/tracker" component={Tracker} />
+						<Route path="/sidebar" component={Sidebar} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
