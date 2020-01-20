@@ -12,7 +12,7 @@ import { Tracker } from "./views/tracker";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbar";
+import { Navbars } from "./component/navbar";
 import { Sidebar } from "./component/sidebar";
 import { Footer } from "./component/footer";
 
@@ -26,7 +26,7 @@ export const Layout = () => {
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter>
 				<ScrollToTop>
-					<Navbar />
+					<Navbars />
 					<Switch>
 						<Route exact path="/" component={Home} />
 						{/* <Route path="/demo" component={Demo} /> */}
