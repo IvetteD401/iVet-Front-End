@@ -92,12 +92,16 @@ body {
   text-align: center;
 }
 .Navbar{
+  height: 100%;
+  width: 0;
   position: fixed;
-  right: 0;
+  z-index: 1;
   top: 0;
   left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: left;
+  background-color: #ececec;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
+
 
