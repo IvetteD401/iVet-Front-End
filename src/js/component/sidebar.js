@@ -20,9 +20,9 @@ export const Sidebar = () => {
 				<Link to="/signup/">order merchandise</Link>
 				<Link to="/signup/">book services</Link>
 			</div>
-			<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
+		<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
 				☰{" "}
 			</span>
-		</div>
+            </div>
 	);
 };

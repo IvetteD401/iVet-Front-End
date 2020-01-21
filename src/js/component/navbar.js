@@ -22,6 +22,9 @@ export const Navbars = props => {
 	return (
 		<div className="Navbar">
 			<Navbar color="light" light expand="md">
+				<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
+					☰{" "}
+				</span>
 				<NavbarBrand href="/">iVet</NavbarBrand>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
