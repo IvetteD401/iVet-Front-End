@@ -38,6 +38,7 @@ body {
 .open {
     width: 250px;
     background-color: blue;
+    text-align: center;
 }
 .close {
     width: 0px;
@@ -45,15 +46,14 @@ body {
 }
 .sidenav {
   height: 100%;
-  width: 0;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 100px;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  text-align: center;
 }
 
 .sidenav a {
@@ -75,6 +75,7 @@ body {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  color: green;
 }
 
 @media screen and (max-height: 450px) {
@@ -92,8 +93,7 @@ body {
   text-align: center;
 }
 .Navbar{
-  height: 100%;
-  width: 0;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -101,7 +101,7 @@ body {
   background-color: #ececec;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+//   padding-top: 60px;
 }
 
 
