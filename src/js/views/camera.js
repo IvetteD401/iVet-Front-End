@@ -45,7 +45,7 @@ export const Camera = () => {
 		}
 		return (
 			<>
-				<div className="emptyDiv" />
+				{/* <div className="emptyDiv" /> */}
 				<div className="container">
 					<h1> Camera </h1>
 					<div className="camera">
