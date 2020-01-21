@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Sidebar } from "./sidebar";
 import {
 	Collapse,
 	Navbar,
@@ -19,41 +20,51 @@ export const Navbars = props => {
 
 	const toggle = () => setIsOpen(!isOpen);
 
+	const [sideNav, setSideNav] = useState("close");
+	const triggerSideBar = () => {
+		if (sideNav == "open sidenav") {
+			setSideNav("close");
+		} else setSideNav("open sidenav");
+	};
+
 	return (
-		<div className="Navbar">
-			<Navbar color="light" light expand="md">
-				<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
-					☰{" "}
-				</span>
-				<NavbarBrand href="/">iVet</NavbarBrand>
-				<NavbarToggler onClick={toggle} />
-				<Collapse isOpen={isOpen} navbar>
-					<Nav className="mr-auto" navbar>
-						<NavItem>
-							<NavLink href="/components/">HomePage</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink href="https://github.com/reactstrap/reactstrap">Log In </NavLink>
-						</NavItem>
-						<UncontrolledDropdown nav inNavbar>
-							<DropdownToggle nav caret>
-								Doggy Options
-							</DropdownToggle>
-							<DropdownMenu left>
-								<DropdownItem>Find My Vet</DropdownItem>
-								<DropdownItem>Connect to Vet</DropdownItem>
-								<DropdownItem>Find Doggy Sitter</DropdownItem>
-								<DropdownItem>Doggy Nutrition</DropdownItem>
-								<DropdownItem>Find doggy Walker</DropdownItem>
-								<DropdownItem>Find my new Puppy</DropdownItem>
-								<DropdownItem divider />
-							</DropdownMenu>
-						</UncontrolledDropdown>
-					</Nav>
-					<NavbarText>Side Bar</NavbarText>
-				</Collapse>
-			</Navbar>
-		</div>
+		<>
+			<div className="Navbar">
+				<Navbar color="light" light expand="md">
+					<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
+						☰{" "}
+					</span>
+					<NavbarBrand href="/">iVet</NavbarBrand>
+					<NavbarToggler onClick={toggle} />
+					<Collapse isOpen={isOpen} navbar>
+						<Nav className="mr-auto" navbar>
+							<NavItem>
+								<NavLink href="/components/">HomePage</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink href="https://github.com/reactstrap/reactstrap">Log In </NavLink>
+							</NavItem>
+							<UncontrolledDropdown nav inNavbar>
+								<DropdownToggle nav caret>
+									Doggy Options
+								</DropdownToggle>
+								<DropdownMenu left>
+									<DropdownItem>Find My Vet</DropdownItem>
+									<DropdownItem>Connect to Vet</DropdownItem>
+									<DropdownItem>Find Doggy Sitter</DropdownItem>
+									<DropdownItem>Doggy Nutrition</DropdownItem>
+									<DropdownItem>Find doggy Walker</DropdownItem>
+									<DropdownItem>Find my new Puppy</DropdownItem>
+									<DropdownItem divider />
+								</DropdownMenu>
+							</UncontrolledDropdown>
+						</Nav>
+						<NavbarText>Side Bar</NavbarText>
+					</Collapse>
+				</Navbar>
+			</div>
+			<Sidebar action={sideNav} />
+		</>
 	);
 };
 

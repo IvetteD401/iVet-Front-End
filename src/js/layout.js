@@ -34,7 +34,6 @@ export const Layout = () => {
 			<BrowserRouter>
 				<ScrollToTop>
 					<Navbars />
-					<Sidebar />
 					<Alerts />
 					<Switch>
 						<Route exact path="/" component={Home} />
