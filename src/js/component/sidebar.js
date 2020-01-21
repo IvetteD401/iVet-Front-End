@@ -14,8 +14,8 @@ export const Sidebar = () => {
 			<div id="mySidenav" className={sideNav}>
 				<a href="javascript:void(0)" className="closebtn" onClick={() => triggerSideBar()} />
 				<Link to="/signup/">sign up</Link>
-                <Link to="/signup/">Pet Profile</Link>
-                <Link to="/signup/">Settings</Link>
+				<Link to="/signup/">Pet Profile</Link>
+				<Link to="/signup/">Settings</Link>
 			</div>
 			<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
 				☰{" "}
