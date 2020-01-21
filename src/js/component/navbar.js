@@ -20,7 +20,7 @@ export const Navbars = props => {
 	const toggle = () => setIsOpen(!isOpen);
 
 	return (
-		<div>
+		<div className="Navbar">
 			<Navbar color="light" light expand="md">
 				<NavbarBrand href="/">iVet</NavbarBrand>
 				<NavbarToggler onClick={toggle} />
