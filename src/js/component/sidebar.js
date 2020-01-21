@@ -14,15 +14,6 @@ export const Sidebar = props => {
 				<Link to="/orderform/">order merchandise</Link>
 				<Link to="/bookservices/">book services</Link>
 			</div>
-<<<<<<< HEAD
-			{/* <span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}> */}
-			{/* ☰{" "} */}
-			{/* </span> */}
-=======
-			<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
-				☰{" "}
-			</span>
->>>>>>> 95753b6f801ae171fd182ee2d3193e0b8a8d6321
 		</div>
 	);
 };
