@@ -10,9 +10,7 @@ export const Signup = () => {
 
 	return (
 		<>
-			<div className="emptyDiv" />
-			<div className="container">
-				Sign up
+			<div className="container signupForm">
 				<form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
 					<div className="container">
 						<h1>Sign Up</h1>
@@ -22,14 +20,17 @@ export const Signup = () => {
 							<b>Email</b>
 						</label>
 						<input type="text" placeholder="Enter Email" name="email" required />
+						<br />
 						<label htmlFor="psw">
 							<b>Password</b>
 						</label>
 						<input type="password" placeholder="Enter Password" name="psw" required />
+						<br />
 						<label htmlFor="psw-repeat">
 							<b>Repeat Password</b>
 						</label>
 						<input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+						<br />
 						<label>
 							<input
 								type="checkbox"
@@ -46,6 +47,7 @@ export const Signup = () => {
 							</a>
 							.
 						</p>
+						<br />
 						<div className="clearfix">
 							<button type="button" className="cancelbtn">
 								Cancel
