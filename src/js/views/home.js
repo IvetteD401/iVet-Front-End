@@ -1,6 +1,6 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
+import { Link } from "react-router-dom";
 
 export const Home = () => (
 	<>
@@ -18,6 +18,9 @@ export const Home = () => (
 				</h2>
 				<h2>Special Instructions.</h2>
 			</p>
+			<Link to="/login/">
+				<button className="btn btn-primary">login</button>
+			</Link>
 		</main>
 	</>
 );

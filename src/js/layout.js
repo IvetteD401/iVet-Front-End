@@ -9,7 +9,12 @@ import { Medications } from "./views/medications";
 import { CalenderAppointments } from "./views/calenderAppointments";
 import { Camera } from "./views/camera";
 import { Tracker } from "./views/tracker";
-import { Single } from "./views/single";
+import { Orderform } from "./views/orderform";
+import { BookServices } from "./views/bookServices";
+import { ContactUs } from "./views/contactUs";
+import { Settings } from "./views/settings";
+import { Login } from "./views/login";
+
 import injectContext from "./store/appContext";
 
 import { Navbars } from "./component/navbar";
@@ -34,9 +39,14 @@ export const Layout = () => {
 						<Route path="/medications" component={Medications} />
 						<Route path="/calenderAppointments" component={CalenderAppointments} />
 						<Route path="/camera" component={Camera} />
+						<Route path="/orderform" component={Orderform} />
+						<Route path="/bookServices" component={BookServices} />
+						<Route path="/settings" component={Settings} />
+						<Route path="/contactUs" component={ContactUs} />
+						<Route path="/login" component={Login} />
 						<Route path="/tracker" component={Tracker} />
 						<Route path="/sidebar" component={Sidebar} />
-						<Route path="/single/:theid" component={Single} />
+						{/* <Route path="/single/:theid" component={Single} /> */}
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />
