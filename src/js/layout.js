@@ -53,7 +53,7 @@ export const Layout = () => {
 						<Route path="/tracker" component={Tracker} />
 						<Route path="/sidebar" component={Sidebar} />
 						{/* <Route path="/single/:theid" component={Single} /> */}
-						<Route render={() => <h1>Not found!</h1>} />
+						<Route render={() => <h1>Love your Doggy!</h1>} />
 					</Switch>
 					<Footer />
 				</ScrollToTop>
