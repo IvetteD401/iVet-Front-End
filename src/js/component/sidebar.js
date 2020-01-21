@@ -9,14 +9,20 @@ export const Sidebar = props => {
 				<a href="javascript:void(0)" className="closebtn" onClick={() => triggerSideBar()} />
 				<Link to="/signup/">sign up</Link>
 				<Link to="/signup/">Pet Profile</Link>
-				<Link to="/signup/">Settings</Link>
-				<Link to="/signup/">contact us</Link>
-				<Link to="/signup/">order merchandise</Link>
-				<Link to="/signup/">book services</Link>
+				<Link to="/settings/">Settings</Link>
+				<Link to="/contactUs/">contact us</Link>
+				<Link to="/orderform/">order merchandise</Link>
+				<Link to="/bookservices/">book services</Link>
 			</div>
+<<<<<<< HEAD
 			{/* <span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}> */}
 			{/* ☰{" "} */}
 			{/* </span> */}
+=======
+			<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
+				☰{" "}
+			</span>
+>>>>>>> 95753b6f801ae171fd182ee2d3193e0b8a8d6321
 		</div>
 	);
 };
