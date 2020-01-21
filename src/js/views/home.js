@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Home = () => (
 	<>
-		<div className="emptyDiv" />
+		{/* <div className="emptyDiv" /> */}
 		<main role="main" className="container">
 			<h4>Herroo, User!!!</h4>
 			<p className="lead">
