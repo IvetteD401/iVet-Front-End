@@ -20,15 +20,15 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  background-color: #ffffffee;
-  background-blend-mode: color;
-    background-image: url("https://png.pngtree.com/element_our/png_detail/20181011/dog-logo-vector-with-continuous-one-line-art-style-minimalist-png_133448.jpg");
+//   background-color: #ffffffee;
+//   background-blend-mode: color;
+    background-image: url("../img/dog-logo-vector-with-continuous-one-line-art-style.jpg");
     
   /* Set a specific height */
   height: 500px;
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+//   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
