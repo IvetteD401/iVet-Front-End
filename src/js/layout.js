@@ -27,6 +27,7 @@ export const Layout = () => {
 			<BrowserRouter>
 				<ScrollToTop>
 					<Navbars />
+					<Sidebar />
 					<Switch>
 						<Route exact path="/" component={Home} />
 						{/* <Route path="/demo" component={Demo} /> */}
