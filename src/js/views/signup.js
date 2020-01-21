@@ -5,13 +5,14 @@ import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
 
-export const Login = () => {
+export const Signup = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
 		<>
 			<div className="emptyDiv" />
 			<div className="container">
+				Sign up
 				<form className="form-signin">
 					<img
 						className="mb-4"

@@ -14,6 +14,7 @@ import { BookServices } from "./views/bookServices";
 import { ContactUs } from "./views/contactUs";
 import { Settings } from "./views/settings";
 import { Login } from "./views/login";
+import { Signup } from "./views/signup";
 
 import injectContext from "./store/appContext";
 
@@ -45,6 +46,8 @@ export const Layout = () => {
 						<Route path="/settings" component={Settings} />
 						<Route path="/contactUs" component={ContactUs} />
 						<Route path="/login" component={Login} />
+						<Route path="/signup" component={Signup} />
+
 						<Route path="/tracker" component={Tracker} />
 						<Route path="/sidebar" component={Sidebar} />
 						{/* <Route path="/single/:theid" component={Single} /> */}
