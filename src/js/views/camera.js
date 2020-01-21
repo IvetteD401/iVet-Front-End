@@ -17,9 +17,12 @@ export const Camera = () => {
 	const WebcamCapture = () => {
 		const webcamRef = React.useRef(null);
 
-		const capture = React.useCallback(() => {
-			const imageSrc = webcamRef.current.getScreenshot();
-		}, [webcamRef]);
+		const capture = React.useCallback(
+			() => {
+				const imageSrc = webcamRef.current.getScreenshot();
+			},
+			[webcamRef]
+		);
 
 		class WebcamCapture extends React.Component {
 			render() {
