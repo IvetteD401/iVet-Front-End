@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 export const Sidebar = () => {
 	const [sideNav, setSideNav] = useState("close");
 	const triggerSideBar = () => {
-		if (sideNav == "open") {
+		if (sideNav == "open sidenav") {
 			setSideNav("close");
-		} else setSideNav("open");
+		} else setSideNav("open sidenav");
 	};
 
 	return (
-		<div>
+		<div style={{ paddingTop: "100px" }}>
 			<div id="mySidenav" className={sideNav}>
 				<a href="javascript:void(0)" className="closebtn" onClick={() => triggerSideBar()} />
 				<Link to="/signup/">sign up</Link>

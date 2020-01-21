@@ -10,8 +10,8 @@ export const Doguments = () => {
 
 	return (
 		<>
-			<div className="emptyDiv" />
-			<div className="emptyDiv" />
+			{/* <div className="emptyDiv" /> */}
+			{/* <div className="emptyDiv" /> */}
 			<div className="container">
 				{/* tabs for navigating views (thumbnail vs cards) */}
 				<ul className="justify-content-center nav nav-pills mb-3" id="pills-tab" role="tablist">

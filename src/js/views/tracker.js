@@ -10,7 +10,7 @@ export const Tracker = () => {
 
 	return (
 		<>
-			<div className="emptyDiv" />
+			{/* <div className="emptyDiv" /> */}
 			<div className="container">
 				<h1> Tracker </h1>
 				<br />

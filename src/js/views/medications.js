@@ -10,7 +10,7 @@ export const Medications = () => {
 
 	return (
 		<>
-			<div className="emptyDiv" />
+			{/* <div className="emptyDiv" /> */}
 			<div className="container">
 				<h1>Medications and Vaccinations</h1>
 				<br />

@@ -10,7 +10,7 @@ export const CalenderAppointments = () => {
 
 	return (
 		<>
-			<div className="emptyDiv" />
+			{/* <div className="emptyDiv" /> */}
 			<div className="container">
 				<h1> CalenderAppointments </h1>
 				<br />
