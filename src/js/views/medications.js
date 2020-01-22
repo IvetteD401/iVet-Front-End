@@ -302,6 +302,17 @@ export const Medications = () => {
 						</div>
 					</div>
 				</div>
+				<div>
+					<button type="button" className="btn btn-secondary">
+						Edit
+					</button>
+					<button type="button" className="btn btn-success">
+						Add
+					</button>
+					<button type="button" className="btn btn-danger">
+						Delete
+					</button>
+				</div>
 			</div>
 		</>
 	);

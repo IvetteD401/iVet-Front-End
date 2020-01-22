@@ -23,7 +23,6 @@ export const Navbars = props => {
 	const [messageUs, setMessageUs] = useState("close");
 	const [sideNav, setSideNav] = useState("close");
 
-
 	const triggerSideBar = () => {
 		if (sideNav == "open sidenav") {
 			setSideNav("close");
@@ -71,8 +70,6 @@ export const Navbars = props => {
 		</>
 	);
 };
-
-
 
 // export const Navbar = () => {
 // 	return (
