@@ -8,7 +8,6 @@ export const messageUs = props => {
 			<div id="mySidenav" className={props.action}>
 				<a href="javascript:void(0)" className="closebtn" onClick={() => triggerSideBar()} />
 				<Link to="/signup/">sign up</Link>
-				
 			</div>
 		</div>
 	);

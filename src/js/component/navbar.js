@@ -19,24 +19,20 @@ export const Navbars = props => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggle = () => setIsOpen(!isOpen);
-    const [messageUs, setMessageUs] = useState("close");
+	const [messageUs, setMessageUs] = useState("close");
 	const [sideNav, setSideNav] = useState("close");
-    
-    
-    const triggerMessageUs = () => {
-        if (messageUs == "open messageUs") {
-			setMessageUs("close");
-        } else setMessageUs("open messageUs");
-    };        
 
-    
-    const triggerSideBar = () => {
+	const triggerMessageUs = () => {
+		if (messageUs == "open messageUs") {
+			setMessageUs("close");
+		} else setMessageUs("open messageUs");
+	};
+
+	const triggerSideBar = () => {
 		if (sideNav == "open sidenav") {
 			setSideNav("close");
 		} else setSideNav("open sidenav");
-    };
-    
-
+	};
 
 	return (
 		<>
@@ -72,7 +68,7 @@ export const Navbars = props => {
 						</Nav>
 						<NavbarText>Side Bar</NavbarText>
 					</Collapse>
-                    <span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerMessageUs()}>
+					<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerMessageUs()}>
 						MessageUs{" "}
 					</span>
 				</Navbar>

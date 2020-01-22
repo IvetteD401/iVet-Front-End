@@ -10,13 +10,11 @@ export const Doguments = () => {
 
 	return (
 		<>
-			{/* <div className="emptyDiv" /> */}
-			{/* <div className="emptyDiv" /> */}
-			<div className="container">
-				{/* tabs for navigating views (thumbnail vs cards) */}
-				<ul className="justify-content-center nav nav-pills mb-3" id="pills-tab" role="tablist">
-					<li className="nav-item">
+			<div>
+				<ul className="nav nav-pills mb-3 justify-content-center bg-white" id="pills-tab" role="tablist">
+					<li className="nav-item mt-2 mb-2">
 						<a
+							style={{ fontSize: "0.5rem", padding: ".7rem 1rem" }}
 							className="nav-link active"
 							id="pills-home-tab"
 							data-toggle="pill"
@@ -24,11 +22,12 @@ export const Doguments = () => {
 							role="tab"
 							aria-controls="pills-home"
 							aria-selected="true">
-							<i className="fa fa-th" />
+							<i className="fas fa-th fa-xm" />
 						</a>
 					</li>
-					<li className="nav-item">
+					<li className="nav-item mt-2 mb-2">
 						<a
+							style={{ fontSize: "0.5rem", padding: ".7rem 1rem" }}
 							className="nav-link"
 							id="pills-profile-tab"
 							data-toggle="pill"
@@ -36,107 +35,271 @@ export const Doguments = () => {
 							role="tab"
 							aria-controls="pills-profile"
 							aria-selected="false">
-							<i className="fa fa-square" />
+							<i className="fas fa-square fa-xm" />
 						</a>
 					</li>
 				</ul>
-				{/* thumbnail view */}
 				<div className="tab-content" id="pills-tabContent">
 					<div
-						className="mx-auto tab-pane fade show active"
+						className="tab-pane fade show active"
 						id="pills-home"
 						role="tabpanel"
 						aria-labelledby="pills-home-tab">
-						{/* card groups begin here */}
-						<div className="card-group">
-							<div className="card">
-								<img
-									src="https://cdn.pixabay.com/photo/2019/11/18/00/38/brown-and-white-dog-4633734__340.jpg"
-									className="card-img-top"
-									alt="..."
-								/>
+						<div className="container-fluid">
+							<div className="row">
+								<div className="col-4 px-1">
+									<img
+										src="https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+										width="100%"
+										alt="random"
+									/>
+								</div>
+								<div className="col-4 px-1">
+									<img
+										src="https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80"
+										width="100%"
+										alt="random2"
+									/>
+								</div>
+								<div className="col-4 px-1">
+									<img
+										src="https://images.unsplash.com/photo-1556634202-129a046351c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+										width="100%"
+										alt="random"
+									/>
+								</div>
 							</div>
-							<div className="card">
-								<img
-									width="100%"
-									src="https://cdn.pixabay.com/photo/2018/03/07/16/37/pink-flamingo-3206415__340.jpg"
-									className="card-img-top"
-									alt="..."
-								/>
+							<div className="row">
+								<div className="col-4 p-1">
+									<img
+										src="https://images.unsplash.com/photo-1515444744559-7be63e1600de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+										width="100%"
+										alt="random"
+									/>
+								</div>
+								<div className="col-4 p-1">
+									<img
+										src="https://images.unsplash.com/photo-1495232808668-8bed30b9a3f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+										width="100%"
+										alt="random2"
+									/>
+								</div>
+								<div className="col-4 p-1">
+									<img
+										src="https://images.unsplash.com/photo-1494564605686-2e931f77a8e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+										width="100%"
+										alt="random"
+									/>
+								</div>
 							</div>
-							<div className="card">
-								<img
-									src="https://cdn.pixabay.com/photo/2019/10/15/19/00/alpine-4552654__340.jpg"
-									className="card-img-top"
-									alt="..."
-								/>
+							<div className="row">
+								<div className="col-4 p-1">
+									<img
+										src="https://images.unsplash.com/photo-1458080767772-b1011d305557?ixlib=rb-1.2.1&auto=format&fit=crop&w=2086&q=80"
+										width="100%"
+										alt="random"
+									/>
+								</div>
+								<div className="col-4 p-1">
+									<img
+										src="https://images.unsplash.com/photo-1556079474-f4243dae6802?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+										width="100%"
+										alt="random2"
+									/>
+								</div>
+								<div className="col-4 p-1">
+									<img
+										src="https://images.unsplash.com/photo-1551754809-38f1c2d6eea7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+										width="100%"
+										alt="random"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
-					{/* view as a feed */}
+					{/* Second Tab */}
 					<div
-						className="p-3 mb-2 bg-light text-dark tab-pane fade"
+						className="tab-pane fade"
 						id="pills-profile"
 						role="tabpanel"
 						aria-labelledby="pills-profile-tab">
-						<div className="w-50 mx-auto card text-left">
-							<div className="card-header bg-white">My First Photo</div>
-							<div className="p-0 card-body">
+						{/*Card 1*/}
+						<div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
+							<div className="card-body pt-1" style={{ width: "100%", padding: 0 }}>
+								<div className="d-flex justify-content-between">
+									<h3
+										className="pl-2"
+										style={{ fontFamily: "Lobster", textShadow: "2px 1px 1px rgb(214, 214, 214)" }}>
+										Graffiti Dreams
+									</h3>
+									<p className="mt-2 mb-2 pr-2">7/4</p>
+								</div>
 								<img
-									src="https://cdn.pixabay.com/photo/2019/11/18/00/38/brown-and-white-dog-4633734__340.jpg"
+									src="https://images.unsplash.com/photo-1487452066049-a710f7296400?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
 									className="card-img-top"
-									alt="..."
+									alt="Corridor"
 								/>
-							</div>
-							<div className="bg-white card-footer text-muted">
-								<i className="fa fa-heart" />
-								<i className="fa fa-comment" />
-								<i className="fa fa-paper-plane" />
-								<span> 441 likes </span>
-								<i className="float-right fa fa-ellipsis-v" />
-								<p> mjgrnjuirhgbuhrtgjuibhrtgjuihrgrtguihruihv </p>
+								<h6 className="card-title pl-2 pt-2">47 Likes</h6>
+								<p className="card-text pt-1 pl-2">
+									Sometimes its in nightmares, other times its tranquility.{" "}
+									<b>#Nightmare?#Insomnia</b>
+								</p>
+								<div className>
+									<button
+										type="button"
+										className=" heart-icon btn"
+										data-toggle="button"
+										aria-pressed="false"
+										autoComplete="off">
+										<i className="far fa-heart p-0" />
+									</button>
+									<input type="text" placeholder="Comment..." />
+									<i className="fas fa-ellipsis-v text-secondary float-right mt-1 mr-4" />
+								</div>
 							</div>
 						</div>
-						<br />
-						<div className="w-50 mx-auto card text-left">
-							<div className="card-header bg-white">My Second Photo</div>
-							<div className="p-0 card-body">
+						{/*Card 2*/}
+						<div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
+							<div className="card-body pt-1" style={{ width: "100%", padding: 0 }}>
+								<div className="d-flex justify-content-between">
+									<h3
+										className="pl-2"
+										style={{ fontFamily: "Lobster", textShadow: "2px 1px 1px rgb(214, 214, 214)" }}>
+										Brick Wisdom
+									</h3>
+									<p className="mt-2 mb-2 pr-2">8/7</p>
+								</div>
 								<img
-									src="https://cdn.pixabay.com/photo/2018/03/07/16/37/pink-flamingo-3206415__340.jpg"
+									src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80"
 									className="card-img-top"
-									alt="..."
+									alt="wall"
 								/>
-							</div>
-							<div className="card-footer text-muted bg-white">
-								<span> 784 likes </span>
-								<i className="float-right fa fa-ellipsis-v" />
-								<p> euirjheihbujifhbjuirnbkrn</p>
+								<h6 className="card-title pl-2 pt-2">88 Likes</h6>
+								<p className="card-text pt-1 pl-2">
+									Creation is limitless, our tools are limited<b>#Imagine#Creation</b>
+								</p>
+								<div className>
+									<button
+										type="button"
+										className=" heart-icon btn"
+										data-toggle="button"
+										aria-pressed="false"
+										autoComplete="off">
+										<i className="far fa-heart p-0" />
+									</button>
+									<input type="text" placeholder="Comment..." />
+									<i className="fas fa-ellipsis-v text-secondary float-right mt-1 mr-4" />
+								</div>
 							</div>
 						</div>
-						<br />
-						<div className="w-50 mx-auto card text-left">
-							<div className="card-header bg-white">My Third Photo</div>
-							<div className="p-0 card-body">
+						{/*Card 3*/}
+						<div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
+							<div className="card-body pt-1" style={{ width: "100%", padding: 0 }}>
+								<div className="d-flex justify-content-between">
+									<h3
+										className="pl-2"
+										style={{ fontFamily: "Lobster", textShadow: "2px 1px 1px rgb(214, 214, 214)" }}>
+										Wynwood Wall of Fame
+									</h3>
+									<p className="mt-2 mb-2 pr-2">9/20</p>
+								</div>
 								<img
-									src="https://cdn.pixabay.com/photo/2019/10/15/19/00/alpine-4552654__340.jpg"
+									src="https://images.unsplash.com/photo-1523309375637-b3f4f2347f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2090&q=80"
 									className="card-img-top"
-									alt="..."
+									alt="wynwood"
 								/>
+								<h6 className="card-title pl-2 pt-2">102 Likes</h6>
+								<p className="card-text pt-1 pl-2">
+									Just Did It - Alternate Reality Nike <b>#hsoows?#backwards</b>
+								</p>
+								<div>
+									<button
+										type="button"
+										className=" heart-icon btn"
+										data-toggle="button"
+										aria-pressed="false"
+										autoComplete="off">
+										<i className="far fa-heart p-0" />
+									</button>
+									<input type="text" placeholder="Comment..." />
+									<i className="fas fa-ellipsis-v text-secondary float-right mt-1 mr-4" />
+								</div>
 							</div>
-							<div className="card-footer text-muted bg-white">
-								<span> 451 likes </span>
-								<i className="float-right fa fa-ellipsis-v" />
-								<p> hbfevjhdbvjhbvhbvjknrvjrjkbnjkrn</p>
+						</div>
+						{/*Card 4*/}
+						<div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
+							<div className="card-body pt-1" style={{ width: "100%", padding: 0 }}>
+								<div className="d-flex justify-content-between">
+									<h3
+										className="pl-2"
+										style={{ fontFamily: "Lobster", textShadow: "2px 1px 1px rgb(214, 214, 214)" }}>
+										Creators In Making
+									</h3>
+									<p className="mt-2 mb-2 pr-2">7/5</p>
+								</div>
+								<img src="photo/IMG_1007.jpg" className="card-img-top" alt="..." />
+								<h6 className="card-title pl-2 pt-2">Infinite Likes - (Easter Egg unlocked!)</h6>
+								<p className="card-text pt-1 pl-2">
+									Struggling is part of the process, Embrace it.{" "}
+									<b>#FutureSelfThanksYou#NeverGiveUp</b>
+								</p>
+								<div className>
+									<button
+										type="button"
+										className=" heart-icon btn"
+										data-toggle="button"
+										aria-pressed="false"
+										autoComplete="off">
+										<i className="far fa-heart p-0" />
+									</button>
+									<input type="text" placeholder="Comment..." />
+									<i className="fas fa-ellipsis-v text-secondary float-right mt-1 mr-4" />
+								</div>
+							</div>
+						</div>
+						{/*Card 5*/}
+						<div className="card mx-auto mt-5 mb-5 shadow-lg" style={{ width: "50%" }}>
+							<div className="card-body pt-1" style={{ width: "100%", padding: 0 }}>
+								<div className="d-flex justify-content-between">
+									<h3
+										className="pl-2"
+										style={{ fontFamily: "Lobster", textShadow: "2px 1px 1px rgb(214, 214, 214)" }}>
+										We are all Astronauts
+									</h3>
+									<p className="mt-2 mb-2 pr-2">7/4</p>
+								</div>
+								<img
+									src="https://images.unsplash.com/photo-1463693396721-8ca0cfa2b3b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+									className="card-img-top"
+									alt="travelphoto"
+								/>
+								<h6 className="card-title pl-2 pt-2">62 Likes</h6>
+								<p className="card-text pt-1 pl-2">
+									We travel not to escape life, but for life not to escape us.{" "}
+									<b>#travel#seetheworld</b>
+								</p>
+								<div className>
+									<button
+										type="button"
+										className=" heart-icon btn"
+										data-toggle="button"
+										aria-pressed="false"
+										autoComplete="off">
+										<i className="far fa-heart p-0" />
+									</button>
+									<input type="text" placeholder="Comment..." />
+									<i className="fas fa-ellipsis-v text-secondary float-right mt-1 mr-4" />
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<br />
-				<Link to="/">
-					<button className="btn btn-primary">Back home</button>
-				</Link>
 			</div>
+			<br />
+			<Link to="/">
+				<button className="btn btn-primary">Back home</button>
+			</Link>
+			{/* </div> */}
 		</>
 	);
 };
