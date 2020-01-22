@@ -11,7 +11,7 @@ export const Login = () => {
 	return (
 		<>
 			{/* <div className="emptyDiv" /> */}
-			<div className="container login mx-auto">
+			<div className="container general mx-auto">
 				<form className="form-signin">
 					{/* <img
 						className="mb-4"
