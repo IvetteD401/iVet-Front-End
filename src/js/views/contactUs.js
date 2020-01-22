@@ -10,7 +10,7 @@ export const ContactUs = () => {
 
 	return (
 		<>
-			<div className="emptyDiv" />
+			{/* <div className="emptyDiv" /> */}
 			<div className="container">
 				Contact us
 				<br />

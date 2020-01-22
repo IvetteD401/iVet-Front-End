@@ -5,12 +5,15 @@ import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
 
+{
+	/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link> */
+}
 export const Signup = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
 		<>
-			<div className="container signupForm">
+			<div className="container general">
 				<form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
 					<div className="container">
 						<h1>Sign Up</h1>
@@ -56,6 +59,7 @@ export const Signup = () => {
 								Sign Up
 							</button>
 						</div>
+						<Link to="/login">Already a member yet? Log in here!</Link>
 					</div>
 				</form>
 				<br />

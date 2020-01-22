@@ -6,7 +6,9 @@ export const Home = () => (
 	<>
 		{/* <div className="emptyDiv" /> */}
 		<main role="main" className="container">
-			<h4>Herroo, User!!!</h4>
+			<div className="greeting">
+				<h1>Herroo!!!</h1>
+			</div>
 			<p className="lead">
 				<h2>Daily Dogfacts.</h2>
 				<h2>

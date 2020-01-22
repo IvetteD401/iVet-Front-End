@@ -22,6 +22,7 @@ import { Navbars } from "./component/navbar";
 import { Sidebar } from "./component/sidebar";
 import { Footer } from "./component/footer";
 import { Alerts } from "./component/alerts";
+import { messageUs } from "./component/messageUs";
 
 //create your first component
 export const Layout = () => {
@@ -34,9 +35,11 @@ export const Layout = () => {
 			<BrowserRouter>
 				<ScrollToTop>
 					<Navbars />
-					<Alerts />
+					{/* <Alerts /> */}
 					<Switch>
 						<Route exact path="/" component={Home} />
+						<Route exact path="/alerts" component={Alerts} />
+						<Route exact path="/messageUs" component={messageUs} />
 						{/* <Route path="/demo" component={Demo} /> */}
 						<Route path="/doguments" component={Doguments} />
 						<Route path="/medications" component={Medications} />
