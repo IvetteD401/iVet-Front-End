@@ -9,32 +9,39 @@ export const Footer = () => {
 		<div className="footer backgroundColor-black">
 			<div className="container">
 				<div className="row">
-					<div className="col-sm ml-auto">
+					<div className="col-lg ml-auto">
 						<Link to="/doguments/">
-							<button className="btn btn-dark">
-								{/* <i className="fas fa-book-medical" /> */}
-								Doguments
-							</button>
+							<span>
+								<i className="far fa-folder-open"></i>
+							</span>
 						</Link>
 					</div>
-					<div className="col-sm ml-auto">
+					<div className="col-lg ml-auto">
 						<Link to="/tracker">
-							<button className="btn btn-dark">Tracker</button>
+							<span>
+								<i className="far fa-chart-bar"></i>
+							</span>
 						</Link>
 					</div>
 					<div className="col-sm ml-auto">
 						<Link to="/camera">
-							<button className="btn btn-dark">Camera</button>
+							<span>
+								<i className="fas fa-camera"></i>
+							</span>
 						</Link>
 					</div>
 					<div className="col-sm ml-auto">
 						<Link to="/medications">
-							<button className="btn btn-dark">Vaccinations {"&"} Medications</button>
+							<span>
+								<i className="fas fa-prescription"></i>
+							</span>
 						</Link>
 					</div>
 					<div className="col-sm ml-auto">
 						<Link to="/calenderAppointments">
-							<button className="btn btn-dark">Appointments</button>
+							<span>
+								<i className="far fa-calendar-alt"></i>
+							</span>
 						</Link>
 					</div>
 				</div>
