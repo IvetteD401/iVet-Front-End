@@ -34,9 +34,10 @@ export const Layout = () => {
 			<BrowserRouter>
 				<ScrollToTop>
 					<Navbars />
-					<Alerts />
+					{/* <Alerts /> */}
 					<Switch>
 						<Route exact path="/" component={Home} />
+						<Route exact path="/alerts" component={Alerts} />
 						{/* <Route path="/demo" component={Demo} /> */}
 						<Route path="/doguments" component={Doguments} />
 						<Route path="/medications" component={Medications} />
