@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Sidebar } from "./sidebar";
 import {
 	Collapse,
@@ -19,24 +20,14 @@ export const Navbars = props => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggle = () => setIsOpen(!isOpen);
-    const [messageUs, setMessageUs] = useState("close");
+	const [messageUs, setMessageUs] = useState("close");
 	const [sideNav, setSideNav] = useState("close");
-    
-    
-    const triggerMessageUs = () => {
-        if (messageUs == "open messageUs") {
-			setMessageUs("close");
-        } else setMessageUs("open messageUs");
-    };        
 
-    
-    const triggerSideBar = () => {
+	const triggerSideBar = () => {
 		if (sideNav == "open sidenav") {
 			setSideNav("close");
 		} else setSideNav("open sidenav");
-    };
-    
-
+	};
 
 	return (
 		<>
@@ -72,9 +63,7 @@ export const Navbars = props => {
 						</Nav>
 						<NavbarText>Side Bar</NavbarText>
 					</Collapse>
-                    <span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerMessageUs()}>
-						MessageUs{" "}
-					</span>
+					<Link to="/messageUs">messageUs</Link>
 				</Navbar>
 			</div>
 			<Sidebar action={sideNav} />
