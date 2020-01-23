@@ -4,7 +4,7 @@ export const messageUs = props => {
 	return (
 		<>
 			<div className="inputfield">
-				<label>enter message here</label>
+				<label>Start Typing</label>
 				<input type="form-control" placeholder="Message Here" />
 			</div>
 			<div className="body2">
