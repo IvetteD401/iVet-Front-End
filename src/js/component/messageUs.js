@@ -1,6 +1,7 @@
 import React from "react";
 
 export const messageUs = props => {
+<<<<<<< HEAD
     return (
 <>
     <div>
@@ -50,3 +51,11 @@ export const messageUs = props => {
 </>
     )
 }
+=======
+	return (
+		<>
+			<div className="message">whatever</div>
+		</>
+	);
+};
+>>>>>>> a016553d67c9d6351d8c17e36cb52d301ba443dc
