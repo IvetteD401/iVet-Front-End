@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import Example from "../component/datepicker";
 
 import { Context } from "../store/appContext";
 
@@ -12,6 +13,7 @@ export const CalenderAppointments = () => {
 		<>
 			<div className="container">
 				<h1> CalenderAppointments </h1>
+				<Example />
 				<br />
 				<Link to="/">
 					<button className="btn btn-primary">Back home</button>
