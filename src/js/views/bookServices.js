@@ -1,10 +1,6 @@
 import React, { useState, useEffect, useContext, ReactNode, SyntheticEvent } from "react";
 import { Link } from "react-router-dom";
-
-// import ApiCalendar from "react-google-calendar-api";
-
 import { Context } from "../store/appContext";
-
 import "../../styles/demo.scss";
 
 export const BookServices = () => {
@@ -13,9 +9,9 @@ export const BookServices = () => {
 	return (
 		<>
 			{<div className="emptyDiv" />}
-			<div className="container">
-				Book Services
-				<div>
+			<div className="container general mx-auto">
+				<div className="container">
+					<h1> Book Services</h1>
 					<div className="form-check">
 						<input className="form-check-input" type="checkbox" defaultValue id="defaultCheck1" />
 						<label className="form-check-label" htmlFor="defaultCheck1">
@@ -36,6 +32,12 @@ export const BookServices = () => {
 					</div>
 				</div>
 				<br />
+				<Link to="/calenderAppointments">
+					<button className="btn btn-primary">go to calendar</button>
+				</Link>
+				<Link to="/">
+					<button className="btn btn-primary">order merch</button>
+				</Link>
 				<Link to="/">
 					<button className="btn btn-primary">Back home</button>
 				</Link>

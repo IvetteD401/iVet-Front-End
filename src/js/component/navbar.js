@@ -35,17 +35,21 @@ export const Navbars = props => {
 			<div className="Navbar">
 				<Navbar color="light" light expand="md">
 					<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
-						☰{" "}
+						☰
 					</span>
-					<NavbarBrand href="/">iVet</NavbarBrand>
+					<NavbarBrand href="/">
+						<span>
+							<i className="fas fa-paw"></i> <strong> iVet </strong> for Dogs{" "}
+						</span>
+					</NavbarBrand>
 					<NavbarToggler onClick={toggle} />
 					<Collapse isOpen={isOpen} navbar>
-						<Nav className="mr-auto" navbar>
+						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavLink href="/components/">HomePage</NavLink>
+								<NavLink href="/login">Log In </NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink href="https://github.com/reactstrap/reactstrap">Log In </NavLink>
+								<NavLink href="/signup">Sign Up </NavLink>
 							</NavItem>
 							<UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret>
@@ -64,7 +68,11 @@ export const Navbars = props => {
 						</Nav>
 						<NavbarText></NavbarText>
 					</Collapse>
-					<Link to="/messageUs">messageUs</Link>
+					<Link to="/messageUs">
+						<h4>
+							<i className="far fa-envelope"></i>
+						</h4>
+					</Link>
 				</Navbar>
 			</div>
 
@@ -78,7 +86,7 @@ export const Navbars = props => {
 // 		<nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 // 			<a className="navbar-brand" href="#">
 // 				<Link to="/sidebar">
-// 					<button className="btn btn-dark">☰</button>
+// 					<button className="btn btn-dark"></button>
 // 				</Link>
 // 				iVet
 // 			</a>
