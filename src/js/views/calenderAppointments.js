@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import React, { Component } from "react";
+
 import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
@@ -18,7 +18,6 @@ export const CalenderAppointments = () => {
 						<button className="btn btn-primary">Back home</button>
 					</Link>
 				</div>
-			}
 			}
 		</>
 	);
