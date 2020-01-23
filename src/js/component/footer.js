@@ -46,7 +46,7 @@ export const Footer = () => {
 						</Link>
 					</div>
 					<div className="col-sm ml-auto">
-						<Link to="/calenderAppointments">
+						<Link to="/bookServices">
 							<span>
 								<h1>
 									<i className="far fa-calendar-alt"></i>
