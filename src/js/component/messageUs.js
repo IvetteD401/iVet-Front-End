@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const messageUs = props => {
 	return (
 		<>
+			<div className="inputfield">
+				<label>enter message here</label>
+				<input type="form-control" placeholder="Message Here" />
+			</div>
 			<div className="body2">
 				<h2>Chat Messages</h2>
 				<div className="message1">
