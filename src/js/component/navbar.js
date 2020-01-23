@@ -66,6 +66,7 @@ export const Navbars = props => {
 					<Link to="/messageUs">messageUs</Link>
 				</Navbar>
 			</div>
+
 			<Sidebar action={sideNav} />
 		</>
 	);
