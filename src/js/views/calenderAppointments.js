@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Example from "../component/datepicker";
 
-import { Context } from "../store/appContext";
+// import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
 
