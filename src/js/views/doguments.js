@@ -10,7 +10,7 @@ export const Doguments = () => {
 
 	return (
 		<>
-			<div>
+			<div className="body2">
 				<ul className="nav nav-pills mb-3 justify-content-center bg-white" id="pills-tab" role="tablist">
 					<li className="nav-item mt-2 mb-2">
 						<a

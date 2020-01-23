@@ -43,23 +43,25 @@ export const Camera = () => {
 		return (
 			<>
 				{/* <div className="emptyDiv" /> */}
-				<div className="container">
-					<h1> Camera </h1>
-					<div className="camera">
-						<Webcam
-							audio={false}
-							height={720}
-							ref={webcamRef}
-							screenshotFormat="image/jpeg"
-							width={1280}
-							videoConstraints={videoConstraints}
-						/>
-						<button onClick={capture}>Capture photo</button>
+				<div className="body2">
+					<div className="container">
+						<h1> Camera </h1>
+						<div className="camera">
+							<Webcam
+								audio={false}
+								height={720}
+								ref={webcamRef}
+								screenshotFormat="image/jpeg"
+								width={1280}
+								videoConstraints={videoConstraints}
+							/>
+							<button onClick={capture}>Capture photo</button>
+						</div>
+						<br />
+						<Link to="/">
+							<button className="btn btn-primary">Back home</button>
+						</Link>
 					</div>
-					<br />
-					<Link to="/">
-						<button className="btn btn-primary">Back home</button>
-					</Link>
 				</div>
 			</>
 		);
