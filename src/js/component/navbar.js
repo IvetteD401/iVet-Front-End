@@ -31,6 +31,7 @@ export const Navbars = props => {
 
 	return (
 		<>
+			<div className="hidden"></div>
 			<div className="Navbar">
 				<Navbar color="light" light expand="md">
 					<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
@@ -61,7 +62,7 @@ export const Navbars = props => {
 								</DropdownMenu>
 							</UncontrolledDropdown>
 						</Nav>
-						<NavbarText>Side Bar</NavbarText>
+						<NavbarText></NavbarText>
 					</Collapse>
 					<Link to="/messageUs">messageUs</Link>
 				</Navbar>

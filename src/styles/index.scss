@@ -50,6 +50,7 @@ body {
 .close {
     width: 0px;
     background-color: red;
+    display: none;
 }
 .sidenav {
   height: 100%;
@@ -119,6 +120,7 @@ body {
   margin: 0 auto;
   max-width: 800px;
   padding: 0 20px;
+  margin-bottom: 100%;
 }
 
 .message1 {
@@ -162,4 +164,8 @@ body {
 .time-left {
   float: left;
   color: #999;
+}
+.inputfield {
+    margin-left: 25px;
+    
 }
