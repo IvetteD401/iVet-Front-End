@@ -1,12 +1,11 @@
 import React from "react";
 
 export const messageUs = props => {
-<<<<<<< HEAD
     return (
 <>
-    <div>
+    <div className="body2">
   <h2>Chat Messages</h2>
-  <div className="container">
+  <div className="message1">
     <img src="/w3images/bandmember.jpg" alt="Avatar" style={{width: '100%'}} />
     <p>Hello. How are you today?</p>
     <span className="time-right">11:00</span>
@@ -51,11 +50,3 @@ export const messageUs = props => {
 </>
     )
 }
-=======
-	return (
-		<>
-			<div className="message">whatever</div>
-		</>
-	);
-};
->>>>>>> a016553d67c9d6351d8c17e36cb52d301ba443dc
