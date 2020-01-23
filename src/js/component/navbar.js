@@ -40,11 +40,14 @@ export const Navbars = props => {
 					<NavbarToggler onClick={toggle} />
 					<Collapse isOpen={isOpen} navbar>
 						<Nav className="mr-auto" navbar>
-							<NavItem>
+							{/* <NavItem>
 								<NavLink href="/components/">HomePage</NavLink>
+							</NavItem> */}
+							<NavItem>
+								<NavLink href="/login">Log In </NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink href="https://github.com/reactstrap/reactstrap">Log In </NavLink>
+								<NavLink href="/signup">Sign Up </NavLink>
 							</NavItem>
 							<UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret>
