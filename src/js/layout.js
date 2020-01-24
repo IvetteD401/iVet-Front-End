@@ -15,6 +15,7 @@ import { ContactUs } from "./views/contactUs";
 import { Settings } from "./views/settings";
 import { Login } from "./views/login";
 import { Signup } from "./views/signup";
+import { petProfile } from "./views/petProfile";
 
 import injectContext from "./store/appContext";
 
@@ -51,6 +52,7 @@ export const Layout = () => {
 						<Route path="/contactUs" component={ContactUs} />
 						<Route path="/login" component={Login} />
 						<Route path="/signup" component={Signup} />
+						<Route path="/petProfile" component={petProfile} />
 
 						<Route path="/tracker" component={Tracker} />
 						<Route path="/sidebar" component={Sidebar} />
