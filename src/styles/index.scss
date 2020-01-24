@@ -10,7 +10,20 @@
     padding: 15px;
 }
 
-img {
+.jumbotron {
+    width: 100%;
+    height:450px;
+    background-color: rgba(255, 255, 255, 0.603);
+    background-blend-mode: lighten;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url("https://media.istockphoto.com/photos/many-different-breeds-of-dogs-on-the-grass-picture-id874937848?k=6&m=874937848&s=612x612&w=0&h=WQ6RITfqo_Hve9SeVqng_iDNwseSbbNmMu4ucqvfshY=");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  margin-bottom: 60px;
+}
+    img {
 
 max-width: 100%;
 
