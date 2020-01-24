@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Sidebar } from "./sidebar";
+import { DogFacts } from "../component/dogFacts";
 import {
 	Collapse,
 	Navbar,
@@ -43,6 +44,7 @@ export const Navbars = props => {
 						</span>
 					</NavbarBrand>
 					<NavbarToggler onClick={toggle} />
+					<DogFacts />
 					<Collapse isOpen={isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
