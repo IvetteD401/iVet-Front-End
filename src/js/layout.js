@@ -24,6 +24,7 @@ import { Sidebar } from "./component/sidebar";
 import { Footer } from "./component/footer";
 import { Alerts } from "./component/alerts";
 import { messageUs } from "./component/messageUs";
+import { modalFunction } from "./component/modalfunction";
 
 //create your first component
 export const Layout = () => {
@@ -41,6 +42,7 @@ export const Layout = () => {
 						<Route exact path="/" component={Home} />
 						<Route exact path="/alerts" component={Alerts} />
 						<Route exact path="/messageUs" component={messageUs} />
+						<Route exact path="/modalfunction" component={modalFunction} />
 						{/* <Route path="/demo" component={Demo} /> */}
 						<Route path="/doguments" component={Doguments} />
 						<Route path="/medications" component={Medications} />
