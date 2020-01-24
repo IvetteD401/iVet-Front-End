@@ -14,17 +14,7 @@ class Example extends React.Component {
 		});
 	};
 	render() {
-		return (
-			// <DatePicker selected={this.state.startDate} onChange={this.handleChange} />;
-
-			<DatePicker
-				selected={this.state.startDate}
-				onChange={this.handleChange}
-				timeInputLabel="Time:"
-				dateFormat="MM/dd/yyyy h:mm aa"
-				showTimeInput
-			/>
-		);
+		return <DatePicker selected={this.state.startDate} onChange={this.handleChange} />;
 	}
 }
 export default Example;

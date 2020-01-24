@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Example from "../component/datepicker";
-
-// import { Context } from "../store/appContext";
+import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
 
