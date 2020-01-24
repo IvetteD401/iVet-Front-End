@@ -5,27 +5,26 @@ import { Link } from "react-router-dom";
 export const Home = () => (
 	<>
 		{/* <div className="emptyDiv" /> */}
-		<main role="main" className="container">
-			<div className="jumbotron">
-				<h1 className="display-4">Hello, world!</h1>
-				<p className="lead">
-					This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-					featured content or information.
+
+		<section className="jumbotron text-center">
+			<div className="container">
+				<h1>Album example</h1>
+				<p className="lead text-muted">
+					Something short and leading about the collection below—its contents, the creator, etc. Make it short
+					and sweet, but not too short so folks don’t simply skip over it entirely.
 				</p>
-				<hr className="my-4" />
 				<p>
-					It uses utility classes for typography and spacing to space content out within the larger container.
+					<a href="#" className="btn btn-primary my-2">
+						New Doggufact!
+					</a>
 				</p>
-				<a className="btn btn-primary btn-lg" href="#" role="button">
-					Learn more
-				</a>
 				<Link to="/login/">
-					<button className="btn btn-primary">login</button>
+					<button className="btn btn-primary my-2">login</button>
 				</Link>
 				<Link to="/signup/">
-					<button className="btn btn-primary">sign up</button>
+					<button className="btn btn-secondary my-2">sign up</button>
 				</Link>
 			</div>
-		</main>
+		</section>
 	</>
 );
