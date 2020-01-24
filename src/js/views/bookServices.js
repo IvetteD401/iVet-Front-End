@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext, ReactNode, SyntheticEvent } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
+import Example from "../component/datepicker";
 import "../../styles/demo.scss";
 
 export const BookServices = () => {
@@ -18,12 +19,14 @@ export const BookServices = () => {
 							<label className="form-check-label" htmlFor="defaultCheck1">
 								Grooming Services
 							</label>
+							<Example />
 						</div>
 						<div className="form-check">
 							<input className="form-check-input" type="checkbox" defaultValue id="defaultCheck1" />
 							<label className="form-check-label" htmlFor="defaultCheck1">
 								Dog Walker
 							</label>
+							<Example />
 						</div>
 						<div className="form-check">
 							<input
@@ -36,6 +39,7 @@ export const BookServices = () => {
 							<label className="form-check-label" htmlFor="defaultCheck2">
 								Find a Vet!
 							</label>
+							<Example />
 						</div>
 					</div>
 					<br />
