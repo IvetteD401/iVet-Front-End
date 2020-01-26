@@ -1,9 +1,30 @@
-import React, { useState } from "react";
+import React, {  Component} from "react";
 
 export const messageUs = props => {
 	return (
 		<>
-			<div className="inputfield">
+			
+
+
+		</>
+	);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// chat with us old code under here
+{/* <div className="inputfield">
 				<label>Start Typing</label>
 				<input type="form-control" placeholder="Message Here" />
 			</div>
@@ -49,7 +70,4 @@ export const messageUs = props => {
 					<p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
 					<span className="time-left">11:05</span>
 				</div>
-			</div>
-		</>
-	);
-};
+			</div> */}
