@@ -1,104 +1,168 @@
-import { BrowserHistory } from 'react-history'
-import History from 'react-history/BrowserHistory'
-import React, { PropTypes } from 'react'
-import { Push } from 'react-history/Actions'
-import Prompt from 'react-history/Prompt'
+// import { BrowserHistory } from 'react-history'
+// import History from 'react-history/BrowserHistory'
+// import React, { PropTypes } from 'react'
+// import { Push } from 'react-history/Actions'
+// import Prompt from 'react-history/Prompt'
+import React, { useState } from "react";
+export function NameForm(props) {
+  return (
+    <>
+      <label>
+        Name:
+        <input type="text" />
+      </label>
+      <input type="submit" value="Submit" />
 
-const App = React.createClass({
-  render() {
-const Link = React.createClass({
-  propTypes: {
-    to: PropTypes.string.isRequired
-  },
- 
-  getInitialState() {
-    return { wasClicked: false }
-  },
- 
-  render() {
-    const { to, ...props } = this.props
- 
-    // If the <Link> was clicked, update the URL!
-    if (this.state.wasClicked)
-      return <Push path={to}/>
- 
-    return (
-      <span {...props} onClick={() => this.setState({ wasClicked: true })}/>
-    )
-  }
-})
-const Form = React.createClass({
-  getInitialState() {
-    return { inputText: '' }
-  },
- 
-  handleChange(event) {
-    this.setState({ inputText: event.target.value })
-  },
- 
-  render() {
-    const { inputText } = this.state
- 
-    return (
-      <form>
-        <Prompt
-          message="Are you sure you want to leave before submitting the form?"
-          when={inputText}
-        />
-        <input
-          type="text"
-          defaultValue={inputText}
-          onChange={this.handleChange}
-        />
-      </form>
-    )
-  }
-})
-    return (
-      <History>
-        {({ history, action, location }) => (
-          <p>The current URL is {location.pathname}{location.search}{location.hash}. You arrived at this URL via a {action} action.</p>
-        )}
-      </History>
-      
-      <BrowserHistory
-  basename=""               // The base URL of the app (see below)
-  forceRefresh={false}      // Set true to force full page refreshes
-  keyLength={6}             // The length of location.key
-  // A function to use to confirm navigation with the user (see below)
-  getUserConfirmation={(message, callback) => callback(window.confirm(message))}
-/>
- 
-<MemoryHistory
-  initialEntries={[ '/' ]}  // The initial URLs in the history stack
-  initialIndex={0}          // The starting index in the history stack
-  keyLength={6}             // The length of location.key
-  // A function to use to confirm navigation with the user. Required
-  // if you return string prompts from transition hooks (see below)
-  getUserConfirmation={null}
-/>
- 
-<HashHistory
-  basename=""               // The base URL of the app (see below)
-  hashType="slash"          // The hash type to use (see below)
-  // A function to use to confirm navigation with the user (see below)
-  getUserConfirmation={(message, callback) => callback(window.confirm(message))}
-/>
-
-<History>
-  {({ history, action, location }) => (
-    <div>
-      <p>The current URL is {location.pathname}{location.search}{location.hash}.</p>
-      <p>You arrived at this URL via a {action} action.</p>
-    </div>
-  )}
-</History>
-
-
-    )
-  }
+        const { value:firstName, bind:bindFirstName, reset:resetFirstName } = useInput('');
+  const { value:lastName, bind:bindLastName, reset:resetLastName } = useInput('');
   
-})
+  const handleSubmit = (evt) => {
+      evt.preventDefault();
+      alert(`Submitting Name ${firstName} ${lastName}`);
+      resetFirstName();
+      resetLastName();
+  }
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        First Name:
+        <input type="text" {...bindFirstName} />
+      </label>
+      <label>
+        Last Name:
+        <input type="text" {...bindLastName} />
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  );
+}
+    </>
+
+    
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const App = React.createClass({
+//   render() {
+// const Link = React.createClass({
+//   propTypes: {
+//     to: PropTypes.string.isRequired
+//   },
+ 
+//   getInitialState() {
+//     return { wasClicked: false }
+//   },
+ 
+//   render() {
+//     const { to, ...props } = this.props
+ 
+//     // If the <Link> was clicked, update the URL!
+//     if (this.state.wasClicked)
+//       return <Push path={to}/>
+ 
+//     return (
+//       <span {...props} onClick={() => this.setState({ wasClicked: true })}/>
+//     )
+//   }
+// })
+// const Form = React.createClass({
+//   getInitialState() {
+//     return { inputText: '' }
+//   },
+ 
+//   handleChange(event) {
+//     this.setState({ inputText: event.target.value })
+//   },
+ 
+//   render() {
+//     const { inputText } = this.state
+ 
+//     return (
+//       <form>
+//         <Prompt
+//           message="Are you sure you want to leave before submitting the form?"
+//           when={inputText}
+//         />
+//         <input
+//           type="text"
+//           defaultValue={inputText}
+//           onChange={this.handleChange}
+//         />
+//       </form>
+//     )
+//   }
+// })
+//     return (
+//       <History>
+//         {({ history, action, location }) => (
+//           <p>The current URL is {location.pathname}{location.search}{location.hash}. You arrived at this URL via a {action} action.</p>
+//         )}
+//       </History>
+      
+//       <BrowserHistory
+//   basename=""               // The base URL of the app (see below)
+//   forceRefresh={false}      // Set true to force full page refreshes
+//   keyLength={6}             // The length of location.key
+//   // A function to use to confirm navigation with the user (see below)
+//   getUserConfirmation={(message, callback) => callback(window.confirm(message))}
+// />
+ 
+// <MemoryHistory
+//   initialEntries={[ '/' ]}  // The initial URLs in the history stack
+//   initialIndex={0}          // The starting index in the history stack
+//   keyLength={6}             // The length of location.key
+//   // A function to use to confirm navigation with the user. Required
+//   // if you return string prompts from transition hooks (see below)
+//   getUserConfirmation={null}
+// />
+ 
+// <HashHistory
+//   basename=""               // The base URL of the app (see below)
+//   hashType="slash"          // The hash type to use (see below)
+//   // A function to use to confirm navigation with the user (see below)
+//   getUserConfirmation={(message, callback) => callback(window.confirm(message))}
+// />
+
+// <History>
+//   {({ history, action, location }) => (
+//     <div>
+//       <p>The current URL is {location.pathname}{location.search}{location.hash}.</p>
+//       <p>You arrived at this URL via a {action} action.</p>
+//     </div>
+//   )}
+// </History>
+
+
+//     )
+//   }
+  
+// })
 
 
 
