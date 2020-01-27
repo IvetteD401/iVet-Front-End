@@ -3,44 +3,44 @@
 // import React, { PropTypes } from 'react'
 // import { Push } from 'react-history/Actions'
 // import Prompt from 'react-history/Prompt'
-import React, { useState } from "react";
-export function NameForm(props) {
-  return (
-    <>
-      <label>
-        Name:
-        <input type="text" />
-      </label>
-      <input type="submit" value="Submit" />
+// import React, { useState } from "react";
+// export function NameForm(props) {
+//   return (
+//     <>
+//       <label>
+//         Name:
+//         <input type="text" />
+//       </label>
+//       <input type="submit" value="Submit" />
 
-        const { value:firstName, bind:bindFirstName, reset:resetFirstName } = useInput('');
-  const { value:lastName, bind:bindLastName, reset:resetLastName } = useInput('');
+//         const { value:firstName, bind:bindFirstName, reset:resetFirstName } = useInput('');
+//   const { value:lastName, bind:bindLastName, reset:resetLastName } = useInput('');
   
-  const handleSubmit = (evt) => {
-      evt.preventDefault();
-      alert(`Submitting Name ${firstName} ${lastName}`);
-      resetFirstName();
-      resetLastName();
-  }
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        First Name:
-        <input type="text" {...bindFirstName} />
-      </label>
-      <label>
-        Last Name:
-        <input type="text" {...bindLastName} />
-      </label>
-      <input type="submit" value="Submit" />
-    </form>
-  );
-}
-    </>
+//   const handleSubmit = (evt) => {
+//       evt.preventDefault();
+//       alert(`Submitting Name ${firstName} ${lastName}`);
+//       resetFirstName();
+//       resetLastName();
+//   }
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <label>
+//         First Name:
+//         <input type="text" {...bindFirstName} />
+//       </label>
+//       <label>
+//         Last Name:
+//         <input type="text" {...bindLastName} />
+//       </label>
+//       <input type="submit" value="Submit" />
+//     </form>
+//   );
+// }
+//     </>
 
     
-  );
-}
+//   );
+// }
 
 
 
