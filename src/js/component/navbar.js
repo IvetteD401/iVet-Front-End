@@ -38,6 +38,7 @@ export const Navbars = props => {
 					<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
 						☰{"  "}
 					</span>
+
 					<NavbarBrand href="/">
 						<span>
 							{"  "}
@@ -46,6 +47,7 @@ export const Navbars = props => {
 					</NavbarBrand>
 					<NavbarToggler onClick={toggle} />
 					<DogFacts />
+
 					<Collapse isOpen={isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							{/* <NavItem>
@@ -53,8 +55,15 @@ export const Navbars = props => {
 							</NavItem>
 							<NavItem>
 								<NavLink href="/signup">Sign Up </NavLink>
-							</NavItem> */}
+                            </NavItem> */}
+
 							<UncontrolledDropdown nav inNavbar>
+								<form action="/action_page.php">
+									<input type="text" placeholder="Search.." name="search" />
+									<button type="submit">
+										<i className="fa fa-search" />
+									</button>
+								</form>
 								<DropdownToggle nav caret>
 									Doggy Options
 								</DropdownToggle>
