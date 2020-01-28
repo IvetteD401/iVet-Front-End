@@ -7,7 +7,7 @@ export const Sidebar = props => {
 		<div style={{ paddingTop: "100px" }}>
 			<div id="mySidenav" className={props.action}>
 				<a href="javascript:void(0)" className="closebtn" onClick={() => triggerSideBar()} />
-				<Link to="/signup/">sign up</Link>
+				{/* <Link to="/signup/">sign up</Link> */}
 				<Link to="/petProfile/">Pet Profile</Link>
 				<Link to="/orderform/">order merchandise</Link>
 				<Link to="/bookservices/">book services</Link>

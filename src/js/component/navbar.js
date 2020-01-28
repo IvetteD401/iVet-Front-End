@@ -36,10 +36,11 @@ export const Navbars = props => {
 			<div className="Navbar">
 				<Navbar color="light" light expand="md">
 					<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
-						☰
+						☰{"  "}
 					</span>
 					<NavbarBrand href="/">
 						<span>
+							{"  "}
 							<i className="fas fa-paw"></i> <strong> iVet </strong> for Dogs{" "}
 						</span>
 					</NavbarBrand>
@@ -47,12 +48,12 @@ export const Navbars = props => {
 					<DogFacts />
 					<Collapse isOpen={isOpen} navbar>
 						<Nav className="ml-auto" navbar>
-							<NavItem>
+							{/* <NavItem>
 								<NavLink href="/login">Log In </NavLink>
 							</NavItem>
 							<NavItem>
 								<NavLink href="/signup">Sign Up </NavLink>
-							</NavItem>
+							</NavItem> */}
 							<UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret>
 									Doggy Options
