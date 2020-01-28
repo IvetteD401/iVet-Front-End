@@ -9,7 +9,10 @@
     width: 50%;
     padding: 15px;
 }
-
+.medications    {
+    width: 400px;
+    height: 200px;
+}
 .jumbotron {
     width: 100%;
     height:450px;
@@ -46,11 +49,10 @@ body {
   height: 500px;
 
   /* Create the parallax scrolling effect */
-//   background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
   margin-bottom: 60px;
 }
 .emptyDiv {
@@ -134,6 +136,14 @@ body {
 .body2 {
   margin: 0 auto;
   max-width: 800px;
+  padding: 0 20px;
+  margin-bottom: 100%;
+}
+
+.body3 {
+  margin: 0 auto;
+  max-width: 500px;
+  max-height: 300px;
   padding: 0 20px;
   margin-bottom: 100%;
 }
