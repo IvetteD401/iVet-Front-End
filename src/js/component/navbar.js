@@ -57,13 +57,15 @@ export const Navbars = props => {
 								<NavLink href="/signup">Sign Up </NavLink>
                             </NavItem> */}
 
-							<UncontrolledDropdown nav inNavbar>
+							<NavItem>
 								<form action="/action_page.php">
 									<input type="text" placeholder="Search.." name="search" />
 									<button type="submit">
 										<i className="fa fa-search" />
 									</button>
 								</form>
+							</NavItem>
+							<UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret>
 									Doggy Options
 								</DropdownToggle>
