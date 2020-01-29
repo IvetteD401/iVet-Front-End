@@ -82,7 +82,7 @@ export const Navbars = props => {
 						</Nav>
 						<NavbarText></NavbarText>
 					</Collapse>
-					<Link to="/messageUs">
+					<Link to="/ChatMessage">
 						<h4>
 							<i className="far fa-envelope"></i>
 						</h4>

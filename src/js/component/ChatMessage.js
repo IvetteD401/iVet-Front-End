@@ -1,175 +1,123 @@
-// import { BrowserHistory } from 'react-history'
-// import History from 'react-history/BrowserHistory'
-// import React, { PropTypes } from 'react'
-// import { Push } from 'react-history/Actions'
-// import Prompt from 'react-history/Prompt'
-// import React, { useState } from "react";
-// export function NameForm(props) {
-//   return (
-//     <>
-//       <label>
-//         Name:
-//         <input type="text" />
-//       </label>
-//       <input type="submit" value="Submit" />
+import React, { useState, useEffect } from "react";
+import useSocket from "use-socket.io-client";
+import { useImmer } from "use-immer";
+// import "./index.scss";
+// import { Socket } from "dgram";
+const Messages = props =>
+	props.data.map(m, i =>
+		m[0] !== "" ? (
+			<li key={m[0]}>
+				<strong>{m[0]}</strong> : <div className="innermsg">{m[1]}</div>
+			</li>
+		) : (
+			<li key={m[1]} className="update">
+				{m[1]}
+			</li>
+		)
+	);
 
-//         const { value:firstName, bind:bindFirstName, reset:resetFirstName } = useInput('');
-//   const { value:lastName, bind:bindLastName, reset:resetLastName } = useInput('');
+const Online = props =>
+	props.data.map(m, i => (
+		<li key={i} id={m[0]}>
+			{m[1]}
+		</li>
+	));
 
-//   const handleSubmit = (evt) => {
-//       evt.preventDefault();
-//       alert(`Submitting Name ${firstName} ${lastName}`);
-//       resetFirstName();
-//       resetLastName();
-//   }
-//   return (
-//     <form onSubmit={handleSubmit}>
-//       <label>
-//         First Name:
-//         <input type="text" {...bindFirstName} />
-//       </label>
-//       <label>
-//         Last Name:
-//         <input type="text" {...bindLastName} />
-//       </label>
-//       <input type="submit" value="Submit" />
-//     </form>
-//   );
-// }
-//     </>
+export const ChatMessage = () => {
+	const [id, setId] = useState();
+	const [socket] = useSocket("<https://open-chat-naostsaecf.now.sh>");
+	socket.connect();
 
-//   );
-// }
+	const [messages, setMessages] = useImmer([]);
+	useEffect(() => {
+		socket.on("message que", (nick, message) => {
+			setMessages(draft => {
+				draft.push([nick, message]);
+			});
+		});
+		socket.on("update", message =>
+			setMessages(draft => {
+				draft.push(["", message]);
+			})
+		);
+		socket.on("people-list", people => {
+			let newState = [];
+			for (let person in people) {
+				newState.push([people[person].id, people[person].nick]);
+			}
+			setOnline(draft => {
+				draft.push(...newState);
+			});
+			console.log(online);
+		});
 
-// const App = React.createClass({
-//   render() {
-// const Link = React.createClass({
-//   propTypes: {
-//     to: PropTypes.string.isRequired
-//   },
+		socket.on("add-person", (nick, id) => {
+			setOnline(draft => {
+				draft.push([id, nick]);
+			});
+		});
 
-//   getInitialState() {
-//     return { wasClicked: false }
-//   },
+		socket.on("remove-person", id => {
+			setOnline(draft => draft.filter(m => m[0] !== id));
+		});
 
-//   render() {
-//     const { to, ...props } = this.props
+		socket.on("chat message", (nick, message) => {
+			setMessages(draft => {
+				draft.push([nick, message]);
+			});
+		});
+	}, 0);
+	// console.log(socket);
 
-//     // If the <Link> was clicked, update the URL!
-//     if (this.state.wasClicked)
-//       return <Push path={to}/>
+	const [nameInput, setNameInput] = useState();
+	const [room, setRoom] = useState();
 
-//     return (
-//       <span {...props} onClick={() => this.setState({ wasClicked: true })}/>
-//     )
-//   }
-// })
-// const Form = React.createClass({
-//   getInitialState() {
-//     return { inputText: '' }
-//   },
+	const handleSubmit = e => {
+		e.preventDefault();
+		if (!nameInput) {
+			return alert("Name can't be empty");
+		}
+		setId(name);
+		socket.emit("join", name, room);
+	};
+	const handleSend = e => {
+		e.preventDefalut();
+		if (input != "") {
+			socket.emit("chat meassage", input, room);
+			setInput("");
+		}
+	};
 
-//   handleChange(event) {
-//     this.setState({ inputText: event.target.value })
-//   },
-
-//   render() {
-//     const { inputText } = this.state
-
-//     return (
-//       <form>
-//         <Prompt
-//           message="Are you sure you want to leave before submitting the form?"
-//           when={inputText}
-//         />
-//         <input
-//           type="text"
-//           defaultValue={inputText}
-//           onChange={this.handleChange}
-//         />
-//       </form>
-//     )
-//   }
-// })
-//     return (
-//       <History>
-//         {({ history, action, location }) => (
-//           <p>The current URL is {location.pathname}{location.search}{location.hash}. You arrived at this URL via a {action} action.</p>
-//         )}
-//       </History>
-
-//       <BrowserHistory
-//   basename=""               // The base URL of the app (see below)
-//   forceRefresh={false}      // Set true to force full page refreshes
-//   keyLength={6}             // The length of location.key
-//   // A function to use to confirm navigation with the user (see below)
-//   getUserConfirmation={(message, callback) => callback(window.confirm(message))}
-// />
-
-// <MemoryHistory
-//   initialEntries={[ '/' ]}  // The initial URLs in the history stack
-//   initialIndex={0}          // The starting index in the history stack
-//   keyLength={6}             // The length of location.key
-//   // A function to use to confirm navigation with the user. Required
-//   // if you return string prompts from transition hooks (see below)
-//   getUserConfirmation={null}
-// />
-
-// <HashHistory
-//   basename=""               // The base URL of the app (see below)
-//   hashType="slash"          // The hash type to use (see below)
-//   // A function to use to confirm navigation with the user (see below)
-//   getUserConfirmation={(message, callback) => callback(window.confirm(message))}
-// />
-
-// <History>
-//   {({ history, action, location }) => (
-//     <div>
-//       <p>The current URL is {location.pathname}{location.search}{location.hash}.</p>
-//       <p>You arrived at this URL via a {action} action.</p>
-//     </div>
-//   )}
-// </History>
-
-//     )
-//   }
-
-// })
-
-// <------------------------------>
-
-// import React, { Component } from "react";
-
-// function ChatMessage(){
-// const ChatMessage = () => {
-// 	constructor(props) {
-// 		super(props);
-// 		this.state = {
-// 			username: ""
-// 		};
-// 		this.handleChange = this.handleChange.bind(this);
-// 		this.handleSubmit = this.handleSubmit.bind(this);
-// 	}
-
-// 	const [handleChange, setHandleChange] = useState("");
-// 	handleChange(e) {
-// 		this.setState({ username: e.target.value });
-// 	}
-// 	handleSubmit(e) {
-// 		e.preventDefault();
-// 		this.props.onSubmit(this.state.username);
-// 	}
-
-// 	return (
-// 		<div className="form-container">
-// 			<h1>Let's Talk</h1>
-// 			<form onSubmit={this.handleSubmit} className="form">
-// 				<label htmlFor="email">What is your email?</label>
-// 				<input type="email" name="username" onChange={this.handleChange} className="input" />
-// 				<button className="submit">Submit</button>
-// 			</form>
-// 		</div>
-// 	);
-// };
-
-// export default Signup;
+	return id ? (
+		<section style={{ display: "flex", flexDirection: "row" }}>
+			<ul id="messages">
+				<Messages data={messages} />
+			</ul>
+			<ul id="online">
+				{" "}
+				&#x1f310; : <Online data={online} />{" "}
+			</ul>
+			<div id="sendform">
+				<form onSubmit={e => handleSend(e)} style={{ display: "flex" }}>
+					<input id="m" onChange={e => setInput(e.target.value.trim())} />
+					<button style={{ width: "75px" }} type="submit">
+						Send
+					</button>
+				</form>
+			</div>
+		</section>
+	) : (
+		<div className="container">
+			<form onSubmit={event => handleSubmit(event)}>
+				<input
+					id="name"
+					onChange={e => setNameInput(e.target.value.trim())}
+					required
+					placeholder="What is your name .."
+				/>
+				<br />
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	);
+};
