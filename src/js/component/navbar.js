@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Sidebar } from "./sidebar";
 import { DogFacts } from "../component/dogFacts";
@@ -16,8 +16,10 @@ import {
 	DropdownItem,
 	NavbarText
 } from "reactstrap";
+import { Context } from "../store/appContext";
 
 export const Navbars = props => {
+	const { store, actions } = useContext(Context);
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggle = () => setIsOpen(!isOpen);
@@ -73,12 +75,12 @@ export const Navbars = props => {
 							</UncontrolledDropdown>
 						</Nav>
 						<NavItem>
-							<form action="/www.google.com">
+							<div>
 								<input type="text" placeholder="Search.." name="search" />
-								<button type="submit">
+								<button onClick={() => actions.breedSearch()}>
 									<i className="fa fa-search" />
 								</button>
-							</form>
+							</div>
 						</NavItem>
 						<NavbarText></NavbarText>
 					</Collapse>

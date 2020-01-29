@@ -13,6 +13,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
 			},
+			breedSearch: () => {
+				fetch("https://api.thedogapi.com/v1/breeds")
+					.then(response => response.json())
+					.then(result => {
+						console.log("Get Contact", result),
+							setStore({
+								contacts: result
+							});
+					})
+					.catch(e => console.error(e));
+			},
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();
@@ -24,8 +35,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 					return elm;
 				});
 
+				const breedSearch = store.breedSearch.map((elm, i) => {
+					if (u === index) elm.console = useState;
+					return elm;
+				});
 				//reset the global store
-				setStore({ Doguments: Doguments });
+				setStore({ Doguments: Doguments, breedSearch });
 			}
 		}
 	};
