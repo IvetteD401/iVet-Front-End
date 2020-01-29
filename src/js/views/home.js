@@ -29,10 +29,10 @@ export const Home = () => (
 					</a>
 				</p> */}
 				<Link to="/login/">
-					<button className="btn lg btn-primary my-2">Login Here</button>
+					<button className="btn lg btn-primary my-2">Log in Here</button>
 				</Link>
 				<br />
-				<Link to="/signup/">Not yet a member, create a new account!</Link>
+				<Link to="/signup/">Not a member yet? Create a new account!</Link>
 			</div>
 		</section>
 	</>
