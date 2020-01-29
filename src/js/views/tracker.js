@@ -30,8 +30,8 @@ export const Tracker = () => {
 								<div className="card-body">
 									<p className="card-text">
 										<div>
-											<div className="input-group mb-3">
-												<div className="input-group-prepend">
+											<div className="input-group">
+												<div className="input-group-append">
 													<button
 														className="btn btn-outline-secondary dropdown-toggle"
 														type="button"
