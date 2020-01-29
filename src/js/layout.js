@@ -11,7 +11,7 @@ import { Camera } from "./views/camera";
 import { Tracker } from "./views/tracker";
 import { Orderform } from "./views/orderform";
 import { BookServices } from "./views/bookServices";
-import { ContactUs } from "./views/contactUs";
+import ContactUs from "./views/contactUs";
 import { Settings } from "./views/settings";
 import { Login } from "./views/login";
 import { Signup } from "./views/signup";
