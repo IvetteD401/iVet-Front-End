@@ -24,18 +24,82 @@ export const Tracker = () => {
 									<title>Placeholder</title>
 									<rect width="100%" height="100%" fill="#55595c" />
 									<text x="50%" y="50%" fill="#eceeef" dy=".3em">
-										Body Mass Index (BMI)
+										Canine BMI (Weight-to-Height Ratio)
 									</text>
 								</svg>
 								<div className="card-body">
 									<p className="card-text">
-										This is a wider card with supporting text below as a natural lead-in to
-										additional content. This content is a little bit longer.
+										<div>
+											<div className="input-group">
+												<input
+													type="text"
+													className="form-control"
+													aria-label="Text input with dropdown button"
+												/>
+												<div className="input-group-append">
+													<button
+														className="btn btn-outline-secondary dropdown-toggle"
+														type="button"
+														data-toggle="dropdown"
+														aria-haspopup="true"
+														aria-expanded="false">
+														Weight
+													</button>
+													<div className="dropdown-menu">
+														<a className="dropdown-item" href="#">
+															Pounds
+														</a>
+														<a className="dropdown-item" href="#">
+															Kilograms
+														</a>
+														<a className="dropdown-item" href="#">
+															Stones
+														</a>
+														<div role="separator" className="dropdown-divider" />
+														<a className="dropdown-item" href="#">
+															Separated link
+														</a>
+													</div>
+												</div>
+											</div>
+											<div className="input-group mt-2">
+												<input
+													type="text"
+													className="form-control"
+													aria-label="Text input with dropdown button"
+												/>
+												<div className="input-group-append">
+													<button
+														className="btn btn-outline-secondary dropdown-toggle"
+														type="button"
+														data-toggle="dropdown"
+														aria-haspopup="true"
+														aria-expanded="false">
+														Height
+													</button>
+													<div className="dropdown-menu">
+														<a className="dropdown-item" href="#">
+															Inches
+														</a>
+														<a className="dropdown-item" href="#">
+															Centimeters
+														</a>
+														<a className="dropdown-item" href="#">
+															Something else here
+														</a>
+														<div role="separator" className="dropdown-divider" />
+														<a className="dropdown-item" href="#">
+															Separated link
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
 									</p>
 									<div className="d-flex justify-content-between align-items-center">
 										<div className="btn-group">
 											<button type="button" className="btn btn-sm btn-outline-secondary">
-												View
+												Calculate
 											</button>
 											<button type="button" className="btn btn-sm btn-outline-secondary">
 												Edit
@@ -82,7 +146,7 @@ export const Tracker = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col-md-4">
+						{/* <div className="col-md-4">
 							<div className="card mb-4 shadow-sm">
 								<svg
 									className="bd-placeholder-img card-img-top"
@@ -117,7 +181,7 @@ export const Tracker = () => {
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 						<div className="col-md-4">
 							<div className="card mb-4 shadow-sm">
 								<svg
@@ -154,7 +218,7 @@ export const Tracker = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col-md-4">
+						{/* <div className="col-md-4">
 							<div className="card mb-4 shadow-sm">
 								<svg
 									className="bd-placeholder-img card-img-top"
@@ -189,8 +253,8 @@ export const Tracker = () => {
 									</div>
 								</div>
 							</div>
-						</div>
-						<div className="col-md-4">
+						</div> */}
+						{/* <div className="col-md-4">
 							<div className="card mb-4 shadow-sm">
 								<svg
 									className="bd-placeholder-img card-img-top"
@@ -225,7 +289,7 @@ export const Tracker = () => {
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
