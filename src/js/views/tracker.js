@@ -24,7 +24,7 @@ export const Tracker = () => {
 									<title>Placeholder</title>
 									<rect width="100%" height="100%" fill="#55595c" />
 									<text x="50%" y="50%" fill="#eceeef" dy=".3em">
-										Body Mass Index (BMI)
+										Canine BMI (Weight-to-Height Ratio)
 									</text>
 								</svg>
 								<div className="card-body">
@@ -38,17 +38,17 @@ export const Tracker = () => {
 														data-toggle="dropdown"
 														aria-haspopup="true"
 														aria-expanded="false">
-														Dropdown
+														Weight
 													</button>
 													<div className="dropdown-menu">
 														<a className="dropdown-item" href="#">
-															Action
+															Pounds
 														</a>
 														<a className="dropdown-item" href="#">
-															Another action
+															Kilograms
 														</a>
 														<a className="dropdown-item" href="#">
-															Something else here
+															Stones
 														</a>
 														<div role="separator" className="dropdown-divider" />
 														<a className="dropdown-item" href="#">
@@ -75,14 +75,14 @@ export const Tracker = () => {
 														data-toggle="dropdown"
 														aria-haspopup="true"
 														aria-expanded="false">
-														Dropdown
+														Height
 													</button>
 													<div className="dropdown-menu">
 														<a className="dropdown-item" href="#">
-															Action
+															Inches
 														</a>
 														<a className="dropdown-item" href="#">
-															Another action
+															Centimeters
 														</a>
 														<a className="dropdown-item" href="#">
 															Something else here
@@ -99,7 +99,7 @@ export const Tracker = () => {
 									<div className="d-flex justify-content-between align-items-center">
 										<div className="btn-group">
 											<button type="button" className="btn btn-sm btn-outline-secondary">
-												View
+												Calculate
 											</button>
 											<button type="button" className="btn btn-sm btn-outline-secondary">
 												Edit
