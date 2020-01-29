@@ -31,6 +31,11 @@ export const Tracker = () => {
 									<p className="card-text">
 										<div>
 											<div className="input-group">
+												<input
+													type="text"
+													className="form-control"
+													aria-label="Text input with dropdown button"
+												/>
 												<div className="input-group-append">
 													<button
 														className="btn btn-outline-secondary dropdown-toggle"
@@ -56,13 +61,8 @@ export const Tracker = () => {
 														</a>
 													</div>
 												</div>
-												<input
-													type="text"
-													className="form-control"
-													aria-label="Text input with dropdown button"
-												/>
 											</div>
-											<div className="input-group">
+											<div className="input-group mt-2">
 												<input
 													type="text"
 													className="form-control"
