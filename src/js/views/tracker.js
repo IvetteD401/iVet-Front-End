@@ -146,7 +146,7 @@ export const Tracker = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col-md-4">
+						{/* <div className="col-md-4">
 							<div className="card mb-4 shadow-sm">
 								<svg
 									className="bd-placeholder-img card-img-top"
@@ -181,7 +181,7 @@ export const Tracker = () => {
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 						<div className="col-md-4">
 							<div className="card mb-4 shadow-sm">
 								<svg
@@ -218,7 +218,7 @@ export const Tracker = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col-md-4">
+						{/* <div className="col-md-4">
 							<div className="card mb-4 shadow-sm">
 								<svg
 									className="bd-placeholder-img card-img-top"
@@ -253,8 +253,8 @@ export const Tracker = () => {
 									</div>
 								</div>
 							</div>
-						</div>
-						<div className="col-md-4">
+						</div> */}
+						{/* <div className="col-md-4">
 							<div className="card mb-4 shadow-sm">
 								<svg
 									className="bd-placeholder-img card-img-top"
@@ -289,7 +289,7 @@ export const Tracker = () => {
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
