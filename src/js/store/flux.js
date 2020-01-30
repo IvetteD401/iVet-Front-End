@@ -1,7 +1,8 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			login: [{}]
+			login: [{}],
+			breeds: []
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -12,6 +13,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
+			},
+			Breedinfo: () => {
+				fetch("https://api.thedogapi.com/v1/breeds")
+					.then(Response => Response.json())
+					.then(result => {
+						console.log("result", result),
+							setStore({
+								breeds: result
+							});
+					});
 			},
 			changeColor: (index, color) => {
 				//get the store

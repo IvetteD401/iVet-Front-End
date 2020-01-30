@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import React from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -38,30 +37,20 @@ export default function ContactUs() {
 					role="dialog"
 					aria-labelledby="exampleModalCenterTitle"
 					aria-hidden="true">
-					<div
-						className="modal-dialog modal-dialog-centered"
-						role="document">
+					<div className="modal-dialog modal-dialog-centered" role="document">
 						<div className="modal-content">
 							<div className="modal-header">
-								<h5
-									className="modal-title w-100 text-center"
-									id="exampleModalCenterTitle">
+								<h5 className="modal-title w-100 text-center" id="exampleModalCenterTitle">
 									Contact Us
 								</h5>
-								<button
-									type="button"
-									className="close"
-									data-dismiss="modal"
-									aria-label="Close">
+								<button type="button" className="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">×</span>
 								</button>
 							</div>
 							<div className="modal-body">
 								<form>
 									<div className="form-group">
-										<label htmlFor="formGroupExampleInput">
-											Full Name:
-										</label>
+										<label htmlFor="formGroupExampleInput">Full Name:</label>
 										<input
 											type="text"
 											className="form-control"
@@ -70,9 +59,7 @@ export default function ContactUs() {
 										/>
 									</div>
 									<div className="form-group">
-										<label htmlFor="formGroupExampleInput2">
-											Phone Number:
-										</label>
+										<label htmlFor="formGroupExampleInput2">Phone Number:</label>
 										<input
 											type="text"
 											className="form-control"
@@ -83,9 +70,7 @@ export default function ContactUs() {
 								</form>
 								<form>
 									<div className="form-group">
-										<label htmlFor="formGroupExampleInput">
-											Email:
-										</label>
+										<label htmlFor="formGroupExampleInput">Email:</label>
 										<input
 											type="text"
 											className="form-control"
@@ -94,9 +79,7 @@ export default function ContactUs() {
 										/>
 									</div>
 									<div className="form-group">
-										<label htmlFor="exampleFormControlTextarea1">
-											Message:
-										</label>
+										<label htmlFor="exampleFormControlTextarea1">Message:</label>
 										<textarea
 											className="form-control"
 											placeholder="Additional Notes"
@@ -120,15 +103,10 @@ export default function ContactUs() {
 								</form>
 							</div>
 							<div className="modal-footer">
-								<button
-									type="button"
-									className="btn btn-secondary"
-									data-dismiss="modal">
+								<button type="button" className="btn btn-secondary" data-dismiss="modal">
 									Cancel
 								</button>
-								<button
-									type="button"
-									className="btn btn-primary">
+								<button type="button" className="btn btn-primary">
 									Contact
 								</button>
 							</div>
@@ -139,5 +117,3 @@ export default function ContactUs() {
 		</>
 	);
 }
-
- 

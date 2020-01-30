@@ -14,6 +14,7 @@ export const Sidebar = props => {
 				<Link to="/contactUs/">contact us</Link>
 				<Link to="/settings/">Settings</Link>
 				<Link to="/BreedSearch/">BreedSearch</Link>
+				<Link to="/SearchResults/">SearchResults</Link>
 			</div>
 		</div>
 	);

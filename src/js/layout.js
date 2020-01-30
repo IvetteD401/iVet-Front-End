@@ -11,8 +11,10 @@ import { Camera } from "./views/camera";
 import { Tracker } from "./views/tracker";
 import { Orderform } from "./views/orderform";
 import { BookServices } from "./views/bookServices";
+import { ContactUs } from "./views/ContactUs";
 // import { MyForm } from "./views/contactUs";
 import { Settings } from "./views/settings";
+import { SearchResults } from "./views/searchresults";
 import { Login } from "./views/login";
 import { Signup } from "./views/signup";
 import { petProfile } from "./views/petProfile";
@@ -44,7 +46,7 @@ export const Layout = () => {
 						<Route exact path="/alerts" component={Alerts} />
 						<Route exact path="/ChatMessage" component={ChatMessage} />
 						<Route exact path="/modalfunction" component={modalFunction} />
-						<Route exact path="/BreedSearch" component={BreedSearch} />
+						<Route exact path="/BreedSearch" component={"BreedSearch"} />
 						{/* <Route path="/demo" component={Demo} /> */}
 						<Route path="/doguments" component={Doguments} />
 						<Route path="/medications" component={Medications} />
@@ -53,10 +55,11 @@ export const Layout = () => {
 						<Route path="/orderform" component={Orderform} />
 						<Route path="/bookServices" component={BookServices} />
 						<Route path="/settings" component={Settings} />
-						{<Route path="/contactUs" component={ContactUs} /> }
+						<Route path="/contactUs" component={ContactUs} />
 						<Route path="/login" component={Login} />
 						<Route path="/signup" component={Signup} />
 						<Route path="/petProfile" component={petProfile} />
+						<Route path="/search" component={SearchResults} />
 
 						<Route path="/tracker" component={Tracker} />
 						<Route path="/sidebar" component={Sidebar} />
