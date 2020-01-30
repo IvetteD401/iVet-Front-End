@@ -63,10 +63,10 @@ export const Tracker = () => {
 														<a className="dropdown-item" href="#">
 															Stones
 														</a>
-														<div role="separator" className="dropdown-divider" />
+														{/* <div role="separator" className="dropdown-divider" />
 														<a className="dropdown-item" href="#">
 															Separated link
-														</a>
+														</a> */}
 													</div>
 												</div>
 											</div>
@@ -96,10 +96,10 @@ export const Tracker = () => {
 														<a className="dropdown-item" href="#">
 															Something else here
 														</a>
-														<div role="separator" className="dropdown-divider" />
+														{/* <div role="separator" className="dropdown-divider" />
 														<a className="dropdown-item" href="#">
 															Separated link
-														</a>
+														</a> */}
 													</div>
 												</div>
 											</div>
@@ -113,9 +113,9 @@ export const Tracker = () => {
 												onClick={() => setCalculate(weight / height)}>
 												Calculate
 											</button>
-											<button type="button" className="btn btn-sm btn-outline-secondary">
+											{/* <button type="button" className="btn btn-sm btn-outline-secondary">
 												Edit
-											</button>
+											</button> */}
 										</div>
 										<small className="text-muted">9 mins</small>
 									</div>
