@@ -75,6 +75,7 @@ export const Tracker = () => {
 													type="text"
 													className="form-control"
 													aria-label="Text input with dropdown button"
+													onChange={e => setHeight(e.target.value)}
 												/>
 												<div className="input-group-append">
 													<button
