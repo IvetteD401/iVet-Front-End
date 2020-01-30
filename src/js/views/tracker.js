@@ -5,6 +5,10 @@ import "../../styles/demo.scss";
 
 export const Tracker = () => {
 	const { store, actions } = useContext(Context);
+	const [calculate, setCalculate] = useState(0);
+	const [weight, setWeight] = useState(400);
+	const [height, setHeight] = useState(200);
+
 	return (
 		<>
 			<div className="album py-5 bg-light">
@@ -27,6 +31,8 @@ export const Tracker = () => {
 										Canine BMI (Weight-to-Height Ratio)
 									</text>
 								</svg>
+								<p>Calucation: {calculate}</p>
+								<h1 onClick={() => setCalculate(weight / height)}>click to update</h1>
 								<div className="card-body">
 									<p className="card-text">
 										<div>
