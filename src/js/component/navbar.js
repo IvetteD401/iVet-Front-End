@@ -76,7 +76,7 @@ export const Navbars = props => {
 						</Nav>
 						<NavItem>
 							<div>
-								<input type="text" placeholder="Search.." name="search" />
+								<input type="text" placeholder="Look up breed..." name="search" />
 								<button onClick={() => actions.breedSearch()}>
 									<i className="fa fa-search" />
 								</button>
