@@ -35,8 +35,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 					return elm;
 				});
 
+				const breedSearch = store.breedSearch.map((elm, i) => {
+					if (u === index) elm.console = useState;
+					return elm;
+				});
 				//reset the global store
-				setStore({ Doguments: Doguments });
+				setStore({ Doguments: Doguments, breedSearch });
 			}
 		}
 	};

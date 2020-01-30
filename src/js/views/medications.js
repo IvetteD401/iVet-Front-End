@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
+import { Alerts } from "../component/alerts";
 
 export const Medications = () => {
 	const { store, actions } = useContext(Context);
@@ -44,7 +45,7 @@ export const Medications = () => {
 					</table>
 				</div>
 
-				<div>
+				<div className="modificationButton mx-auto">
 					<button type="button" className="btn btn-secondary">
 						Edit
 					</button>
@@ -55,10 +56,11 @@ export const Medications = () => {
 						Delete
 					</button>
 				</div>
-				<Link to="/">
-					<button className="btn btn-primary">Back home</button>
-				</Link>
+				<Alerts />
 			</div>
+			<Link to="/">
+				<button className="btn btn-primary">Back home</button>
+			</Link>
 		</>
 	);
 };

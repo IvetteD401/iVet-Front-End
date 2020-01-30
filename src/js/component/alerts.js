@@ -21,7 +21,7 @@ export const Alerts = () => {
 
 	return (
 		<div className="alert alert-warning alert-dismissible fade show" role="alert">
-			<strong>Holy guacamole!</strong> You should check in on some of those fields below.
+			<strong>It{"’"}s mind-beagle-ing.</strong> all vaccinations are up to date!
 			<button type="button" className="close" data-dismiss="alert" aria-label="Close">
 				<span aria-hidden="true">×</span>
 			</button>

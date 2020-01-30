@@ -86,9 +86,17 @@ export const Navbars = props => {
 								</DropdownMenu>
 							</UncontrolledDropdown>
 						</Nav>
+						<NavItem>
+							<div>
+								<input type="text" placeholder="Look up breed..." name="search" />
+								<button onClick={() => actions.breedSearch()}>
+									<i className="fa fa-search" />
+								</button>
+							</div>
+						</NavItem>
 						<NavbarText></NavbarText>
 					</Collapse>
-					<Link to="/messageUs">
+					<Link to="/ChatMessage">
 						<h4>
 							<i className="far fa-envelope"></i>
 						</h4>

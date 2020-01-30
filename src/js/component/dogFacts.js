@@ -21,8 +21,8 @@ export const DogFacts = () => {
 	];
 
 	return (
-		<div>
-			<p>{something[Math.floor(Math.random() * something.length)]}</p>
-		</div>
+		<>
+			<p className="mt-4 dogFacts">Random Dog Fact: {something[Math.floor(Math.random() * something.length)]}!</p>
+		</>
 	);
 };

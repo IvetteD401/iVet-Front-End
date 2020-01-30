@@ -10,8 +10,14 @@
     padding: 15px;
 }
 .medications    {
-    width: 400px;
+    width: 475px;
     height: 200px;
+}
+.modificationButton {
+    align-content: right;
+}
+.alert  {
+    width: 475px;
 }
 .jumbotron {
     width: 100%;
@@ -240,3 +246,11 @@ body {
       width: 350px;
       border: 1px solid #ccc;
     }
+
+.dogFacts { animation:opac 2s;
+color: #818181;}
+@keyframes opac {from {opacity:0} to {opacity:1} }
+
+    li {
+    list-style-type: none;
+}
