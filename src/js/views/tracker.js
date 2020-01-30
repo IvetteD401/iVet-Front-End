@@ -31,8 +31,8 @@ export const Tracker = () => {
 										Canine BMI (Weight-to-Height Ratio)
 									</text>
 								</svg>
-								<p>Calucation: {calculate}</p>
-								<h1 onClick={() => setCalculate(weight / height)}>click to update</h1>
+								<p>Weight-to-Height Ratio: {calculate}</p>
+								{/* <h1 onClick={() => setCalculate(weight / height)}>click to update</h1> */}
 								<div className="card-body">
 									<p className="card-text">
 										<div>
@@ -107,7 +107,10 @@ export const Tracker = () => {
 									</p>
 									<div className="d-flex justify-content-between align-items-center">
 										<div className="btn-group">
-											<button type="button" className="btn btn-sm btn-outline-secondary">
+											<button
+												type="button"
+												className="btn btn-sm btn-outline-secondary"
+												onClick={() => setCalculate(weight / height)}>
 												Calculate
 											</button>
 											<button type="button" className="btn btn-sm btn-outline-secondary">
