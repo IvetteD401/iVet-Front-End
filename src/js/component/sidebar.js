@@ -13,6 +13,7 @@ export const Sidebar = props => {
 				<Link to="/bookservices/">book services</Link>
 				<Link to="/contactUs/">contact us</Link>
 				<Link to="/settings/">Settings</Link>
+				<Link to="/BreedSearch/">BreedSearch</Link>
 			</div>
 		</div>
 	);
