@@ -20,6 +20,7 @@ import { petProfile } from "./views/petProfile";
 import injectContext from "./store/appContext";
 
 import { Navbars } from "./component/navbar";
+import { WebCam } from "./component/webCam";
 import { Sidebar } from "./component/sidebar";
 import { Footer } from "./component/footer";
 import { Alerts } from "./component/alerts";

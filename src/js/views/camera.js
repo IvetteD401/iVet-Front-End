@@ -3,38 +3,40 @@ import React, { useRef, useEffect } from "react";
 // import Webcam from "react-webcam";
 // import { Context } from "../store/appContext";
 import "../../styles/demo.scss";
+import WebCam from "../component/webCam";
 
 export const Camera = () => {
-	const videoEl = useRef(null);
+	// const videoEl = useRef(null);
 
-	useEffect(() => {
-		if (!videoEl) {
-			return;
-		}
-		navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
-			let video = videoEl.current;
-			video.srcObject = stream;
-			video.play();
-		});
-	}, [videoEl]);
+	// useEffect(() => {
+	// 	if (!videoEl) {
+	// 		return;
+	// 	}
+	// 	navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
+	// 		let video = videoEl.current;
+	// 		video.srcObject = stream;
+	// 		video.play();
+	// 	});
+	// }, [videoEl]);
 
-	const stopHandler = () => {
-		navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
-			let video = videoEl.current;
-			video.srcObject = stream;
-			video.pause();
-		});
-	};
+	// const stopHandler = () => {
+	// 	navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
+	// 		let video = videoEl.current;
+	// 		video.srcObject = stream;
+	// 		video.pause();
+	// 	});
+	// };
 
 	return (
 		<>
-			<div className="container">
+			<WebCam />
+			{/* <div className="container">
 				<video ref={videoEl} />
 			</div>
 
 			<button className="btn btn-dark" onClick={stopHandler}>
 				Stop Recording
-			</button>
+			// </button> */}
 		</>
 	);
 };
@@ -84,32 +86,3 @@ export const Camera = () => {
 // 			exact: "environment";
 // 		}
 // 	};
-
-// 	return <Webcam videoConstraints={videoConstraints} />;
-// }
-
-// return (
-// 	<>
-// 		{/* <div className="emptyDiv" /> */}
-// 		<div className="body2">
-// 			<div className="container">
-// 				<h1> Camera </h1>
-// 				<div className="camera">
-// 					<Webcam
-// 						audio={false}
-// 						height={720}
-// 						ref={webcamRef}
-// 						screenshotFormat="image/jpeg"
-// 						width={1280}
-// 						videoConstraints={videoConstraints}
-// 					/>
-// 					<button onClick={capture}>Capture photo</button>
-// 				</div>
-// 				<br />
-// 				<Link to="/">
-// 					<button className="btn btn-primary">Back home</button>
-// 				</Link>
-// 			</div>
-// 		</div>
-// </>
-// );
