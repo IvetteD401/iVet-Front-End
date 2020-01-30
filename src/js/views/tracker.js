@@ -41,6 +41,8 @@ export const Tracker = () => {
 													type="text"
 													className="form-control"
 													aria-label="Text input with dropdown button"
+													onChange={e => setWeight(e.target.value)}
+													value={weight}
 												/>
 												<div className="input-group-append">
 													<button
