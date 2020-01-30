@@ -117,7 +117,7 @@ export const Tracker = () => {
 												Edit
 											</button> */}
 										</div>
-										<small className="text-muted">9 mins</small>
+										{/* <small className="text-muted">9 mins</small> */}
 									</div>
 								</div>
 							</div>
