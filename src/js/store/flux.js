@@ -2,7 +2,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			login: [{}],
-			breeds: []
+			breeds: [{}],
+			weight: [{}],
+			height: [{}],
+			name: [{}],
+			bred_for: [{}],
+			breed_group: [{}],
+			life_span: [{}],
+			temperament: [{}],
+			origin: [{}]
 		},
 		actions: {
 			// Use getActions to call a function within a fuction

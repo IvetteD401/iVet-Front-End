@@ -10,7 +10,15 @@ export const BreedSearch = () => {
 
 	return (
 		<>
-        <h1>sdfsd</h1>
+        <h1>Breed Search</h1>
+
+        <ul class="list-group">
+  <li class="list-group-item active">Dobberman</li>
+  <li class="list-group-item">Eskimo dog</li>
+  <li class="list-group-item">French bulldog</li>
+  <li class="list-group-item">mastiff</li>
+  <li class="list-group-item">schnauzer</li>
+</ul>
 			
 		</>
 	);
