@@ -60,7 +60,7 @@ export const Navbars = props => {
                             </NavItem> */}
 
 							<NavItem>
-								<div>
+								{/* <div>
 									<input type="text" placeholder="Search.." name="search" />
 									<button
 										type="submit"
@@ -69,7 +69,7 @@ export const Navbars = props => {
 										}}>
 										<i className="fa fa-search" />
 									</button>
-								</div>
+								</div> */}
 							</NavItem>
 							<UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret>
