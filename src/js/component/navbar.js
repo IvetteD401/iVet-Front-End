@@ -52,15 +52,15 @@ export const Navbars = props => {
 
 					<Collapse isOpen={isOpen} navbar>
 						<Nav className="ml-auto" navbar>
-							{/* <NavItem>
+							<NavItem>
 								<NavLink href="/login">Log In </NavLink>
 							</NavItem>
 							<NavItem>
 								<NavLink href="/signup">Sign Up </NavLink>
-                            </NavItem> */}
-
+							</NavItem>{" "}
+							*/}
 							<NavItem>
-								{/* <div>
+								<div>
 									<input type="text" placeholder="Search.." name="search" />
 									<button
 										type="submit"
@@ -69,7 +69,7 @@ export const Navbars = props => {
 										}}>
 										<i className="fa fa-search" />
 									</button>
-								</div> */}
+								</div>
 							</NavItem>
 							<UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret>
@@ -155,8 +155,8 @@ export const Navbars = props => {
 // 			</div>
 // 		</nav>
 
-// 		// <Link to="/">
-// 		// 	<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-// 		// </Link>
+// 		 <Link to="/">
+// 		 	<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+// 		 </Link>
 // 	);
-// };
+//  };
