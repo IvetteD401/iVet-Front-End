@@ -89,7 +89,7 @@ export const Navbars = props => {
 						<NavItem>
 							<div>
 								<input type="text" placeholder="Look up breed..." name="search" />
-								<button onClick={() => actions.breedSearch()}>
+								<button onClick={() => actions.Breedinfo()}>
 									<i className="fa fa-search" />
 								</button>
 							</div>
