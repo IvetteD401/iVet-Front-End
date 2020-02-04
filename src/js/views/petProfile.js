@@ -24,17 +24,18 @@ export const petProfile = () => {
 									focusable="false"
 									role="img"
 									aria-label="Placeholder: Thumbnail">
-									<title>Placeholder</title>
+									<title>Your Dogs Name and Info</title>
 									<rect width="100%" height="100%" fill="#55595c" />
 									<text x="50%" y="50%" fill="#eceeef" dy=".3em">
-										Thumbnail
+										<img src="https://i.pinimg.com/originals/39/33/24/393324d46b50e0d0f97cae58d824799a.png"></img>
 									</text>
 								</svg>
 								<div className="card-body">
-									<p className="card-text">
-										This is a wider card with supporting text below as a natural lead-in to
-										additional content. This content is a little bit longer.
-									</p>
+									<ol className="card-text">
+										<ul>enjoyed a 3 mile walk 2/4/20 @1:30pm</ul>
+										<ul>up to date with vet appoinments</ul>
+										<ul>Ate twice today. 8am: Half a chicken and 6pm:Half a chicken</ul>
+									</ol>
 									<div className="d-flex justify-content-between align-items-center">
 										<div className="btn-group">
 											<button type="button" className="btn btn-sm btn-outline-secondary">
