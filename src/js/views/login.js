@@ -43,7 +43,7 @@ export const Login = () => {
 								<input type="checkbox" defaultValue="remember-me" /> Remember me
 							</label>
 						</div>
-						<Link to="/landing/">
+						<Link to="/petProfile/">
 							<button className="btn btn-lg btn-dark btn-block" type="submit">
 								Sign in
 							</button>
