@@ -18,6 +18,7 @@ import { SearchResults } from "./views/searchresults";
 import { Login } from "./views/login";
 import { Signup } from "./views/signup";
 import { petProfile } from "./views/petProfile";
+import { BreedSearch } from "./views/BreedSearch";
 
 import injectContext from "./store/appContext";
 
@@ -28,7 +29,6 @@ import { Footer } from "./component/footer";
 import { Alerts } from "./component/alerts";
 import { ChatMessage } from "./component/ChatMessage";
 import { modalFunction } from "./component/modalfunction";
-import { BreedSearch } from "./component/BreedSearch";
 
 //create your first component
 export const Layout = () => {
@@ -47,7 +47,7 @@ export const Layout = () => {
 						<Route exact path="/alerts" component={Alerts} />
 						<Route exact path="/ChatMessage" component={ChatMessage} />
 						<Route exact path="/modalfunction" component={modalFunction} />
-						<Route exact path="/BreedSearch" component={"BreedSearch"} />
+						<Route exact path="/BreedSearch" component={BreedSearch} />
 						{/* <Route path="/demo" component={Demo} /> */}
 						<Route path="/doguments" component={Doguments} />
 						<Route path="/medications" component={Medications} />
