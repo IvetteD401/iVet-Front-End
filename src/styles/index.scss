@@ -16,6 +16,10 @@
 .modificationButton {
     align-content: right;
 }
+.greeting {
+    align-content: right;
+    // position: sticky;
+}
 .alert  {
     width: 475px;
 }
@@ -29,7 +33,7 @@
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  position: fixed;
   margin-bottom: 60px;
 }
     img {

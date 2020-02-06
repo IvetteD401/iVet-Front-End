@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
+import { Landing } from "./views/landing";
 import { Demo } from "./views/demo";
 import { Doguments } from "./views/doguments";
 import { Medications } from "./views/medications";
@@ -44,6 +45,7 @@ export const Layout = () => {
 					{/* <Alerts /> */}
 					<Switch>
 						<Route exact path="/" component={Home} />
+						<Route exact path="/landing" component={Landing} />
 						<Route exact path="/alerts" component={Alerts} />
 						<Route exact path="/ChatMessage" component={ChatMessage} />
 						<Route exact path="/modalfunction" component={modalFunction} />
