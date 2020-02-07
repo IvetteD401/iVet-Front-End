@@ -17,7 +17,7 @@ const BreedItems = () => {
 
 	return (
 		<>
-			{store.breeds.map((dog, idx) => {
+			{store.breedsSearch.map((dog, idx) => {
 				const isActive = activeIdx == idx;
 				return (
 					<li

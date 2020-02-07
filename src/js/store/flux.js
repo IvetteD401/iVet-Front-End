@@ -3,6 +3,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			login: [{}],
 			breeds: [{}],
+			breedSearchParam: "",
+			breedsSearch: [],
 			weight: [{}],
 			height: [{}],
 			name: [{}],
@@ -21,6 +23,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
+			},
+			setBreedSearchParam: param => {
+				setStore({ breedSearchParam: param });
+			},
+			searchBreed: () => {
+				fetch("https://api.thedogapi.com/v1/breeds/search?q=" + encodeURIComponent(getStore().breedSearchParam))
+					.then(Response => Response.json())
+					.then(result => {
+						console.log("result", result),
+							setStore({
+								breedsSearch: result
+							});
+					});
 			},
 			Breedinfo: () => {
 				fetch("https://api.thedogapi.com/v1/breeds")

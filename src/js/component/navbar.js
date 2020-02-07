@@ -25,7 +25,7 @@ export const Navbars = props => {
 	const toggle = () => setIsOpen(!isOpen);
 	const [messageUs, setMessageUs] = useState("close");
 	const [sideNav, setSideNav] = useState("close");
-
+	const [input, setInput] = useState();
 	const triggerSideBar = () => {
 		if (sideNav == "open sidenav") {
 			setSideNav("close");
@@ -87,9 +87,14 @@ export const Navbars = props => {
 						</Nav>
 						<NavItem>
 							<div>
-								<input type="text" placeholder="Look up breed..." name="search" />
+								<input
+									onChange={evt => actions.setBreedSearchParam(evt.target.value)}
+									type="text"
+									placeholder="Look up breed..."
+									name="search"
+								/>
 								<Link to="/BreedSearch">
-									<button onClick={() => actions.Breedinfo()}>
+									<button onClick={actions.searchBreed}>
 										<i className="fa fa-search" />
 									</button>
 								</Link>
