@@ -6,7 +6,7 @@ export const Landing = () => (
 	<>
 		{/* <div className="emptyDiv" /> */}
 
-		<section className="jumbotron text-center">
+		<section className="jumbotron main text-center">
 			<div className="container">
 				<br />
 				<br />

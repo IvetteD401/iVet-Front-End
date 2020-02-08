@@ -23,7 +23,7 @@
 .alert  {
     width: 475px;
 }
-.jumbotron {
+.main {
     width: 100%;
     height:450px;
     background-color: rgba(255, 255, 255, 0.603);
@@ -33,8 +33,9 @@
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
+//   position: fixed;
   margin-bottom: 60px;
+  margin-top: 60px;
 }
     img {
 
@@ -65,8 +66,17 @@ body {
   background-size: cover;
   margin-bottom: 60px;
 }
-.emptyDiv {
-    height: 80px;
+// .empty {
+//     height: 400px;
+//     background-color: orange;
+    
+// }
+.lead {
+    background-color: rgba(0, 0, 0, 0.466);
+    border-color: rgb(107, 107, 150);
+    background-blend-mode: lighten;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 400px;
 }
 .open {
     width: 250px;
