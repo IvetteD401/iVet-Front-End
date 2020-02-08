@@ -13,7 +13,7 @@ export const Signup = () => {
 
 	return (
 		<>
-			<div className="container general">
+			<div className="container signup">
 				<form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
 					<div className="container">
 						<h1>Sign Up</h1>
@@ -52,20 +52,16 @@ export const Signup = () => {
 						</p>
 						<br />
 						<div className="clearfix">
-							<button type="button" className="cancelbtn">
+							<button className="btn btn-lg btn-dark btn-block" type="submit">
 								Cancel
 							</button>
-							<button type="submit" className="signupbtn">
+							<button className="btn btn-lg btn-dark btn-block" type="submit">
 								Sign Up
 							</button>
 						</div>
 						<Link to="/login">Already a member? Log in here!</Link>
 					</div>
 				</form>
-				<br />
-				<Link to="/">
-					<button className="btn btn-primary">Back home</button>
-				</Link>
 			</div>
 		</>
 	);

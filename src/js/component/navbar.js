@@ -36,7 +36,7 @@ export const Navbars = props => {
 		<>
 			<div className="hidden"></div>
 			<div className="Navbar">
-				<Navbar color="light" light expand="md">
+				<Navbar color="dark" light expand="md">
 					<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
 						☰{"  "}
 					</span>
