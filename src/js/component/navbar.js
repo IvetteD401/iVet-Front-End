@@ -71,7 +71,7 @@ export const Navbars = props => {
 								</div> */}
 							</NavItem>
 							<UncontrolledDropdown nav inNavbar>
-								<DropdownToggle nav caret>
+								<DropdownToggle nav caret className="links">
 									Doggy Options
 								</DropdownToggle>
 								<DropdownMenu left>

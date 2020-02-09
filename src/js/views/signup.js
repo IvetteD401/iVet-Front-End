@@ -15,51 +15,75 @@ export const Signup = () => {
 		<>
 			<div className="container signup">
 				<form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
-					<div className="container">
-						<h1>Sign Up</h1>
-						<p>Please fill in this form to create an account.</p>
-						<hr />
-						<label htmlFor="email">
-							<b>Email</b>
+					<div className="container form-signup">
+						<h1 className="h3 mb-3 font-weight-normal">Let{"'"}s get started!</h1>
+
+						<label htmlFor="inputEmail" className="sr-only">
+							Email address
 						</label>
-						<input type="text" placeholder="Enter Email" name="email" required />
-						<br />
-						<label htmlFor="psw">
-							<b>Password</b>
+						<input
+							type="email"
+							id="inputEmail"
+							className="form-control"
+							placeholder="Email address"
+							required
+							autoFocus
+						/>
+
+						<label htmlFor="inputPassword" className="sr-only">
+							Password
 						</label>
-						<input type="password" placeholder="Enter Password" name="psw" required />
-						<br />
-						<label htmlFor="psw-repeat">
-							<b>Repeat Password</b>
+						<input
+							type="password"
+							id="inputPassword"
+							className="form-control"
+							placeholder="Password"
+							required
+						/>
+						<label htmlFor="inputPassword" className="sr-only">
+							Re-enter Password
 						</label>
-						<input type="password" placeholder="Repeat Password" name="psw-repeat" required />
-						<br />
-						<label>
-							<input
-								type="checkbox"
-								defaultChecked="checked"
-								name="remember"
-								style={{ marginBottom: "15px" }}
-							/>{" "}
-							Remember me
-						</label>
-						<p>
-							By creating an account you agree to our{" "}
-							<a href="#" style={{ color: "dodgerblue" }}>
-								Terms &amp; Privacy
-							</a>
-							.
-						</p>
-						<br />
-						<div className="clearfix">
-							<button className="btn btn-lg btn-dark btn-block" type="submit">
-								Cancel
-							</button>
-							<button className="btn btn-lg btn-dark btn-block" type="submit">
-								Sign Up
-							</button>
+						<input
+							type="password"
+							id="inputPassword"
+							className="form-control"
+							placeholder="Re-enter Password"
+							required
+						/>
+
+						<div className="checkbox mb-3">
+							<label>
+								<input type="checkbox" defaultValue="remember-me" /> Remember me
+							</label>
+							<p>
+								By creating an account you agree to our{" "}
+								<strong>
+									<a href="#" style={{ color: "dodgerblue" }}>
+										Terms &amp; Privacy
+									</a>
+								</strong>
+								.
+							</p>
 						</div>
-						<Link to="/login">Already a member? Log in here!</Link>
+						<div className="row">
+							<div className="col">
+								<div className="clearfix">
+									<button className="btn btn-secondary btn-lg" type="submit">
+										Cancel
+									</button>
+								</div>
+							</div>
+							<div className="col">
+								<Link to="/petProfile/">
+									<button className="btn btn-lg btn-dark" type="submit">
+										Sign up
+									</button>
+								</Link>
+							</div>
+						</div>
+						<Link to="/login">
+							<strong>Already a member? Log in here!</strong>
+						</Link>
 					</div>
 				</form>
 			</div>
