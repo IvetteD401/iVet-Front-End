@@ -68,14 +68,14 @@ export const Signup = () => {
 						<div className="row">
 							<div className="col">
 								<div className="clearfix">
-									<button className="btn btn-secondary btn-lg" type="submit">
+									<button className="btn btn-secondary btn-lg btn-block" type="submit">
 										Cancel
 									</button>
 								</div>
 							</div>
 							<div className="col">
 								<Link to="/petProfile/">
-									<button className="btn btn-lg btn-dark" type="submit">
+									<button className="btn btn-lg btn-dark btn-block" type="submit">
 										Sign up
 									</button>
 								</Link>
