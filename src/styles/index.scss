@@ -39,6 +39,37 @@
 .alert  {
     width: 475px;
 }
+.about {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(255, 255, 255, 0.603);
+    background-blend-mode: lighten;
+    border: 5px;
+    border-radius: 20px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.startLink {
+    max-height: 140px;
+}
+.leadLogo{
+    align-content: center;
+    // height: 190px;
+    max-height: 100%;
+    width: 90%;
+    padding-top: 0;
+    background-image: url("https://image.shutterstock.com/image-photo/artificial-dog-bone-shape-toy-260nw-1039152244.jpg");
+    background-color: rgba(255, 255, 255, 0.603);
+    background-blend-mode: multiply , overlay , soft-light ;
+    position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    // background-position: center;
+//   background-repeat: repeat-x;
+//   background-size: auto  ; 
+}
 .main {
     width: 100%;
     height:450px;
@@ -71,7 +102,9 @@ body {
 //   background-color: #ffffffee;
 //   background-blend-mode: color;
     background-image: url("../img/dog-logo-vector-with-continuous-one-line-art-style.jpg");
-    
+    font-family: 'Gloria Hallelujah', cursive;
+    color: rgba(23, 46, 23, 0.616);
+
   /* Set a specific height */
   height: 500px;
 
@@ -82,17 +115,16 @@ body {
   background-size: cover;
   margin-bottom: 60px;
 }
-// .empty {
-//     height: 400px;
-//     background-color: orange;
-    
-// }
+.homeJumbo  {
+    background-image: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/2086924/910/606/m2/fpnw/wm1/ioia4zoa41xau0bvkvrwvb4tzogatmsgqpio5izdp7bwfeud0hg5czpihebk7sv3-.jpg?1483468179&s=bd24e99892eb55591d2860aaaa328226");
+}
 .lead {
     background-color: rgba(0, 0, 0, 0.466);
     border-color: rgb(107, 107, 150);
     background-blend-mode: lighten;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 400px;
+    
 }
 .open {
     width: 250px;
