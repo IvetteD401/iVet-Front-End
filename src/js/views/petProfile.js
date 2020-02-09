@@ -8,53 +8,69 @@ import { Link } from "react-router";
 export const petProfile = () => {
 	return (
 		<div>
-			<section className="jumbotron text-center">
-				<h1 className="greeting">
-					<strong>Hello, Ivette!</strong>
-				</h1>
+			<div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center greeting">
+				<div className="col-md-5 p-lg-5 mx-auto my-5">
+					<h1 className="display-4 font-weight-normal">
+						<strong>Hello, Ivette!</strong>
+					</h1>
+				</div>
+			</div>
 
-				<div className="container">
-					<div className="row">
+			<section className="jumbotron homeJumbo lead text-center mx-auto">
+				<div className="card about" style={{ maxWidth: "100%" }}>
+					<div className="row no-gutters">
 						<div className="col-md-4">
-							<div className="card mb-4 shadow-sm">
-								<svg
-									className="bd-placeholder-img card-img-top"
-									width="100%"
-									height={225}
-									xmlns="http://www.w3.org/2000/svg"
-									preserveAspectRatio="xMidYMid slice"
-									focusable="false"
-									role="img"
-									aria-label="Placeholder: Thumbnail">
-									<title>Your Dogs Name and Info</title>
-									<rect width="100%" height="100%" fill="#55595c" />
-									<text x="50%" y="50%" fill="#eceeef" dy=".3em">
-										<img src="https://i.pinimg.com/originals/39/33/24/393324d46b50e0d0f97cae58d824799a.png"></img>
-									</text>
-								</svg>
-								<div className="card-body">
-									<ol className="card-text">
-										<ul>enjoyed a 3 mile walk 2/4/20 @1:30pm</ul>
-										<ul>up to date with vet appoinments</ul>
-										<ul>Ate twice today. 8am: Half a chicken and 6pm:Half a chicken</ul>
-									</ol>
-									<div className="d-flex justify-content-between align-items-center">
-										<div className="btn-group">
-											<button type="button" className="btn btn-sm btn-outline-secondary">
-												View
-											</button>
-											<button type="button" className="btn btn-sm btn-outline-secondary">
-												Edit
-											</button>
-										</div>
-										<small className="text-muted">9 mins</small>
-									</div>
-								</div>
+							<img
+								src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2018/01/12201051/cute-puppy-body-image.jpg"
+								className="card-img"
+								alt="..."
+							/>
+						</div>
+						<div className="col-md-8">
+							<div className="card-body">
+								<h2 className="card-title">
+									<strong>Oreo</strong>
+								</h2>
+								<h4>
+									<p className="card-text">
+										<strong>
+											<ol className="card-text align-left">
+												<ul>Breed: Shitzhu</ul>
+												<ul>Weight: 14.6lbs</ul>
+												<ul>Primary Vet: Sunshine Animal Clinic</ul>
+												<ul>Groomer: Home groomed</ul>
+												<ul>Caregiver: Elinne, Rose</ul>
+												<ul>Oreo is to date with vet appoinments</ul>
+												<ul>Enjoys playing, eating, cuddles, long walks.</ul>
+											</ol>
+										</strong>
+									</p>
+									<p className="card-text">
+										<small className="text-muted">Last updated 3 mins ago</small>
+									</p>
+								</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
+			{/* </h4>
+							<div className="btn-group">
+								<button type="button" className="btn btn-sm btn-outline-secondary">
+									View
+								</button>
+								<button type="button" className="btn btn-sm btn-outline-secondary">
+									Edit
+								</button>
+							</div>
+							<p className="card-text">
+								<small className="text-muted">Last updated 3 mins ago</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section> */}
 		</div>
 	);
 };
