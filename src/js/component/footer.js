@@ -6,14 +6,14 @@ import { Context } from "../store/appContext";
 
 export const Footer = () => {
 	return (
-		<div className="footer backgroundColor-black">
+		<div className="footer dogIcons">
 			<div className="container">
 				<div className="row">
 					<div className="col-sm ml-auto">
-						<Link to="/doguments/">
+						<Link to="/petprofile/">
 							<span>
 								<h1>
-									<i className="far fa-folder-open"></i>
+									<i className="fas fa-paw"></i>
 								</h1>
 							</span>
 						</Link>

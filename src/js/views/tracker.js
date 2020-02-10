@@ -11,6 +11,7 @@ export const Tracker = () => {
 
 	return (
 		<>
+			<section className="emptyDiv"></section>
 			<div className="album py-5 bg-light">
 				<div className="container">
 					<div className="row">

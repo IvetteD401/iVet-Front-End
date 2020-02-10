@@ -11,6 +11,7 @@ export const Medications = () => {
 
 	return (
 		<>
+			<section className="emptyDiv"></section>
 			<div className="body3">
 				<div className="overflow-auto medications">
 					<table className="table table-striped">

@@ -44,7 +44,7 @@ export const Navbars = props => {
 					<NavbarBrand href="/">
 						<span>
 							{"  "}
-							<i className="fas fa-paw"></i> <strong> iVet </strong> for Dogs{" "}
+							<strong> iVet </strong> for Dogs{" "}
 						</span>
 					</NavbarBrand>
 					<NavbarToggler onClick={toggle} />
