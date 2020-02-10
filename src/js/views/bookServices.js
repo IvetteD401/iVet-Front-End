@@ -11,80 +11,86 @@ export const BookServices = () => {
 
 	return (
 		<>
-			{<div className="emptyDiv" />}
-			<div className="body2 bookserviceCss">
-				<div className="container general mx-auto">
-					<div className="container">
-						<h1> Book Services</h1>
-						<div className="form-check">
-							<input className="form-check-input" type="checkbox" defaultValue id="defaultCheck1" />
-							<label className="form-check-label" htmlFor="defaultCheck1">
-								Grooming Services
-								<div className="form-group">
-									<label htmlFor="exampleFormControlTextarea1">Message for service provider</label>
-									<textarea
-										className="form-control"
-										id="exampleFormControlTextarea1"
-										rows={3}
-										defaultValue={""}
-									/>
-								</div>
-							</label>
-							<Example />
-						</div>
-						<div className="form-check">
-							<input className="form-check-input" type="checkbox" defaultValue id="defaultCheck1" />
-							<label className="form-check-label" htmlFor="defaultCheck1">
-								Dog Walker
-								<div className="form-group">
-									<label htmlFor="exampleFormControlTextarea1">Message for service provider</label>
-									<textarea
-										className="form-control"
-										id="exampleFormControlTextarea1"
-										rows={3}
-										defaultValue={""}
-									/>
-								</div>
-							</label>
-							<Example />
-						</div>
-						<div className="form-check">
-							<input
-								className="form-check-input"
-								type="checkbox"
-								defaultValue
-								id="defaultCheck2"
-								enabled
-							/>
-							<label className="form-check-label" htmlFor="defaultCheck2">
-								Find a Vet!
-								<div className="form-group">
-									<label htmlFor="exampleFormControlTextarea1">Message for service provider</label>
-									<textarea
-										className="form-control"
-										id="exampleFormControlTextarea1"
-										rows={3}
-										defaultValue={""}
-									/>
-								</div>
-							</label>
-							<Example />
-						</div>
-					</div>
-					<br />
+			<section className="emptyDiv"></section>
 
-					<button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-						Submit
-					</button>
-					<Link to="/">
-						<button className="btn btn-primary">order merch</button>
-					</Link>
-					<Link to="/">
-						<button className="btn btn-primary">Back home</button>
-					</Link>
+			<h1> Book Services</h1>
+			<div className="row form-signup mx-auto">
+				<br />
+				<br />
+				<div className="col-4">
+					<div className="form-check">
+						<input className="form-check-input" type="checkbox" defaultValue id="defaultCheck1" />
+						<label className="form-check-label" htmlFor="defaultCheck1">
+							Grooming Services
+							<div className="form-group">
+								<label htmlFor="exampleFormControlTextarea1">Message for service provider</label>
+								<textarea
+									className="form-control"
+									id="exampleFormControlTextarea1"
+									rows={3}
+									defaultValue={""}
+								/>
+							</div>
+						</label>
+						<Example />
+					</div>
+				</div>
+				<div className="col-4">
+					<div className="form-check">
+						<input className="form-check-input" type="checkbox" defaultValue id="defaultCheck1" />
+						<label className="form-check-label" htmlFor="defaultCheck1">
+							Dog Walker
+							<div className="form-group">
+								<label htmlFor="exampleFormControlTextarea1">Message for service provider</label>
+								<textarea
+									className="form-control"
+									id="exampleFormControlTextarea1"
+									rows={3}
+									defaultValue={""}
+								/>
+							</div>
+						</label>
+						<Example />
+					</div>
+				</div>
+				<div className="col-4">
+					<div className="form-check">
+						<input className="form-check-input" type="checkbox" defaultValue id="defaultCheck2" enabled />
+						<label className="form-check-label" htmlFor="defaultCheck2">
+							Find a Vet!
+							<div className="form-group">
+								<label htmlFor="exampleFormControlTextarea1">Message for service provider</label>
+								<textarea
+									className="form-control"
+									id="exampleFormControlTextarea1"
+									rows={3}
+									defaultValue={""}
+								/>
+							</div>
+						</label>
+						<Example />
+					</div>
+				</div>
+
+				<div className="row">
+					{/* <div className="col-4">
+						<Link to="/">
+							<button className="btn btn-lg btn-secondary btn-block">take me home</button>
+						</Link>
+					</div> */}
+					<div className="col">
+						<button
+							type="button"
+							className="btn btn-lg btn-dark btn-block"
+							data-toggle="modal"
+							data-target="#exampleModal">
+							Book!
+						</button>
+					</div>
 				</div>
 			</div>
 
+			{/* modal */}
 			<div
 				className="modal fade"
 				id="exampleModal"
@@ -92,24 +98,29 @@ export const BookServices = () => {
 				aria-labelledby="exampleModalLabel"
 				aria-hidden="true">
 				<div className="modal-dialog" role="document">
-					<div className="modal-content">
+					<div className="modal-content general">
 						<div className="modal-header">
-							<h5 className="modal-title" id="exampleModalLabel">
-								Modal title
-							</h5>
+							<h2 className="modal-title" id="exampleModalLabel">
+								Congratulations!!{" "}
+							</h2>{" "}
 							<button type="button" className="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-						<div className="modal-body">Congratulations!! Your appointment is set.</div>
-						<div className="modal-footer">
-							<button type="button" className="btn btn-secondary" data-dismiss="modal">
-								Close
-							</button>
-							<button type="button" className="btn btn-primary">
-								Save changes
-							</button>
+						<div className="modal-body">
+							<h4>Your appointment is set.</h4>
 						</div>
+						{/* <div className="modal-footer">
+							<button type="button" className="btn btn-secondary" data-dismiss="modal">
+								close
+							</button>
+							<Link to="/petProfile/">
+								{" "}
+								<button type="button" className="btn btn-primary">
+									go home
+								</button>
+							</Link>
+						</div> */}
 					</div>
 				</div>
 			</div>

@@ -18,9 +18,15 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .general {
-    background-color: rgba(141, 132, 132, 0.397);
-    width: 50%;
-    padding: 15px;
+    background-image: url("https://image.shutterstock.com/image-photo/artificial-dog-bone-shape-toy-260nw-1039152244.jpg");
+    background-color: rgba(255, 255, 255, 0.603);
+    background-blend-mode: multiply , overlay , soft-light ;
+    position: relative;
+//   opacity: 0.65;
+//   background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
 .signin {
     background-image: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/2086924/910/606/m2/fpnw/wm1/ioia4zoa41xau0bvkvrwvb4tzogatmsgqpio5izdp7bwfeud0hg5czpihebk7sv3-.jpg?1483468179&s=bd24e99892eb55591d2860aaaa328226");
@@ -42,7 +48,15 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      margin-top: 40px;
     // opacity: 0.6;
 }
-
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 150px;
+    height: 200px;
+    border-color: transparent;
+    border-radius: 20px;
+}
 .medications    {
     width: 475px;
     height: 200px;
