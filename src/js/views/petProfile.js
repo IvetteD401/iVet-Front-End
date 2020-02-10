@@ -22,12 +22,12 @@ export const petProfile = () => {
 						<div className="col-md-4">
 							<img
 								src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2018/01/12201051/cute-puppy-body-image.jpg"
-								className="card-img"
+								className="card-img profile"
 								alt="..."
 							/>
 						</div>
 						<div className="col-md-8">
-							<div className="card-body">
+							<div className="card-body profile">
 								<h2 className="card-title">
 									<strong>Oreo</strong>
 								</h2>
@@ -44,9 +44,6 @@ export const petProfile = () => {
 												<ul>Enjoys playing, eating, cuddles, long walks.</ul>
 											</ol>
 										</strong>
-									</p>
-									<p className="card-text">
-										<small className="text-muted">Last updated 3 mins ago</small>
 									</p>
 								</h4>
 							</div>
