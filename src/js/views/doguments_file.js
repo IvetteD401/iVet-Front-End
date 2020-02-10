@@ -10,15 +10,14 @@ export const DogumentsFile = () => {
 
 	return (
 		<>
-			{/* <section className="jumbotron homeJumbo lead text-center mx-auto"> */}
-			{/* </section> */}
-			files will be here
-			<div>
-				<h3>Show a file-select field which allows multiple files:</h3>
+			<section className="emptyDiv"></section>
+
+			<div className="form-signup">
+				<h3>Select your doggyment files to upload</h3>
 				<form action="/action_page.php">
 					Select files: <input type="file" name="myFile" multiple />
 					<br />
-					<br />
+					{/* <br /> */}
 					<input type="submit" />
 				</form>
 			</div>
