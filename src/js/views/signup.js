@@ -15,7 +15,7 @@ export const Signup = () => {
 		<>
 			<div className="container signup">
 				<form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
-					<div className="container form-signup">
+					<div className="container form about">
 						<h1 className="h3 mb-3 font-weight-normal">Let{"'"}s get started!</h1>
 
 						<label htmlFor="inputEmail" className="sr-only">

@@ -14,7 +14,7 @@ export const BookServices = () => {
 			<section className="emptyDiv"></section>
 
 			<h1> Book Services</h1>
-			<div className="row form-signup mx-auto">
+			<div className="row about mx-auto">
 				<br />
 				<br />
 				<div className="col-4">
@@ -71,7 +71,7 @@ export const BookServices = () => {
 						<Example />
 					</div>
 				</div>
-
+				<br />
 				<div className="row">
 					{/* <div className="col-4">
 						<Link to="/">

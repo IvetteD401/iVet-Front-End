@@ -1,22 +1,6 @@
 /* 
     General Styles
 */
-.form-signin  {
-    background-color: rgba(228, 222, 222, 0.61);
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    border-radius: 20px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.form-signup {
-    background-color: rgba(228, 222, 222, 0.61);
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    border-radius: 20px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 .general {
     background-image: url("https://image.shutterstock.com/image-photo/artificial-dog-bone-shape-toy-260nw-1039152244.jpg");
     background-color: rgba(255, 255, 255, 0.603);
@@ -28,6 +12,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-repeat: repeat;
   background-size: cover;
 }
+
 .signin {
     background-image: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/2086924/910/606/m2/fpnw/wm1/ioia4zoa41xau0bvkvrwvb4tzogatmsgqpio5izdp7bwfeud0hg5czpihebk7sv3-.jpg?1483468179&s=bd24e99892eb55591d2860aaaa328226");
     background-color: rgba(141, 132, 132, 0.397);
@@ -65,43 +50,49 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     align-content: right;
 }
 .greeting {
-     background-color: rgba(228, 222, 222, 0.61);
-background-image: url("https://image.shutterstock.com/image-photo/artificial-dog-bone-shape-toy-260nw-1039152244.jpg");
-background-blend-mode: lighten;
-background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-color: rgba(228, 222, 222, 0.61);
+    background-image: url("https://image.shutterstock.com/image-photo/artificial-dog-bone-shape-toy-260nw-1039152244.jpg");
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     // height: 100%;
     padding: 10px;
-    border-radius: 20px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .dogIcons   {
     color:#0600a7;
     // text-align: justify;
     font-size: 150px;
 
 }
+
 .alert  {
     width: 475px;
 }
+
 .profile    {
     height: 335px;
 }
+
 .about {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: rgba(255, 255, 255, 0.809);
+    background-color: rgba(255, 255, 255, 0.904);
     background-blend-mode: lighten;
     border: 5px;
     border-radius: 20px;
     font-family: 'Gloria Hallelujah', cursive;
 }
+
 .startLink {
     max-height: 140px;
 }
-.leadLogo{
+
+.leadLogo   {
     align-content: center;
     // height: 190px;
     max-height: 100%;
@@ -111,50 +102,43 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgba(255, 255, 255, 0.603);
     background-blend-mode: multiply , overlay , soft-light ;
     position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-    // background-position: center;
-//   background-repeat: repeat-x;
-//   background-size: auto  ; 
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.main {
+
+.main   {
     width: 100%;
     height:100%;
     background-color: rgba(255, 255, 255, 0.603);
     background-blend-mode: lighten;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-image: url("https://media.istockphoto.com/photos/many-different-breeds-of-dogs-on-the-grass-picture-id874937848?k=6&m=874937848&s=612x612&w=0&h=WQ6RITfqo_Hve9SeVqng_iDNwseSbbNmMu4ucqvfshY=");
     background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 60px;
-//   margin-top: 60px;
-   position: relative;
-//   opacity: 0.65;
-  background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 60px;
+    position: relative;
+    background-attachment: fixed;
+  }
   
-}
     img {
-
 max-width: 100%;
-
 }
 
 html {
   position: relative;
   min-height: 100%;
 }
+
 .camera {
     background-color: purple;
 }
+
 body {
-  /* Margin bottom by footer height */
-//   background-color: #ffffffee;
-//   background-blend-mode: color;
+    // background-blend-mode: color;
     background-image: url("../img/dog-logo-vector-with-continuous-one-line-art-style.jpg");
     font-family: 'Gloria Hallelujah', cursive;
     color: rgba(23, 46, 23, 0.616);
@@ -169,28 +153,32 @@ body {
   background-size: cover;
   margin-bottom: 60px;
 }
+
 .homeJumbo  {
     background-image: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/2086924/910/606/m2/fpnw/wm1/ioia4zoa41xau0bvkvrwvb4tzogatmsgqpio5izdp7bwfeud0hg5czpihebk7sv3-.jpg?1483468179&s=bd24e99892eb55591d2860aaaa328226");
 }
+
 .lead {
     background-color: rgba(0, 0, 0, 0.466);
     border-color: rgb(107, 107, 150);
     background-blend-mode: lighten;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 400px;
-    
 }
+
 .open {
     width: 250px;
     background-color: blue;
     text-align: center;
 }
+
 .close {
     width: 0px;
     background-color: rgb(0, 0, 0);
     // background-color: red;
     display: none;
 }
+
 .sidenav {
   height: 100%;
   position: fixed;
@@ -229,23 +217,18 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-// .toolIcons  {
-//   color:#0600a7;
 
-// }
 .emptyDiv   {
     height: 100px;
     width: 100%;
-    // position: fixed;
-     background-image: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/2086924/910/606/m2/fpnw/wm1/ioia4zoa41xau0bvkvrwvb4tzogatmsgqpio5izdp7bwfeud0hg5czpihebk7sv3-.jpg?1483468179&s=bd24e99892eb55591d2860aaaa328226");
+    background-image: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/2086924/910/606/m2/fpnw/wm1/ioia4zoa41xau0bvkvrwvb4tzogatmsgqpio5izdp7bwfeud0hg5czpihebk7sv3-.jpg?1483468179&s=bd24e99892eb55591d2860aaaa328226");
     background-color: rgba(141, 132, 132, 0.397);
-       background-blend-mode: multiply , overlay , soft-light ;
+    background-blend-mode: multiply , overlay , soft-light ;
     position: relative;
-//   opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer  {
@@ -257,6 +240,7 @@ body {
   background-color: #050505;
   text-align: center;
 }
+
 .Navbar{
   width: 100%;
   position: fixed;
@@ -264,35 +248,22 @@ body {
   top: 0;
   left: 0;
   background-color: #11101059;
-//   overflow-x: hidden;
   transition: 0.5s;
-//   padding-top: 60px;
-color: rgb(137, 137, 218)
+  color: rgb(137, 137, 218)
 }
+
 .navbar-light .navbar-brand  {
     color: #007bff;
 }
+
 .links   {
     color: #6da9e9b9;
 }
+
 .message {
     background-color: rgb(87, 87, 131);
 }
 
-.body2 {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 0 20px;
-  margin-bottom: 100%;
-}
-
-.body3 {
-  margin: 0 auto;
-  max-width: 500px;
-  max-height: 300px;
-  padding: 0 20px;
-  margin-bottom: 100%;
-}
 
 .message1 {
   border: 2px solid #dedede;
