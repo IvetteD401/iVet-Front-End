@@ -7,6 +7,8 @@ import { ivetHome } from "./views/ivethome";
 import { Landing } from "./views/landing";
 import { Demo } from "./views/demo";
 import { Doguments } from "./views/doguments";
+import { DogumentsFile } from "./views/doguments_file";
+import { DogumentsImages } from "./views/doguments_images";
 import { Medications } from "./views/medications";
 import { CalenderAppointments } from "./views/calenderAppointments";
 import { Camera } from "./views/camera";
@@ -54,6 +56,8 @@ export const Layout = () => {
 						<Route exact path="/BreedSearch" component={BreedSearch} />
 						{/* <Route path="/demo" component={Demo} /> */}
 						<Route path="/doguments" component={Doguments} />
+						<Route path="/doguments_images" component={DogumentsImages} />
+						<Route path="/doguments_file" component={DogumentsFile} />
 						<Route path="/medications" component={Medications} />
 						<Route path="/calenderAppointments" component={CalenderAppointments} />
 						<Route path="/camera" component={Camera} />

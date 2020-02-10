@@ -5,25 +5,30 @@ import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
 
-export const Doguments = () => {
+export const DogumentsFile = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
 		<>
 			{/* <section className="jumbotron homeJumbo lead text-center mx-auto"> */}
-			<div className="row mx-auto">
-				<div className="col-6 dogIcons">
-					<Link to="/doguments_file">
-						<i className="fas fa-archive"></i>
-					</Link>
-				</div>
-				<div className="col-6 dogIcons">
-					<Link to="/doguments_images">
-						<i className="far fa-images"></i>
-					</Link>
-				</div>
-			</div>
 			{/* </section> */}
+			files will be here
+			<div>
+				<h3>Show a file-select field which allows multiple files:</h3>
+				<form action="/action_page.php">
+					Select files: <input type="file" name="myFile" multiple />
+					<br />
+					<br />
+					<input type="submit" />
+				</form>
+			</div>
+			<Link to="/doguments/">
+				<span>
+					<h1>
+						<i className="far fa-folder-open"></i>
+					</h1>
+				</span>
+			</Link>
 			{/* <div className="body2">
 				<ul className="nav nav-pills mb-3 justify-content-center bg-white" id="pills-tab" role="tablist">
 					<li className="nav-item mt-2 mb-2">
@@ -324,7 +329,6 @@ export const Doguments = () => {
 			<Link to="/">
 				<button className="btn btn-primary">Back home</button>
 			</Link> */}
-
 			{/* </div> */}
 		</>
 	);

@@ -5,26 +5,15 @@ import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
 
-export const Doguments = () => {
+export const DogumentsImages = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
 		<>
 			{/* <section className="jumbotron homeJumbo lead text-center mx-auto"> */}
-			<div className="row mx-auto">
-				<div className="col-6 dogIcons">
-					<Link to="/doguments_file">
-						<i className="fas fa-archive"></i>
-					</Link>
-				</div>
-				<div className="col-6 dogIcons">
-					<Link to="/doguments_images">
-						<i className="far fa-images"></i>
-					</Link>
-				</div>
-			</div>
 			{/* </section> */}
-			{/* <div className="body2">
+
+			<div className="body2">
 				<ul className="nav nav-pills mb-3 justify-content-center bg-white" id="pills-tab" role="tablist">
 					<li className="nav-item mt-2 mb-2">
 						<a
@@ -132,13 +121,13 @@ export const Doguments = () => {
 						</div>
 					</div>
 					{/* Second Tab */}
-			{/* <div
+					<div
 						className="tab-pane fade"
 						id="pills-profile"
 						role="tabpanel"
-						aria-labelledby="pills-profile-tab"> */}
-			{/*Card 1*/}
-			{/* <div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
+						aria-labelledby="pills-profile-tab">
+						{/*Card 1*/}
+						<div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
 							<div className="card-body pt-1" style={{ width: "100%", padding: 0 }}>
 								<div className="d-flex justify-content-between">
 									<h3
@@ -171,9 +160,9 @@ export const Doguments = () => {
 									<i className="fas fa-ellipsis-v text-secondary float-right mt-1 mr-4" />
 								</div>
 							</div>
-						</div> */}
-			{/*Card 2*/}
-			{/* <div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
+						</div>
+						{/*Card 2*/}
+						<div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
 							<div className="card-body pt-1" style={{ width: "100%", padding: 0 }}>
 								<div className="d-flex justify-content-between">
 									<h3
@@ -205,9 +194,9 @@ export const Doguments = () => {
 									<i className="fas fa-ellipsis-v text-secondary float-right mt-1 mr-4" />
 								</div>
 							</div>
-						</div> */}
-			{/*Card 3*/}
-			{/* <div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
+						</div>
+						{/*Card 3*/}
+						<div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
 							<div className="card-body pt-1" style={{ width: "100%", padding: 0 }}>
 								<div className="d-flex justify-content-between">
 									<h3
@@ -239,9 +228,9 @@ export const Doguments = () => {
 									<i className="fas fa-ellipsis-v text-secondary float-right mt-1 mr-4" />
 								</div>
 							</div>
-						</div> */}
-			{/*Card 4*/}
-			{/* <div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
+						</div>
+						{/*Card 4*/}
+						<div className="card mx-auto mt-5 shadow-lg" style={{ width: "50%" }}>
 							<div className="card-body pt-1" style={{ width: "100%", padding: 0 }}>
 								<div className="d-flex justify-content-between">
 									<h3
@@ -270,9 +259,9 @@ export const Doguments = () => {
 									<i className="fas fa-ellipsis-v text-secondary float-right mt-1 mr-4" />
 								</div>
 							</div>
-						</div> */}
-			{/*Card 5*/}
-			{/* <div className="card mx-auto mt-5 mb-5 shadow-lg" style={{ width: "50%" }}>
+						</div>
+						{/*Card 5*/}
+						<div className="card mx-auto mt-5 mb-5 shadow-lg" style={{ width: "50%" }}>
 							<div className="card-body pt-1" style={{ width: "100%", padding: 0 }}>
 								<div className="d-flex justify-content-between">
 									<h3
@@ -323,9 +312,7 @@ export const Doguments = () => {
 			<br />
 			<Link to="/">
 				<button className="btn btn-primary">Back home</button>
-			</Link> */}
-
-			{/* </div> */}
+			</Link>
 		</>
 	);
 };
