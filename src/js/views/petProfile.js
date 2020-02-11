@@ -34,6 +34,20 @@ export const petProfile = () => {
 											</div>
 											<div className="col-md-8">
 												<div className="card-body profile">
+													<div className=" float-right">
+														{/* <Link to={"/edit/" + e.id + "/" + index}>
+											<button className="btn">
+												<i className="fas fa-pencil-alt mr-3" />
+											</button>
+										</Link> */}
+														<button
+															className="btn"
+															onClick={() => {
+																actions.deletePet_Profile(e.id);
+															}}>
+															<i className="fas fa-trash-alt" />
+														</button>
+													</div>
 													<h2 className="card-title">
 														<strong>{e.petname}</strong>
 													</h2>
