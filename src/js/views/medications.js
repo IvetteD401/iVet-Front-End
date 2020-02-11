@@ -12,35 +12,43 @@ export const Medications = () => {
 	return (
 		<>
 			<section className="emptyDiv"></section>
-			<div className="body3">
+			<br />
+			<br />
+			<div className="aboutMed mx-auto">
 				<div className="overflow-auto medications">
 					<table className="table table-striped">
 						<thead>
 							<tr>
 								<th scope="col">#</th>
-								<th scope="col">First</th>
-								<th scope="col">Last</th>
-								<th scope="col">Handle</th>
+								<th scope="col">Medication</th>
+								<th scope="col">Frequency</th>
+								<th scope="col">Take with food</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<th scope="row">1</th>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
+								<td>Ketamine</td>
+								<td>Once a day</td>
+								<td>Yes</td>
 							</tr>
 							<tr>
 								<th scope="row">2</th>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
+								<td>Xanax</td>
+								<td>When needed</td>
+								<td>No</td>
 							</tr>
 							<tr>
 								<th scope="row">3</th>
-								<td>Larry</td>
-								<td>the Bird</td>
-								<td>@twitter</td>
+								<td>Morphine</td>
+								<td>When needed</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Morphine</td>
+								<td>When needed</td>
+								<td>Yes</td>
 							</tr>
 						</tbody>
 					</table>

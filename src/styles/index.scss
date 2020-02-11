@@ -43,8 +43,9 @@
     border-radius: 20px;
 }
 .medications    {
-    width: 475px;
-    height: 200px;
+    width: 100%;
+    height:200px;
+    align-content: center;
 }
 .modificationButton {
     align-content: right;
@@ -63,16 +64,21 @@
     border-radius: 20px;    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.dogumentIcons  {
+margin-bottom: 80px;
+}
 .dogIcons   {
     color:#0600a7;
     // text-align: justify;
-    font-size: 150px;
-
-}
+    font-size: 100px;
+    box-shadow: 10px;
+    }
 
 .alert  {
-    width: 475px;
+    width: 600px;
+    background-color: rgba(7, 187, 7, 0.558);
+    color: rgba(246, 234, 234, 0.728);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .profile    {
@@ -86,6 +92,15 @@
     border: 5px;
     border-radius: 20px;
     font-family: 'Gloria Hallelujah', cursive;
+}
+.aboutMed {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(255, 255, 255, 0.904);
+    background-blend-mode: lighten;
+    border: 5px;
+    border-radius: 20px;
+    font-family: 'Gloria Hallelujah', cursive;
+    width: 600px;
 }
 
 .startLink {

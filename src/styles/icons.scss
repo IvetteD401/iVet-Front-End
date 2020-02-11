@@ -1,0 +1,49 @@
+/* 
+    General Styles
+*/
+
+.modificationButton {
+    align-content: right;
+}
+
+.dogumentIcons  {
+margin-bottom: 80px;
+}
+
+.dogIcons   {
+    color:#0600a7;
+    // text-align: justify;
+    font-size: 100px;
+    box-shadow: 10px;
+    }
+
+
+.startLink {
+    max-height: 140px;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: green;
+}
+
+.navbar-light .navbar-brand  {
+    color: #007bff;
+}
+
+.links   {
+    color: #6da9e9b9;
+}
+
+    .submit  {
+      height: 40px;
+      padding: 0 20px;
+      background-color: #5E0565;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
