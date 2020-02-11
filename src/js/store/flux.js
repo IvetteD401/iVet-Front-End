@@ -36,7 +36,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 				groomeraddress,
 				insurance_policy,
 				insurance_provider,
-				petname
+				petname,
+				caregiver,
+				likes
 			) {
 				fetch(url, {
 					method: "post",
@@ -48,7 +50,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 						groomer_address: groomeraddress,
 						insurance_policy: insurance_policy,
 						insurance_provider: insurance_provider,
-						petname: petname
+						petname: petname,
+						caregiver: caregiver,
+						likes: likes
 					})
 				}).then(() => {
 					fetch(url + "records")

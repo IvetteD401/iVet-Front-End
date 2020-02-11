@@ -22,6 +22,7 @@ import { SearchResults } from "./views/searchresults";
 import { Login } from "./views/login";
 import { Signup } from "./views/signup";
 import { petProfile } from "./views/petProfile";
+import { AddPet } from "./views/add_petProfile";
 import { BreedSearch } from "./views/BreedSearch";
 
 import injectContext from "./store/appContext";
@@ -68,6 +69,7 @@ export const Layout = () => {
 						<Route path="/login" component={Login} />
 						<Route path="/signup" component={Signup} />
 						<Route path="/petProfile" component={petProfile} />
+						<Route path="/add_petProfile" component={AddPet} />
 						<Route path="/search" component={SearchResults} />
 
 						<Route path="/tracker" component={Tracker} />

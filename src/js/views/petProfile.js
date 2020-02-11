@@ -37,7 +37,7 @@ export const petProfile = () => {
 													<div className=" float-right">
 														{/* <Link to={"/edit/" + e.id + "/" + index}>
 											<button className="btn">
-												<i className="fas fa-pencil-alt mr-3" />
+                                            <i className="fas fa-pencil-alt mr-3" />
 											</button>
 										</Link> */}
 														<button
@@ -47,6 +47,11 @@ export const petProfile = () => {
 															}}>
 															<i className="fas fa-trash-alt" />
 														</button>
+														<div>
+															<Link to="/add_petProfile">
+																<h3>add a new pet</h3>
+															</Link>
+														</div>
 													</div>
 													<h2 className="card-title">
 														<strong>{e.petname}</strong>
@@ -57,13 +62,13 @@ export const petProfile = () => {
 																<ol className="card-text align-left">
 																	<ul>Breed: Shitzhu</ul>
 																	<ul>Weight: 14.6lbs</ul>
-																	<ul>Primary Vet: {e.vetname}</ul>
-																	<ul>Groomer: {e.groomername}</ul>
-																	<ul>Caregiver: Elinne, Rose</ul>
-																	<ul>Oreo is up to date with vet appoinments</ul>
+																	<ul>{e.vetname}</ul>
+																	<ul>{e.groomername}</ul>
+																	<ul>{e.caregiver}</ul>
 																	<ul>
-																		Enjoys playing, eating, cuddles, long walks.
+																		{e.petname}is up to date with vet appoinments
 																	</ul>
+																	<ul>{e.likes}</ul>
 																</ol>
 															</strong>
 														</p>
