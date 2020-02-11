@@ -8,14 +8,67 @@ import { Alerts } from "../component/alerts";
 
 export const Medications = () => {
 	const { store, actions } = useContext(Context);
+	const [value, setValue] = useState();
+	const [newToDo, setNewToDo] = useState([]);
 
+	// const [toDo, setToDO] = useState();
+	// function toDoChange(e) {
+	// 	setToDO(e.target.value);
+	// }
+
+	function addToDo(e) {
+		if (value === "") return;
+		setNewToDo([...newToDo, { text: value }]);
+		setValue("");
+	}
+
+	function deleteInput(e) {
+		newToDo.splice(list1, 1);
+		setNewToDo([...newToDo]);
+	}
 	return (
 		<>
 			<section className="emptyDiv"></section>
 			<br />
 			<br />
 			<div className="aboutMed mx-auto">
-				<div className="overflow-auto medications">
+				<h1>Medications</h1>
+				<input
+					id="input1"
+					type="text"
+					placeholder="add to list"
+					value={value}
+					onChange={e => setValue(e.target.value)}
+				/>
+				<button onClick={addToDo}>add</button>
+				<input
+					id="input2"
+					type="text"
+					placeholder="add to list"
+					value={value}
+					onChange={e => setValue(e.target.value)}
+				/>
+				<button onClick={addToDo}>add</button>
+				<input
+					id="input3"
+					type="text"
+					placeholder="add to list"
+					value={value}
+					onChange={e => setValue(e.target.value)}
+				/>
+				<button onClick={addToDo}>add</button>
+				<ul>
+					{newToDo.map(todo => (
+						<>
+							<li id="list1" key={todo.index}>
+								{todo.text}
+							</li>
+							<button onClick={deleteInput}>trash</button>
+						</>
+					))}
+				</ul>
+
+				{/* <div className="overflow-auto medications">
 					<table className="table table-striped">
 						<thead>
 							<tr>
@@ -64,12 +117,9 @@ export const Medications = () => {
 					<button type="button" className="btn btn-danger">
 						Delete
 					</button>
-				</div>
+				</div> */}
 				<Alerts />
 			</div>
-			<Link to="/">
-				<button className="btn btn-primary">Back home</button>
-			</Link>
 		</>
 	);
 };

@@ -102,6 +102,23 @@ margin-bottom: 80px;
     font-family: 'Gloria Hallelujah', cursive;
     width: 600px;
 }
+.aboutLink {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(255, 255, 255, 0.904);
+    background-blend-mode: lighten;
+    border: 5px;
+    border-radius: 20px;
+    font-family: 'Gloria Hallelujah', cursive;
+    width: 600px;
+background-image: url("https://image.shutterstock.com/image-photo/artificial-dog-bone-shape-toy-260nw-1039152244.jpg");
+ position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
 
 .startLink {
     max-height: 140px;

@@ -1,3 +1,4 @@
+const url = "https://3000-b0ec813b-b296-4c70-8c70-72300d7eb0e8.ws-us02.gitpod.io/";
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
@@ -12,9 +13,72 @@ const getState = ({ getStore, getActions, setStore }) => {
 			breed_group: [{}],
 			life_span: [{}],
 			temperament: [{}],
-			origin: [{}]
+			origin: [{}],
+			pet_profile: []
 		},
 		actions: {
+			loadPet_Profile() {
+				fetch(url + "records")
+					.then(response => response.json())
+					.then(result => {
+						console.log("Get profile", result),
+							setStore({
+								pet_profile: result
+							});
+					})
+					.catch(e => console.error(e));
+			},
+			// post to petProfile
+			addPet_Profile(
+				vetname,
+				groomername,
+				vetaddress,
+				groomeraddress,
+				insurance_policy,
+				insurance_provider,
+				petname
+			) {
+				fetch(url, {
+					method: "post",
+					headers: { "Content-type": "application/json" },
+					body: JSON.stringify({
+						vet_name: vetname,
+						groomer_name: groomername,
+						vet_address: vetaddress,
+						groomer_address: groomeraddress,
+						insurance_policy: insurance_policy,
+						insurance_provider: insurance_provider,
+						petname: petname
+					})
+				}).then(() => {
+					fetch(url + "records")
+						.then(response => response.json())
+						.then(result => {
+							console.log("result", result),
+								setStore({
+									pet_profile: result
+								});
+						})
+						.catch(e => console.error(e));
+				});
+			},
+			// delete petProfile
+			deletePet_Profile(id) {
+				fetch(url + id, {
+					method: "delete"
+				}).then(() => {
+					fetch(url + "records")
+						.then(response => response.json())
+						.then(result => {
+							console.log("result", result),
+								setStore({
+									pet_profile: result
+								});
+						})
+						.catch(e => console.error(e));
+				});
+			},
+
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
