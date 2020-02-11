@@ -37,9 +37,9 @@ export const Navbars = props => {
 			<div className="hidden"></div>
 			<div className="Navbar">
 				<Navbar color="dark" light expand="md">
-					<span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
+					{/* <span style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => triggerSideBar()}>
 						☰{"  "}
-					</span>
+					</span> */}
 
 					<NavbarBrand href="/">
 						<span>
@@ -70,7 +70,7 @@ export const Navbars = props => {
 									</button>
 								</div> */}
 							</NavItem>
-							<UncontrolledDropdown nav inNavbar>
+							{/* <UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret className="links">
 									Doggy Options
 								</DropdownToggle>
@@ -83,7 +83,7 @@ export const Navbars = props => {
 									<DropdownItem>Find my new Puppy</DropdownItem>
 									<DropdownItem divider />
 								</DropdownMenu>
-							</UncontrolledDropdown>
+							</UncontrolledDropdown> */}
 						</Nav>
 						<NavItem>
 							<div>
