@@ -137,7 +137,7 @@ export const Tracker = () => {
 							<title>Placeholder</title>
 							<rect width="100%" height="100%" fill="#55595c" />
 							<text x="50%" y="50%" fill="#eceeef" dy=".3em">
-								Heart Ratere{" "}
+								Heart Rate{" "}
 							</text>
 						</svg>
 						<div className="card-body">

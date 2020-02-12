@@ -72,16 +72,17 @@ export const petProfile = () => {
 																<strong>
 																	<ol className="card-text align-left">
 																		<ul>Breed: Shitzhu</ul>
-																		<ul>Weight: 14.6lbs</ul>
-																		<ul>{e.vetname}</ul>
-																		<ul>{e.groomername}</ul>
-																		<ul>{e.caregiver}</ul>
+																		<ul>VetsName: Dr Hulk{e.vetname}</ul>
 																		<ul>
-																			{e.petname}is up to date with vet
-																			appoinments
+																			Groomername: Puppy Palace{e.groomername}
 																		</ul>
-																		<ul>{e.likes}</ul>
+																		<ul>Caregiver: Puppy Palace{e.caregiver}</ul>
+																		<ul>Puppy Habbits:{e.likes}</ul>
 																	</ol>
+																	{""}
+																	<p>
+																		{e.petname} is up to date with vet appoinments
+																	</p>
 																</strong>
 															</p>
 														</h4>
