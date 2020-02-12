@@ -2,19 +2,17 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-export const AddPet = () => {
+export const AddCaregiver = () => {
 	const { actions } = useContext(Context);
-	const [vetname, setVetname] = useState("");
-	const [groomername, setGroomername] = useState("");
-	const [petname, setPetname] = useState("");
+
 	// const [insurance_policy, setInsurance__policy] = useState("");
 	// const [insurance_provider, setInsurance__provider] = useState("");
 	// const [vet_address, setVet_address] = useState("");
 	// const [groomer_address, setGroomer_address] = useState("");
 	const [caregiver, setCaregiver] = useState("");
-	const [breed, setbreed] = useState("");
-	const [likes, setLikes] = useState("");
+	const [email, setEmail] = useState("");
 	return (
+    
 		<div className="container">
 			<div>
                 <form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
@@ -97,6 +95,7 @@ export const AddPet = () => {
                 </form>
                 
 			</div>
-		</div>
+			</div>
+		
 	);
 };

@@ -40,6 +40,21 @@
     margin-top: 150px;
     height: 200px;
     border-color: transparent;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.modal-contentCare {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 150px;
+    height: fit-content;
+    border-color: transparent;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
     border-radius: 20px;
 }
 .medications    {
@@ -91,7 +106,7 @@ margin-bottom: 80px;
     background-blend-mode: lighten;
     border: 5px;
     border-radius: 20px;
-    font-family: 'Gloria Hallelujah', cursive;
+    // font-family: 'Gloria Hallelujah', cursive;
 }
 .aboutMed {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -99,7 +114,7 @@ margin-bottom: 80px;
     background-blend-mode: lighten;
     border: 5px;
     border-radius: 20px;
-    font-family: 'Gloria Hallelujah', cursive;
+    // font-family: 'Gloria Hallelujah', cursive;
     width: 600px;
 }
 .aboutLink {
@@ -108,7 +123,7 @@ margin-bottom: 80px;
     background-blend-mode: lighten;
     border: 5px;
     border-radius: 20px;
-    font-family: 'Gloria Hallelujah', cursive;
+    // font-family: 'Gloria Hallelujah', cursive;
     width: 600px;
 background-image: url("https://image.shutterstock.com/image-photo/artificial-dog-bone-shape-toy-260nw-1039152244.jpg");
  position: relative;
@@ -172,7 +187,7 @@ html {
 body {
     // background-blend-mode: color;
     background-image: url("../img/dog-logo-vector-with-continuous-one-line-art-style.jpg");
-    font-family: 'Gloria Hallelujah', cursive;
+    // font-family: 'Gloria Hallelujah', cursive;
     color: rgba(23, 46, 23, 0.616);
 
   /* Set a specific height */
