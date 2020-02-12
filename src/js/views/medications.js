@@ -33,43 +33,35 @@ export const Medications = () => {
 			<br />
 			<div className="aboutMed mx-auto">
 				<h1>Medications</h1>
-				<input
-					id="input1"
-					type="text"
-					placeholder="add to list"
-					value={value}
-					onChange={e => setValue(e.target.value)}
-				/>
-				<button onClick={addToDo}>add</button>
-				<input
-					id="input2"
-					type="text"
-					placeholder="add to list"
-					value={value}
-					onChange={e => setValue(e.target.value)}
-				/>
-				<button onClick={addToDo}>add</button>
-				<input
-					id="input3"
-					type="text"
-					placeholder="add to list"
-					value={value}
-					onChange={e => setValue(e.target.value)}
-				/>
-				<button onClick={addToDo}>add</button>
-				<ul>
-					{newToDo.map(todo => (
-						<>
-							<li id="list1" key={todo.index}>
-								{todo.text}
-							</li>
-							<button onClick={deleteInput}>trash</button>
-						</>
-					))}
-				</ul>
+				<div className="overflow-auto medications">
+					<input
+						className="inputMed"
+						id="input1"
+						type="text"
+						placeholder="Medication and Frequency"
+						value={value}
+						onChange={e => setValue(e.target.value)}
+					/>
 
+					<button className="addmedbtn" onClick={addToDo}>
+						<i className="fas fa-plus-circle"></i>
+					</button>
+					<br />
+					{/* <table className="table table-striped"> */}
+					<ul>
+						{newToDo.map(todo => (
+							<>
+								<li className="inputMed" id="list1" key={todo.index}>
+									{todo.text}
+									<button className="addmedbtn float-right" onClick={deleteInput}>
+										<i className="fas fa-trash-alt" />
+									</button>
+								</li>
+							</>
+						))}
+					</ul>
+				</div>
 				{/* <div className="overflow-auto medications">
-					<table className="table table-striped">
 						<thead>
 							<tr>
 								<th scope="col">#</th>
