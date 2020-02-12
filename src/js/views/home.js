@@ -50,7 +50,7 @@ export const Home = () => (
 			</div>
 		</section>
 
-		<section className="jumbotron homeJumbo resize lead text-center mx-auto">
+		{/* <section className="jumbotron homeJumbo resize lead text-center mx-auto">
 			<div className="card about resize mx-auto" style={{ maxWidth: "100%" }}>
 				<div className="row no-gutters">
 					<div className="col-md-8">
@@ -111,7 +111,7 @@ export const Home = () => (
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> */}
 		<section className="jumbotron lead leadLogo startLink mx-auto text-center">
 			<br />
 			{/* <br /> */}

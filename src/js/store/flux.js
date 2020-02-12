@@ -29,27 +29,27 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.catch(e => console.error(e));
 			},
 			// post to petProfile
-			addPet_Profile(
+			addPet_Profile: (
 				vetname,
 				groomername,
-				vetaddress,
-				groomeraddress,
-				insurance_policy,
-				insurance_provider,
+				// vetaddress,
+				// groomeraddress,
+				// insurance_policy,
+				// insurance_provider,
 				petname,
 				caregiver,
 				likes
-			) {
-				fetch("https://3000-b0ec813b-b296-4c70-8c70-72300d7eb0e8.ws-us02.gitpod.io/records", {
-					method: "post",
-					headers: { "Content-type": "application/json" },
+			) => {
+				fetch(url + "records", {
+					method: "POST",
+					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify({
 						vet_name: vetname,
 						groomer_name: groomername,
-						vet_address: vetaddress,
-						groomer_address: groomeraddress,
-						insurance_policy: insurance_policy,
-						insurance_provider: insurance_provider,
+						// vet_address: vetaddress,
+						// groomer_address: groomeraddress,
+						// insurance_policy: insurance_policy,
+						// insurance_provider: insurance_provider,
 						petname: petname,
 						caregiver: caregiver,
 						likes: likes

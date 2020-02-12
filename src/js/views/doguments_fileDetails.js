@@ -5,7 +5,7 @@ import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
 
-export const DogumentsFile = () => {
+export const DogumentsFileDetails = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
@@ -16,22 +16,13 @@ export const DogumentsFile = () => {
 			<div className="aboutMed mx-auto">
 				<div className="form-signup">
 					<h3>Select your doggyment files to upload</h3>
-					<form action="/action_page.php">
-						Select files: <input type="file" name="myFile" multiple />
-						<br />
-						{/* <br /> */}
-						<button
-							type="button"
-							className="btn btn-lg btn-dark btn-block"
-							data-toggle="modal"
-							data-target="#exampleModal">
-							Add my dogument!
-						</button>
-					</form>
+					<div className="dogFiles">
+						<img src="https://careanimalshelterbacolod.files.wordpress.com/2017/10/adoption-formjpg1.jpg?w=660"></img>
+					</div>
 				</div>
 			</div>
 			<div>
-				<Link to="/doguments_fileDetails/">
+				<Link to="/petprofile/">
 					<span>
 						<h4>View my doguments!</h4>
 					</span>

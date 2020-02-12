@@ -17,13 +17,28 @@ export const petProfile = () => {
 					</h1>
 				</div>
 			</div>
+			<div className="align-center">
+				<div className=" float-right">
+					<Link to="/add_petProfile">
+						<h3>Invite your caregiver!</h3>
+					</Link>
+				</div>
+				<div className=" float-left">
+					<Link to="/add_petProfile">
+						<h3>Add a new pet</h3>
+					</Link>
+				</div>
+			</div>
+			<br />
+			<br />
+
 			{store.pet_profile &&
 				store.pet_profile.map((e, index) => {
 					return (
 						<div key={index}>
 							<li className="list-group-item">
-								<section className="jumbotron homeJumbo resize text-center mx-auto">
-									<div className="card about resize mx-auto" style={{ maxWidth: "100%" }}>
+								<section className="jumbotron homeJumbo text-center mx-auto">
+									<div className="card about mx-auto" style={{ maxWidth: "100%" }}>
 										<div className="row no-gutters">
 											<div className="col-md-4">
 												<img
@@ -47,11 +62,6 @@ export const petProfile = () => {
 															}}>
 															<i className="fas fa-trash-alt" />
 														</button>
-														<div>
-															<Link to="/add_petProfile">
-																<h3>add a new pet</h3>
-															</Link>
-														</div>
 													</div>
 													<h2 className="card-title">
 														<strong>{e.petname}</strong>

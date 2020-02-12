@@ -28,7 +28,7 @@ export const Footer = () => {
 						</Link>
 					</div>
 					<div className="col-sm ml-auto">
-						<Link to="/camera">
+						<Link to="/doguments_file">
 							<span>
 								<h1>
 									<i className="fas fa-camera"></i>
@@ -46,10 +46,10 @@ export const Footer = () => {
 						</Link>
 					</div>
 					<div className="col-sm ml-auto">
-						<Link to="/bookServices">
+						<Link to="/ChatMessage">
 							<span>
 								<h1>
-									<i className="far fa-calendar-alt"></i>
+									<i className="far fa-envelope"></i>
 								</h1>
 							</span>
 						</Link>

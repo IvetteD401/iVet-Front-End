@@ -8,6 +8,7 @@ import { Landing } from "./views/landing";
 import { Demo } from "./views/demo";
 import { Doguments } from "./views/doguments";
 import { DogumentsFile } from "./views/doguments_file";
+import { DogumentsFileDetails } from "./views/doguments_fileDetails";
 import { DogumentsImages } from "./views/doguments_images";
 import { Medications } from "./views/medications";
 import { CalenderAppointments } from "./views/calenderAppointments";
@@ -59,6 +60,7 @@ export const Layout = () => {
 						<Route path="/doguments" component={Doguments} />
 						<Route path="/doguments_images" component={DogumentsImages} />
 						<Route path="/doguments_file" component={DogumentsFile} />
+						<Route path="/doguments_fileDetails" component={DogumentsFileDetails} />
 						<Route path="/medications" component={Medications} />
 						<Route path="/calenderAppointments" component={CalenderAppointments} />
 						<Route path="/camera" component={Camera} />
