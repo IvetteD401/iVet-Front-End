@@ -17,7 +17,9 @@ export const AddPet = () => {
 	return (
 		<div className="container">
 			<div>
+                <form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
 				<h1 className="text-center mt-5">Add a new pet</h1>
+                <div className="Padding-for-Div">
 				<form>
 					<div className="form-group">
 						<label>Pet{"'"}s Name</label>
@@ -46,42 +48,7 @@ export const AddPet = () => {
 							onChange={e => setGroomername(e.target.value)}
 						/>
 					</div>
-					{/* <div className="form-group">
-						<label>Vet{"'"}s Address</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Vet Name"
-							onChange={e => setVet_address(e.target.value)}
-						/>
-					</div>
-					<div className="form-group">
-						<label>Groomer{"'"}s Address</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Vet Name"
-							onChange={e => setGroomer_address(e.target.value)}
-						/>
-					</div>
-					<div className="form-group">
-						<label>Insurance Policy</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Enter policy info"
-							onChange={e => setInsurance__policy(e.target.value)}
-						/>
-					</div>
-					<div className="form-group">
-						<label>Insurance Provider</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Enter policy provider info"
-							onChange={e => setInsurance__provider(e.target.value)}
-						/>
-					</div> */}
+					
 					<div className="form-group">
 						<label>Care Giver</label>
 						<input
@@ -126,6 +93,9 @@ export const AddPet = () => {
 				</form>
 				<br />
 				<br />
+                </div>
+                </form>
+                
 			</div>
 		</div>
 	);
