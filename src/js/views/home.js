@@ -64,8 +64,6 @@ export const Home = () => (
 										<strong>Full Stack Web Developer</strong>
 										<br /> Project Developer - 2nd Lead Project Developer
 										<br />
-										Ivette, was awesome to work with. She Delegated well, and always communicated
-										through out the process to keep us on track.
 									</p>
 								</strong>
 								<p>
@@ -81,7 +79,7 @@ export const Home = () => (
 					</div>
 					<div className="col-md-4">
 						<img
-							src="6https://avatars1.githubusercontent.com/u/57456107?s=400&u=4fe460aaaa3bca0965c58477bf313979d30a8555&v=4"
+							src="https://avatars1.githubusercontent.com/u/57456107?s=400&u=4fe460aaaa3bca0965c58477bf313979d30a8555&v=4"
 							className="card-img"
 							alt="..."
 						/>
