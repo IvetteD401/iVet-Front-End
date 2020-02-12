@@ -63,26 +63,29 @@ export const petProfile = () => {
 															<i className="fas fa-trash-alt" />
 														</button>
 													</div>
-													<h2 className="card-title">
-														<strong>{e.petname}</strong>
-													</h2>
-													<h4>
-														<p className="card-text">
-															<strong>
-																<ol className="card-text align-left">
-																	<ul>Breed: Shitzhu</ul>
-																	<ul>Weight: 14.6lbs</ul>
-																	<ul>{e.vetname}</ul>
-																	<ul>{e.groomername}</ul>
-																	<ul>{e.caregiver}</ul>
-																	<ul>
-																		{e.petname}is up to date with vet appoinments
-																	</ul>
-																	<ul>{e.likes}</ul>
-																</ol>
-															</strong>
-														</p>
-													</h4>
+													<div className="PetCard">
+														<h2 className="card-title">
+															<strong>{e.petname}</strong>
+														</h2>
+														<h4>
+															<p className="card-text">
+																<strong>
+																	<ol className="card-text align-left">
+																		<ul>Breed: Shitzhu</ul>
+																		<ul>Weight: 14.6lbs</ul>
+																		<ul>{e.vetname}</ul>
+																		<ul>{e.groomername}</ul>
+																		<ul>{e.caregiver}</ul>
+																		<ul>
+																			{e.petname}is up to date with vet
+																			appoinments
+																		</ul>
+																		<ul>{e.likes}</ul>
+																	</ol>
+																</strong>
+															</p>
+														</h4>
+													</div>
 												</div>
 											</div>
 										</div>

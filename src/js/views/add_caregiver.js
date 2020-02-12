@@ -5,15 +5,11 @@ import { Context } from "../store/appContext";
 export const AddCaregiver = () => {
 	const { actions } = useContext(Context);
 
-	// const [insurance_policy, setInsurance__policy] = useState("");
-	// const [insurance_provider, setInsurance__provider] = useState("");
-	// const [vet_address, setVet_address] = useState("");
-	// const [groomer_address, setGroomer_address] = useState("");
 	const [caregiver, setCaregiver] = useState("");
 	const [email, setEmail] = useState("");
 	return (
-		<div className="container">
-			<div>
+		<div className="container signup">
+			<div className="about">
 				<form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
 					<h1 className="text-center mt-5">Add a new pet</h1>
 					<div className="Padding-for-Div">
@@ -33,7 +29,7 @@ export const AddCaregiver = () => {
 									type="text"
 									className="form-control"
 									placeholder="email"
-									onChange={e => setemail(e.target.value)}
+									onChange={e => setEmail(e.target.value)}
 								/>
 							</div>
 							<button
@@ -47,9 +43,9 @@ export const AddCaregiver = () => {
 								or get back to contacts
 							</Link>
 						</form>
-						<br />
-						<br />
 					</div>
+					<br />
+					<br />
 				</form>
 			</div>
 		</div>

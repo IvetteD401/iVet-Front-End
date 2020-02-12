@@ -7,10 +7,7 @@ export const AddPet = () => {
 	const [vetname, setVetname] = useState("");
 	const [groomername, setGroomername] = useState("");
 	const [petname, setPetname] = useState("");
-	// const [insurance_policy, setInsurance__policy] = useState("");
-	// const [insurance_provider, setInsurance__provider] = useState("");
-	// const [vet_address, setVet_address] = useState("");
-	// const [groomer_address, setGroomer_address] = useState("");
+
 	const [caregiver, setCaregiver] = useState("");
 	const [breed, setbreed] = useState("");
 	const [likes, setLikes] = useState("");
