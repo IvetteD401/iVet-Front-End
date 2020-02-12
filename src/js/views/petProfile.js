@@ -22,8 +22,8 @@ export const petProfile = () => {
 					return (
 						<div key={index}>
 							<li className="list-group-item">
-								<section className="jumbotron homeJumbo text-center mx-auto">
-									<div className="card about" style={{ maxWidth: "100%" }}>
+								<section className="jumbotron homeJumbo resize text-center mx-auto">
+									<div className="card about resize mx-auto" style={{ maxWidth: "100%" }}>
 										<div className="row no-gutters">
 											<div className="col-md-4">
 												<img

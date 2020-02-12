@@ -16,9 +16,8 @@ export const Home = () => (
 				</h3>
 			</div>
 		</section>
-
-		<section className="jumbotron homeJumbo lead text-center mx-auto">
-			<div className="card about" style={{ maxWidth: "100%" }}>
+		<section className="jumbotron homeJumbo resize lead text-center mx-auto">
+			<div className="card about resize mx-auto" style={{ maxWidth: "100%" }}>
 				<div className="row no-gutters">
 					<div className="col-md-4">
 						<img
@@ -34,24 +33,25 @@ export const Home = () => (
 							</h2>
 							<h4>
 								<p className="card-text">
-									<strong>
-										Motivated and resourceful individual capable of providing the highest quality of
-										support with excellent organizational skills that allow to work productively in
-										a fast-paced environment without direct supervision.
-									</strong>
-								</p>
-								<p className="card-text">
-									<small className="text-muted">Last updated 3 mins ago</small>
+									<strong>Full Stack Web Developer</strong>
+									<br /> Project Manager - Lead Project Developer
 								</p>
 							</h4>
+							<h6>
+								<p>
+									{" "}
+									Technologies used: Python, Raspberry Pi, MySQL,
+									<br /> JavaScript, ReactJS, Bootstrap
+								</p>
+							</h6>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section className="jumbotron homeJumbo lead text-center">
-			<div className="card about" style={{ maxWidth: "100%" }}>
+		<section className="jumbotron homeJumbo resize lead text-center mx-auto">
+			<div className="card about resize mx-auto" style={{ maxWidth: "100%" }}>
 				<div className="row no-gutters">
 					<div className="col-md-8">
 						<div className="card-body">
@@ -81,9 +81,8 @@ export const Home = () => (
 				</div>
 			</div>
 		</section>
-
-		<section className="jumbotron homeJumbo lead text-center">
-			<div className="card about" style={{ maxWidth: "100%" }}>
+		<section className="jumbotron homeJumbo resize lead text-center mx-auto">
+			<div className="card about resize mx-auto" style={{ maxWidth: "100%" }}>
 				<div className="row no-gutters">
 					<div className="col-md-4">
 						<img
@@ -113,7 +112,6 @@ export const Home = () => (
 				</div>
 			</div>
 		</section>
-
 		<section className="jumbotron lead leadLogo startLink mx-auto text-center">
 			<br />
 			{/* <br /> */}

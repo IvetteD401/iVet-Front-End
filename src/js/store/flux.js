@@ -40,7 +40,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				caregiver,
 				likes
 			) {
-				fetch(url, {
+				fetch("https://3000-b0ec813b-b296-4c70-8c70-72300d7eb0e8.ws-us02.gitpod.io/records", {
 					method: "post",
 					headers: { "Content-type": "application/json" },
 					body: JSON.stringify({
