@@ -2,131 +2,86 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-export const AddPet = () => {
+export const AddCaregiver = () => {
 	const { actions } = useContext(Context);
-	const [vetname, setVetname] = useState("");
-	const [groomername, setGroomername] = useState("");
-	const [petname, setPetname] = useState("");
+
 	// const [insurance_policy, setInsurance__policy] = useState("");
 	// const [insurance_provider, setInsurance__provider] = useState("");
 	// const [vet_address, setVet_address] = useState("");
 	// const [groomer_address, setGroomer_address] = useState("");
 	const [caregiver, setCaregiver] = useState("");
-	const [breed, setbreed] = useState("");
-	const [likes, setLikes] = useState("");
+	const [email, setEmail] = useState("");
 	return (
-		<div className="container">
-			<div>
-				<h1 className="text-center mt-5">Add a new pet</h1>
-				<form>
-					<div className="form-group">
-						<label>Pet{"'"}s Name</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Pet Name"
-							onChange={e => setPetname(e.target.value)}
-						/>
-					</div>
-					<div className="form-group">
-						<label>Vet{"'"}s Name</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Vet Name"
-							onChange={e => setVetname(e.target.value)}
-						/>
-					</div>
-					<div className="form-group">
-						<label>Groomer{"'"}s Name</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Vet Name"
-							onChange={e => setGroomername(e.target.value)}
-						/>
-					</div>
-					{/* <div className="form-group">
-						<label>Vet{"'"}s Address</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Vet Name"
-							onChange={e => setVet_address(e.target.value)}
-						/>
-					</div>
-					<div className="form-group">
-						<label>Groomer{"'"}s Address</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Vet Name"
-							onChange={e => setGroomer_address(e.target.value)}
-						/>
-					</div>
-					<div className="form-group">
-						<label>Insurance Policy</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Enter policy info"
-							onChange={e => setInsurance__policy(e.target.value)}
-						/>
-					</div>
-					<div className="form-group">
-						<label>Insurance Provider</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Enter policy provider info"
-							onChange={e => setInsurance__provider(e.target.value)}
-						/>
-					</div> */}
-					<div className="form-group">
-						<label>Care Giver</label>
-						<input
-							type="phone"
-							className="form-control"
-							placeholder="Enter care givers here"
-							onChange={e => setCaregiver(e.target.value)}
-						/>
-					</div>
-					<div className="form-group">
-						<label>Likes</label>
-						<input
-							type="text"
-							className="form-control"
-							placeholder="Enter likes"
-							onChange={e => setLikes(e.target.value)}
-						/>
-					</div>
-					<Link to={"/petProfile"}>
-						<button
-							type="button"
-							className="btn btn-primary form-control"
-							onClick={() => {
-								actions.addPet_Profile(
-									vetname,
-									groomername,
-									// vet_address,
-									// groomer_address,
-									// insurance_policy,
-									// insurance_provider,
-									petname,
-									caregiver,
-									likes
-								);
-							}}>
-							save
-						</button>
-					</Link>
-					<Link className="mt-3 w-100 text-center" to="/">
-						or get back to contacts
-					</Link>
-				</form>
-				<br />
-				<br />
+		<>
+			<div className="container">
+				<div>
+					<h1 className="text-center mt-5">Add your pet{"'"}s caregiver:</h1>
+					<form>
+						<div className="form-group">
+							<label>Caregiver{"'"}s Name</label>
+							<input
+								type="text"
+								className="form-control"
+								placeholder="Caregivers Name"
+								onChange={e => setCaregiver(e.target.value)}
+							/>
+						</div>
+						<div className="form-group">
+							<label>Caregiver{"'"}s Email</label>
+							<input
+								type="text"
+								className="form-control"
+								placeholder="Caregivers Email"
+								onChange={e => setEmail(e.target.value)}
+							/>
+						</div>
+
+						<Link to={"/petProfile"}>
+							<button
+								type="button"
+								className="btn btn-lg btn-dark btn-block"
+								data-toggle="modal"
+								data-target="#exampleModal">
+								Add my dogument!
+							</button>
+						</Link>
+						<Link className="mt-3 w-100 text-center" to="/">
+							or get back to contacts
+						</Link>
+					</form>
+					<br />
+					<br />
+				</div>
 			</div>
-		</div>
+			{/* modal */}
+
+			<div
+				className="modal fade"
+				id="exampleModal"
+				role="dialog"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div className="modal-dialog" role="document">
+					<div className="modal-content caregiver">
+						<div className="modal-header">
+							<h2 className="modal-title" id="exampleModalLabel">
+								Congratulations!!{" "}
+							</h2>{" "}
+							<button type="button" className="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div className="modal-body">
+							<h4>
+								An email invitation has been sent to your caregiver <br />
+								to join iVet and better manage your dogs health needs. <br />
+								Make sure to have them accept this invite <br />
+								to gain access to your pet{"'"}s dogumentation!
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
 	);
 };

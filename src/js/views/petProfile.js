@@ -19,7 +19,7 @@ export const petProfile = () => {
 			</div>
 			<div className="align-center">
 				<div className=" float-right">
-					<Link to="/add_petProfile">
+					<Link to="/add_caregiver">
 						<h3>Invite your caregiver!</h3>
 					</Link>
 				</div>
