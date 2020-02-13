@@ -10,7 +10,7 @@ export const DogumentsFile = () => {
 
 	return (
 		<>
-			<section className="emptyDiv"></section>
+			{/* <section className="emptyDiv"></section> */}
 
 			<div className="container signup">
 				<div className="about Padding-for-Div">

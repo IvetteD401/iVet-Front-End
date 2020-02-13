@@ -23,7 +23,7 @@ export const Medications = () => {
 	}
 	return (
 		<>
-			<section className="emptyDiv"></section>
+			{/* <section className="emptyDiv"></section> */}
 			{/* 
 			<br />
 			<br /> */}

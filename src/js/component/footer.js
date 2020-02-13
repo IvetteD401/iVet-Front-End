@@ -46,7 +46,7 @@ export const Footer = () => {
 						</Link>
 					</div>
 					<div className="col-sm ml-auto">
-						<Link to="/ChatMessage">
+						<Link to="/sendMessage">
 							<span>
 								<h1>
 									<i className="far fa-envelope"></i>

@@ -14,6 +14,7 @@ import { Medications } from "./views/medications";
 import { CalenderAppointments } from "./views/calenderAppointments";
 import { Camera } from "./views/camera";
 import { Tracker } from "./views/tracker";
+import { SendMessage } from "./views/sendMessage";
 import { Orderform } from "./views/orderform";
 import { BookServices } from "./views/bookServices";
 import { ContactUs } from "./views/ContactUs";
@@ -54,7 +55,7 @@ export const Layout = () => {
 						<Route exact path="/landing" component={Landing} />
 						<Route exact path="/ivethome" component={ivetHome} />
 						<Route exact path="/alerts" component={Alerts} />
-						<Route exact path="/ChatMessage" component={ChatMessage} />
+						<Route exact path="/sendMessage" component={SendMessage} />
 						<Route exact path="/modalfunction" component={modalFunction} />
 						<Route exact path="/BreedSearch" component={BreedSearch} />
 						{/* <Route path="/demo" component={Demo} /> */}
