@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from "react";
 // import { Context } from "../store/appContext";
 import "../../styles/demo.scss";
 import WebCam from "../component/webCam";
+import { Footer } from "../component/footer";
 
 export const Camera = () => {
 	// const videoEl = useRef(null);
@@ -41,7 +42,8 @@ export const Camera = () => {
 
 			<button className="btn btn-dark" onClick={stopHandler}>
 				Stop Recording
-			// </button> */}
+            // </button> */}
+			<Footer />
 		</>
 	);
 };

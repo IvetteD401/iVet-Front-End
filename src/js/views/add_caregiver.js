@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
+import { Footer } from "../component/footer";
 
 export const AddCaregiver = () => {
 	const { actions } = useContext(Context);
@@ -83,6 +84,7 @@ export const AddCaregiver = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 };

@@ -80,9 +80,9 @@ export const Layout = () => {
 						<Route path="/tracker" component={Tracker} />
 						<Route path="/sidebar" component={Sidebar} />
 						{/* <Route path="/single/:theid" component={Single} /> */}
+						<Footer />
 						<Route render={() => <h1>Love your Doggy!</h1>} />
 					</Switch>
-					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>

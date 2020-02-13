@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
+import { Footer } from "../component/footer";
 
 export const SendMessage = () => {
 	const { actions } = useContext(Context);
@@ -73,6 +74,7 @@ export const SendMessage = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 };

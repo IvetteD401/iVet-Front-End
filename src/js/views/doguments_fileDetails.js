@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Footer } from "../component/footer";
 
 import { Context } from "../store/appContext";
 
@@ -64,7 +65,8 @@ export const DogumentsFileDetails = () => {
 						<h4>View my image gallery.</h4>
 					</span>
 				</Link>
-			</div> */}
+            </div> */}
+			<Footer />
 		</>
 	);
 };

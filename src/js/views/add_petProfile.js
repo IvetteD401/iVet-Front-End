@@ -1,6 +1,9 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
+import { Footer } from "../component/footer";
+import { BreedSearch } from "../component/breedSearch";
+import { SearchResults } from "../views/searchResults";
 
 export const AddPet = () => {
 	const { actions } = useContext(Context);
@@ -76,6 +79,10 @@ export const AddPet = () => {
 								Add my dogument!
 							</button> */}
 						</form>
+						<BreedSearch />
+						<div className="overflow-auto medications">
+							<SearchResults />
+						</div>
 					</div>
 					<Link to={"/petProfile"}>
 						<button
@@ -102,6 +109,7 @@ export const AddPet = () => {
 				{/* </div> */}
 				{/* </form> */}
 			</div>
+			<Footer />
 		</div>
 	);
 };

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Footer } from "../component/footer";
 
 import { Context } from "../store/appContext";
 
@@ -69,6 +70,7 @@ export const DogumentsFile = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 };
