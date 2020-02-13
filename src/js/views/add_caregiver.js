@@ -12,7 +12,7 @@ export const AddCaregiver = () => {
 			<div className="container signup">
 				<div className="about">
 					<form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
-						<h1 className="text-center mt-5">Add a new pet</h1>
+						<h1 className="text-center mt-5">Connect with your caregiver:</h1>
 						<div className="Padding-for-Div">
 							<form>
 								<div className="form-group">
@@ -38,7 +38,7 @@ export const AddCaregiver = () => {
 									className="btn btn-lg btn-dark btn-block"
 									data-toggle="modal"
 									data-target="#exampleModal">
-									Book!
+									Send Invite!
 								</button>
 								<Link to="/petProfile/">
 									{" "}
@@ -52,6 +52,30 @@ export const AddCaregiver = () => {
 
 						<br />
 					</form>
+				</div>
+			</div>
+			{/* modal */}
+
+			<div
+				className="modal fade"
+				id="exampleModal"
+				role="dialog"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div className="modal-dialog" role="document">
+					<div className="modal-content general">
+						<div className="modal-header">
+							<h2 className="modal-title" id="exampleModalLabel">
+								Congratulations!!{" "}
+							</h2>{" "}
+							<button type="button" className="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div className="modal-body">
+							<h4>Your dogument has been added!</h4>
+						</div>
+					</div>
 				</div>
 			</div>
 		</>

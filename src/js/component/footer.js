@@ -19,16 +19,16 @@ export const Footer = () => {
 						</Link>
 					</div>
 					<div className="col-sm ml-auto">
-						<Link to="/tracker">
+						<Link to="/doguments_file">
 							<span>
 								<h1>
-									<i className="far fa-chart-bar"></i>
+									<i className="fas fa-folder-open"></i>
 								</h1>
 							</span>
 						</Link>
 					</div>
 					<div className="col-sm ml-auto">
-						<Link to="/doguments_file">
+						<Link to="/camera">
 							<span>
 								<h1>
 									<i className="fas fa-camera"></i>
