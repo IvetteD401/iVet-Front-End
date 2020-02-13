@@ -9,7 +9,7 @@ export const Footer = () => {
 		<div className="footer dogIcons">
 			<div className="container">
 				<div className="row">
-					<div className="col-sm ml-auto">
+					<div className="col-2 mx-auto">
 						<Link to="/petprofile/">
 							<span>
 								<h1>
@@ -18,7 +18,7 @@ export const Footer = () => {
 							</span>
 						</Link>
 					</div>
-					<div className="col-sm ml-auto">
+					<div className="col-2 mx-auto">
 						<Link to="/doguments_file">
 							<span>
 								<h1>
@@ -27,7 +27,7 @@ export const Footer = () => {
 							</span>
 						</Link>
 					</div>
-					<div className="col-sm ml-auto">
+					<div className="col-2 mx-auto">
 						<Link to="/camera">
 							<span>
 								<h1>
@@ -36,7 +36,7 @@ export const Footer = () => {
 							</span>
 						</Link>
 					</div>
-					<div className="col-sm ml-auto">
+					<div className="col-2 mx-auto">
 						<Link to="/medications">
 							<span>
 								<h1>
@@ -45,7 +45,8 @@ export const Footer = () => {
 							</span>
 						</Link>
 					</div>
-					<div className="col-sm ml-auto">
+
+					<div className="col-2 mx-auto">
 						<Link to="/sendMessage">
 							<span>
 								<h1>
