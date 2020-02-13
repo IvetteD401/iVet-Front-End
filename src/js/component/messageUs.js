@@ -17,7 +17,7 @@ export const messageUs = props => {
 
     return id !== '' ? (
 		 <div>Hello</div>
-  ) : (
+  ) : (<>
     <div style={{ textAlign: "center", margin: "30vh auto", width: "70%" }}>
       <form onSubmit={event => handleSubmit(event)}>
         <input
@@ -33,9 +33,48 @@ export const messageUs = props => {
           placeholder="What is your room .."
         />
         <br />
-        <button type="submit">Submit</button>
+        <button
+									type="button"
+									className="btn btn-lg btn-dark btn-block"
+									data-toggle="modal"
+									data-target="#exampleModal">
+									Send Invite!
+								</button>
       </form>
     </div>
+    {/* modal */}
+
+			<div
+				className="modal fade"
+				id="exampleModal"
+				role="dialog"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div className="modal-dialog" role="document">
+					<div className="modal-content general">
+						<div className="modal-header">
+							<h2 className="modal-title" id="exampleModalLabel">
+								Congratulations!!{" "}
+							</h2>{" "}
+							<button type="button" className="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div className="modal-body">
+							<strong>
+								<h6>
+									An email has been sent to you caregiver to join iVet and share important
+									dogumentation!
+								</h6>
+							</strong>
+							<br />
+							<br />
+							<br />
+						</div>
+					</div>
+				</div>
+			</div>
+            </>
   );
 };
 

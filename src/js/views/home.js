@@ -49,8 +49,12 @@ export const Home = () => (
 				</div>
 			</div>
 		</section>
+<<<<<<< HEAD
         
                     <section className="jumbotron homeJumbo resize lead text-center mx-auto">
+=======
+		<section className="jumbotron homeJumbo resize lead text-center mx-auto">
+>>>>>>> ce7abb584444317fcc668276cb57506f243461a8
 			<div className="card about resize mx-auto" style={{ maxWidth: "100%" }}>
 				<div className="row no-gutters">
 					<div className="col-md-4">
