@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Sidebar } from "./sidebar";
 import { DogFacts } from "../component/dogFacts";
+import { BreedSearch } from "../component/breedSearch";
 import {
 	Collapse,
 	Navbar,
@@ -87,17 +88,18 @@ export const Navbars = props => {
 						</Nav>
 						<NavItem>
 							<div>
-								<input
+								{/* <input
 									onChange={evt => actions.setBreedSearchParam(evt.target.value)}
 									type="text"
 									placeholder="Look up breed..."
 									name="search"
-								/>
-								<Link to="/BreedSearch">
+								/> */}
+								<BreedSearch />
+								{/* <Link to="/BreedSearch">
 									<button onClick={actions.searchBreed}>
 										<i className="fa fa-search" />
 									</button>
-								</Link>
+								</Link> */}
 							</div>
 						</NavItem>
 						<NavbarText></NavbarText>

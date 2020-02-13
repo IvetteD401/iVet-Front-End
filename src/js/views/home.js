@@ -49,7 +49,6 @@ export const Home = () => (
 				</div>
 			</div>
 		</section>
-
 		<section className="jumbotron homeJumbo resize lead text-center mx-auto">
 			<div className="card about resize mx-auto" style={{ maxWidth: "100%" }}>
 				<div className="row no-gutters">
