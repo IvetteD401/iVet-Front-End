@@ -5,6 +5,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import { SearchResults } from "../views/searchResults";
+import Oreo from "../../img/oreo.jpg";
 
 export const petProfile = () => {
 	const { store, actions } = useContext(Context);
@@ -43,11 +44,7 @@ export const petProfile = () => {
 									<div className="card about mx-auto" style={{ maxWidth: "100%" }}>
 										<div className="row no-gutters">
 											<div className="col-md-4">
-												<img
-													src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2018/01/12201051/cute-puppy-body-image.jpg"
-													className="card-img profile"
-													alt="..."
-												/>
+												<img src={Oreo} className="card-img profile" alt="..." />
 											</div>
 											<div className="col-md-8">
 												<div className="card-body profile">
@@ -98,18 +95,6 @@ export const petProfile = () => {
 						</div>
 					);
 				})}
-			<div className="row dogumentIcons mx-auto">
-				<div className="col-6 dogIcons">
-					<Link to="/doguments_file">
-						<i className="fas fa-archive"></i>
-					</Link>
-				</div>
-				<div className="col-6 dogIcons">
-					<Link to="/doguments_images">
-						<i className="far fa-images"></i>
-					</Link>
-				</div>
-			</div>
 		</div>
 	);
 };
