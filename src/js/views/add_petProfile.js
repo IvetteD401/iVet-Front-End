@@ -6,7 +6,7 @@ import { BreedSearch } from "../component/breedSearch";
 import { SearchResults } from "../views/searchResults";
 
 export const AddPet = () => {
-	const { actions } = useContext(Context);
+	const { store, actions } = useContext(Context);
 	const [vetname, setVetname] = useState("");
 	const [groomername, setGroomername] = useState("");
 	const [petname, setPetname] = useState("");
@@ -65,6 +65,10 @@ export const AddPet = () => {
 							placeholder="Enter likes"
 							onChange={e => setLikes(e.target.value)}
 						/>
+					</div>
+					<div className="form-group">
+						{/* <label>Likes</label> */}
+						<input type="text" className="form-control" placeholder="Breed" value={store.breedInfo} />
 					</div>
 					<div>
 						<form action="/action_page.php">

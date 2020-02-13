@@ -10,9 +10,19 @@ export const SearchResults = props => {
 			{store.breedSearchResult != undefined &&
 				store.breedSearchResult.map((item, index) => {
 					return (
-						<div key={index} className="card">
-							{item.name}
-						</div>
+						<>
+							<div className="row mb-2">
+								<div className="col-md-8">
+									<div key={index} className="card">
+										{item.name}
+										{item.temperment}
+									</div>
+								</div>
+								<div onClick={() => actions.addBreedInfo(item.name)} className="col-md-2">
+									<div className="btn btn-info">+</div>
+								</div>
+							</div>
+						</>
 					);
 				})}
 		</div>

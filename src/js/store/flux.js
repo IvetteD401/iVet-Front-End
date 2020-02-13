@@ -2,6 +2,7 @@ const url = "https://3000-b0ec813b-b296-4c70-8c70-72300d7eb0e8.ws-us02.gitpod.io
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			breedInfo: "",
 			login: [{}],
 			breeds: [{}],
 			breedSearchParam: "",
@@ -18,6 +19,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 			pet_profile: []
 		},
 		actions: {
+			addBreedInfo: input => {
+				setStore({ breedInfo: input });
+			},
 			loadPet_Profile() {
 				fetch(url + "records")
 					.then(response => response.json())
