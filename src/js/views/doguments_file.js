@@ -11,40 +11,39 @@ export const DogumentsFile = () => {
 	return (
 		<>
 			<section className="emptyDiv"></section>
+
 			<div className="container signup">
-				<div className="about">
-					<form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
+				<div className="about Padding-for-Div">
+					{/* <form action="/action_page.php" style={{ border: "1px solid #ccc" }}> */}
+					<br />
+					<h3>Select the dogument files to upload:</h3>
+					<br />
+					{/* <div className="Padding-for-Div"> */}
+					{/* <div className="aboutMed mx-auto"> */}
+					<form action="/action_page.php">
+						Select files: <input type="file" name="myFile" multiple />
 						<br />
-						<h3>Select your doggyment files to upload</h3>
 						<br />
-						<div className="Padding-for-Div">
-							<div className="aboutMed mx-auto">
-								<div className="form-signup">
-									<form action="/action_page.php">
-										Select files: <input type="file" name="myFile" multiple />
-										<br />
-										<br />
-										<button
-											type="button"
-											className="btn btn-lg btn-dark btn-block"
-											data-toggle="modal"
-											data-target="#exampleModal">
-											Add my dogument!
-										</button>
-										<br />
-									</form>
-									<br />
-								</div>
-							</div>
-							<div>
-								<Link to="/doguments_fileDetails/">
-									<span>
-										<h4>View my doguments!</h4>
-									</span>
-								</Link>
-							</div>
-						</div>
+						<button
+							type="button"
+							className="btn btn-lg btn-dark btn-block"
+							data-toggle="modal"
+							data-target="#exampleModal">
+							Add my dogument!
+						</button>
 					</form>
+					<br />
+					{/* </div> */}
+					<div>
+						<Link to="/doguments_fileDetails/">
+							<span>
+								<h4>View my doguments!</h4>
+							</span>
+						</Link>
+					</div>
+					{/* </div> */}
+					{/* </form> */}
+
 					{/* modal */}
 					<div
 						className="modal fade"
