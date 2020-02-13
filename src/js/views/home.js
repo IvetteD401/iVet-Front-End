@@ -63,8 +63,8 @@ export const Home = () => (
 									<br />
 								</p>
 							</h4>
+							Currently working at Secberus, as Cloud Security and Compliance Sales Engineer.
 							<br />
-
 							<br />
 							<h6>
 								<p>
