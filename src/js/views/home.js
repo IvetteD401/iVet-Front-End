@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 export const Home = () => (
 	<>
 		{/* <section className="jumbotron lead leadLogo mx-auto text-center"> */}
-		<div className="container">
+		{/* <div className="container">
 			<br />
 
 			<h3>
 				{'"'}Keep your Doggy Up-To-Date!{'"'}
 			</h3>
-		</div>
+		</div> */}
 		{/* </section> */}
 		<section className="jumbotron homeJumbo resize lead text-center mx-auto">
 			<div className="card about resize mx-auto" style={{ maxWidth: "100%" }}>
