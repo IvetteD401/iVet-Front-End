@@ -21,7 +21,7 @@ export const BreedSearch = () => {
 						className="btn btn-outline-secondary"
 						type="button"
 						id="button-addon2">
-						Your Doggy{"'"}s Breed
+						Search
 					</button>
 				</div>
 			</div>

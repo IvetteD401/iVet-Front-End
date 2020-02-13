@@ -9,7 +9,7 @@ export const Home = () => (
 			<br />
 
 			<h3>
-				{'"'}Your one stop shop for all of your dogs health needs!{'"'}
+				{'"'}Keep your Doggy Up-To-Date!{'"'}
 			</h3>
 		</div>
 		{/* </section> */}

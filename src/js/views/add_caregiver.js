@@ -72,10 +72,10 @@ export const AddCaregiver = () => {
 						</div>
 						<div className="modal-body">
 							<strong>
-								<h6>
+								<h4>
 									An email has been sent to you caregiver to join iVet and share important
 									dogumentation!
-								</h6>
+								</h4>
 							</strong>
 							<br />
 							<br />
