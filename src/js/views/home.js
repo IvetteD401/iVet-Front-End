@@ -55,7 +55,7 @@ export const Home = () => (
 					<div className="col-md-8">
 						<div className="card-body">
 							<h2 className="card-title">
-								<strong>Antuan Freyman</strong>
+								<strong>Antuan Frayman</strong>
 							</h2>
 							<h4>
 								<p className="card-text">
@@ -64,6 +64,7 @@ export const Home = () => (
 								</p>
 							</h4>
 							<br />
+
 							<br />
 							<h6>
 								<p>

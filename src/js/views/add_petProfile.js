@@ -63,6 +63,20 @@ export const AddPet = () => {
 							onChange={e => setLikes(e.target.value)}
 						/>
 					</div>
+					<div>
+						<form action="/action_page.php">
+							Select files: <input type="file" name="myFile" multiple />
+							<br />
+							<br />
+							{/* <button
+								type="button"
+								className="btn btn-lg btn-dark btn-block"
+								data-toggle="modal"
+								data-target="#exampleModal">
+								Add my dogument!
+							</button> */}
+						</form>
+					</div>
 					<Link to={"/petProfile"}>
 						<button
 							type="button"
