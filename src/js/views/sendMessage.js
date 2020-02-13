@@ -21,21 +21,19 @@ export const SendMessage = () => {
 							id="name"
 							onChange={e => setNameInput(e.target.value.trim())}
 							required
-							placeholder="What is your name .."
+							placeholder="Recipient .."
 						/>
 						<br />
-						<input
-							id="room"
-							onChange={e => setRoom(e.target.value.trim())}
-							placeholder="What is your room .."
-						/>
-						<br />
+						<div className="form-group">
+							<label htmlFor="exampleFormControlTextarea1">Post your Message</label>
+							<textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
 						<button
 							type="button"
 							className="btn btn-lg btn-dark btn-block"
 							data-toggle="modal"
 							data-target="#exampleModal">
-							Send Invite!
+							Send your Message!
 						</button>
 						{/* </div> */}
 					</form>
