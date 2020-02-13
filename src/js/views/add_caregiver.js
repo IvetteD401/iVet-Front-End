@@ -10,49 +10,46 @@ export const AddCaregiver = () => {
 	return (
 		<>
 			<div className="container signup">
-				<div className="about">
-					<form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
-						<h1 className="text-center mt-5">Connect with your caregiver:</h1>
-						<div className="Padding-for-Div">
-							<form>
-								<div className="form-group">
-									<label>caregiver{"'"}s Name</label>
-									<input
-										type="text"
-										className="form-control"
-										placeholder="Caregivers Name"
-										onChange={e => setCaregiver(e.target.value)}
-									/>
-								</div>
-								<div className="form-group">
-									<label>Caregiver{"'"}s Email</label>
-									<input
-										type="text"
-										className="form-control"
-										placeholder="email"
-										onChange={e => setEmail(e.target.value)}
-									/>
-								</div>
-								<button
-									type="button"
-									className="btn btn-lg btn-dark btn-block"
-									data-toggle="modal"
-									data-target="#exampleModal">
-									Send Invite!
-								</button>
-								<Link to="/petProfile/">
-									{" "}
-									<button type="button" className="btn btn-primary">
-										go home
-									</button>
-								</Link>
-							</form>
+				<div className="about Padding-for-Div">
+					{/* <form action="/action_page.php" style={{ border: "1px solid #ccc" }}> */}
+					<h1 className="text-center mt-5">Connect with your caregiver:</h1>
+					{/* <div className="Padding-for-Div"> */}
+					<form>
+						<div className="form-group">
+							{/* <label>caregiver{"'"}s Name</label> */}
+							<input
+								type="text"
+								className="form-control"
+								placeholder="Caregivers Name"
+								onChange={e => setCaregiver(e.target.value)}
+							/>
 						</div>
-						<br />
-
-						<br />
+						<div className="form-group">
+							{/* <label>Caregiver{"'"}s Email</label> */}
+							<input
+								type="text"
+								className="form-control"
+								placeholder="caregiver@email.com"
+								onChange={e => setEmail(e.target.value)}
+							/>
+							<p>***Caregiver must accept invitation to view your pet info.</p>
+						</div>
+						<button
+							type="button"
+							className="btn btn-lg btn-dark btn-block"
+							data-toggle="modal"
+							data-target="#exampleModal">
+							Send Invite!
+						</button>
+						<Link to="/petProfile/">
+							{" "}
+							<button type="button" className="btn btn-secondary btn-sm">
+								go home
+							</button>
+						</Link>
 					</form>
 				</div>
+				<br />
 			</div>
 			{/* modal */}
 

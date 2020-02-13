@@ -41,7 +41,7 @@ export const AddPet = () => {
 						<input
 							type="text"
 							className="form-control"
-							placeholder="Vet Name"
+							placeholder="Groomer Name"
 							onChange={e => setGroomername(e.target.value)}
 						/>
 					</div>
