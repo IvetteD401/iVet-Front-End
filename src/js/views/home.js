@@ -4,18 +4,15 @@ import { Link } from "react-router-dom";
 
 export const Home = () => (
 	<>
-		<section className="jumbotron lead leadLogo mx-auto text-center">
-			<div className="container">
-				<br />
+		{/* <section className="jumbotron lead leadLogo mx-auto text-center"> */}
+		<div className="container">
+			<br />
 
-				<h1>
-					<strong>i-Vet</strong>{" "}
-				</h1>
-				<h3>
-					{'"'}Your one stop shop for all of your dogs health needs!{'"'}
-				</h3>
-			</div>
-		</section>
+			<h3>
+				{'"'}Your one stop shop for all of your dogs health needs!{'"'}
+			</h3>
+		</div>
+		{/* </section> */}
 		<section className="jumbotron homeJumbo resize lead text-center mx-auto">
 			<div className="card about resize mx-auto" style={{ maxWidth: "100%" }}>
 				<div className="row no-gutters">
@@ -40,7 +37,7 @@ export const Home = () => (
 							<h6>
 								<p>
 									{" "}
-									Technologies used: Python, Raspberry Pi, MySQL,
+									Technologies used: Python, MySQL,
 									<br /> JavaScript, ReactJS, Bootstrap
 								</p>
 							</h6>
@@ -69,7 +66,7 @@ export const Home = () => (
 							<h6>
 								<p>
 									{" "}
-									Technologies used: Python, Raspberry Pi, MySQL,
+									Technologies used: Python, MySQL,
 									<br /> JavaScript, ReactJS, Bootstrap
 								</p>
 							</h6>

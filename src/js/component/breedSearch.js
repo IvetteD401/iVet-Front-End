@@ -11,7 +11,7 @@ export const BreedSearch = () => {
 					onChange={e => setInput(e.target.value)}
 					type="text"
 					className="form-control"
-					placeholder="Recipient's username"
+					placeholder="Select Your Doggy's Breed"
 					aria-label="Recipient's username"
 					aria-describedby="button-addon2"
 				/>
@@ -21,7 +21,7 @@ export const BreedSearch = () => {
 						className="btn btn-outline-secondary"
 						type="button"
 						id="button-addon2">
-						Button
+						Your Doggy{"'"}s Breed
 					</button>
 				</div>
 			</div>
