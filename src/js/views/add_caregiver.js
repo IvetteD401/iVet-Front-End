@@ -73,7 +73,15 @@ export const AddCaregiver = () => {
 							</button>
 						</div>
 						<div className="modal-body">
-							<h4>Your dogument has been added!</h4>
+							<strong>
+								<h6>
+									An email has been sent to you caregiver to join iVet and share important
+									dogumentation!
+								</h6>
+							</strong>
+							<br />
+							<br />
+							<br />
 						</div>
 					</div>
 				</div>
