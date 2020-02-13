@@ -11,69 +11,65 @@ export const DogumentsFile = () => {
 	return (
 		<>
 			<section className="emptyDiv"></section>
-			<br />
-			<br />
-			<div className="aboutMed mx-auto">
-				<div className="form-signup">
-					<h3>Select your doggyment files to upload</h3>
-					<form action="/action_page.php">
-						Select files: <input type="file" name="myFile" multiple />
+			<div className="container signup">
+				<div className="about">
+					<form action="/action_page.php" style={{ border: "1px solid #ccc" }}>
 						<br />
-						{/* <br /> */}
-						<button
-							type="button"
-							className="btn btn-lg btn-dark btn-block"
-							data-toggle="modal"
-							data-target="#exampleModal">
-							Add my dogument!
-						</button>
-					</form>
-				</div>
-			</div>
-			<div>
-				<Link to="/doguments_fileDetails/">
-					<span>
-						<h4>View my doguments!</h4>
-					</span>
-				</Link>
-			</div>
-			{/* modal */}
-
-			<div
-				className="modal fade"
-				id="exampleModal"
-				role="dialog"
-				aria-labelledby="exampleModalLabel"
-				aria-hidden="true">
-				<div className="modal-dialog" role="document">
-					<div className="modal-content general">
-						<div className="modal-header">
-							<h2 className="modal-title" id="exampleModalLabel">
-								Congratulations!!{" "}
-							</h2>{" "}
-							<button type="button" className="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
+						<h3>Select your doggyment files to upload</h3>
+						<br />
+						<div className="Padding-for-Div">
+							<div className="aboutMed mx-auto">
+								<div className="form-signup">
+									<form action="/action_page.php">
+										Select files: <input type="file" name="myFile" multiple />
+										<br />
+										<br />
+										<button
+											type="button"
+											className="btn btn-lg btn-dark btn-block"
+											data-toggle="modal"
+											data-target="#exampleModal">
+											Add my dogument!
+										</button>
+										<br />
+									</form>
+									<br />
+								</div>
+							</div>
+							<div>
+								<Link to="/doguments_fileDetails/">
+									<span>
+										<h4>View my doguments!</h4>
+									</span>
+								</Link>
+							</div>
 						</div>
-						<div className="modal-body">
-							<h4>Your dogument has been added!</h4>
+					</form>
+					{/* modal */}
+					<div
+						className="modal fade"
+						id="exampleModal"
+						role="dialog"
+						aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
+						<div className="modal-dialog" role="document">
+							<div className="modal-content general">
+								<div className="modal-header">
+									<h2 className="modal-title" id="exampleModalLabel">
+										Congratulations!!{" "}
+									</h2>{" "}
+									<button type="button" className="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div className="modal-body">
+									<h4>Your dogument has been added!</h4>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			{/* <div className="aboutLink mx-auto">
-				<Link to="/petprofile/">
-					<span>
-						<h4>Go back to my profile.</h4>
-					</span>
-				</Link>
-				<Link to="/doguments_images/">
-					<span>
-						<h4>View my image gallery.</h4>
-					</span>
-				</Link>
-			</div> */}
 		</>
 	);
 };
