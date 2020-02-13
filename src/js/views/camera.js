@@ -29,7 +29,12 @@ export const Camera = () => {
 
 	return (
 		<>
-			<WebCam />
+			<div className=" grass">
+				{/* <div className="about Padding-for-Div"> */}
+				<WebCam />
+				{/* </div> */}
+			</div>
+
 			{/* <div className="container">
 				<video ref={videoEl} />
 			</div>
